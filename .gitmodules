@@ -1,0 +1,3 @@
+[submodule "AutoChess/assets/Script/AutoBattle"]
+	path = AutoChess/assets/Script/AutoBattle
+	url = git@github.com:pumpkye/AutoChessBattle.git
