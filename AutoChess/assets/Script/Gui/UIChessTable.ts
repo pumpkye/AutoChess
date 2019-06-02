@@ -2,6 +2,8 @@ import { g_UIManager } from "./UIManager";
 import UISetNpc from "./UISetNpc";
 import { ChessNpc } from "../AutoBattle/Model/ChessNpc";
 import { ChessNpcInfo } from "../AutoBattle/Input/InputCache";
+import UIMain from "./UIMain";
+import { npc_data } from "../AutoBattle/Tbx/npc_data";
 
 // Learn TypeScript:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -63,18 +65,22 @@ export default class UIChessTable extends cc.Component {
         console.log(npc);
         let idx = y * 8 + x;
         let node = this.gridArr[idx];
-        let label = cc.find("Background/npcName", node).getComponent(cc.Label);
-        label.string = npc.name;
         if (y > 3) {
             x = 7 - x;
             y = 7 - y;
         }
-        let chessNpcInfo = new ChessNpcInfo(0, npc.baseId, npc.level, { x: x, y: y })
-        console.log(chessNpcInfo);
         if (!npc.baseId) {
             delete (this.layout[idx]);
-        } else {
+        } else if (npc_data[npc.baseId]) {
+            let label = cc.find("Background/npcName", node).getComponent(cc.Label);
+            label.string = npc.name;
+            let chessNpcInfo = new ChessNpcInfo(0, npc.baseId, npc.level, { x: x, y: y })
+            console.log(chessNpcInfo);
             this.layout[idx] = chessNpcInfo;
+        }
+        let panel: UIMain = g_UIManager.getPanel("UIMain")
+        if (panel) {
+            panel.refreshCostBuff();
         }
     }
     // update (dt) {}

@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var InputCache_1 = require("../AutoBattle/Input/InputCache");
 var AutoBattle_1 = require("../AutoBattle/AutoBattle");
 var UIManager_1 = require("./UIManager");
+var npc_data_1 = require("../AutoBattle/Tbx/npc_data");
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
@@ -21,7 +22,10 @@ var UIMain = /** @class */ (function (_super) {
     function UIMain() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.startBattleBtn = null;
-        _this.text = 'hello';
+        _this.layoutACost = null;
+        _this.layoutABuff = null;
+        _this.layoutBCost = null;
+        _this.layoutBBuff = null;
         return _this;
         // update (dt) {}
     }
@@ -31,8 +35,27 @@ var UIMain = /** @class */ (function (_super) {
         this.battleInfo = new InputCache_1.BattleInfo(1);
         this.battleInfo.addMatch(101, 102);
     };
-    UIMain.prototype.startBattle = function () {
-        console.log("onStartBattleTouch");
+    /**
+     * 刷新阵容cost和buff
+     */
+    UIMain.prototype.refreshCostBuff = function () {
+        this.refreshBattleInfo();
+        var layoutA = this.battleInfo.getLayoutByPlayerId(101);
+        var sumCost = 0;
+        for (var i = 0; i < layoutA.npcList.length; i++) {
+            var npc = layoutA.npcList[i];
+            sumCost = sumCost + npc_data_1.npc_data[npc.baseId].quality * Math.pow(3, npc.level - 1);
+        }
+        this.layoutACost.string = sumCost.toString();
+        sumCost = 0;
+        var layoutB = this.battleInfo.getLayoutByPlayerId(102);
+        for (var i = 0; i < layoutB.npcList.length; i++) {
+            var npc = layoutB.npcList[i];
+            sumCost = sumCost + npc_data_1.npc_data[npc.baseId].quality * Math.pow(3, npc.level - 1);
+        }
+        this.layoutBCost.string = sumCost.toString();
+    };
+    UIMain.prototype.refreshBattleInfo = function () {
         var thisId = 0;
         var chessTable = UIManager_1.g_UIManager.getPanel("UIChessTable");
         console.log(chessTable.layout);
@@ -55,6 +78,10 @@ var UIMain = /** @class */ (function (_super) {
         this.battleInfo.clearLayout();
         this.battleInfo.addLayout(layoutInfoA);
         this.battleInfo.addLayout(layoutInfoB);
+    };
+    UIMain.prototype.startBattle = function () {
+        console.log("onStartBattleTouch");
+        this.refreshBattleInfo();
         console.log(this.battleInfo);
         InputCache_1.g_InputCache.setBattleInfo(this.battleInfo);
         AutoBattle_1.g_AutoBattle.doAutoBattle();
@@ -73,8 +100,17 @@ var UIMain = /** @class */ (function (_super) {
         property(cc.Button)
     ], UIMain.prototype, "startBattleBtn", void 0);
     __decorate([
-        property
-    ], UIMain.prototype, "text", void 0);
+        property(cc.Label)
+    ], UIMain.prototype, "layoutACost", void 0);
+    __decorate([
+        property(cc.Label)
+    ], UIMain.prototype, "layoutABuff", void 0);
+    __decorate([
+        property(cc.Label)
+    ], UIMain.prototype, "layoutBCost", void 0);
+    __decorate([
+        property(cc.Label)
+    ], UIMain.prototype, "layoutBBuff", void 0);
     UIMain = __decorate([
         ccclass
     ], UIMain);

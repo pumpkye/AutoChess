@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/FlashBoom.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '9f206KPt8BJl4xIBFSECSk8', 'FlashBoom', __filename);
+cc._RF.push(module, '63ae4QvqBFM56SanZM6BNuy', 'FlashBoom', __filename);
 // Script/AutoBattle/SkillEffect/FlashBoom.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

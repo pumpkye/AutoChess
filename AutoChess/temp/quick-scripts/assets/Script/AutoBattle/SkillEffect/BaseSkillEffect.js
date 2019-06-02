@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/BaseSkillEffect.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '50c4dlk0ptC+LJiYQsog3MB', 'BaseSkillEffect', __filename);
+cc._RF.push(module, '6566eXN5OBIabmfyMUj/rE6', 'BaseSkillEffect', __filename);
 // Script/AutoBattle/SkillEffect/BaseSkillEffect.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

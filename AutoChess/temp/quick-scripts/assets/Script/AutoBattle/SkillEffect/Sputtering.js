@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/Sputtering.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '1b10di2H6REfLgxXdxB0iQ/', 'Sputtering', __filename);
+cc._RF.push(module, '34728LG4j1DOpjwMjk4/+b3', 'Sputtering', __filename);
 // Script/AutoBattle/SkillEffect/Sputtering.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

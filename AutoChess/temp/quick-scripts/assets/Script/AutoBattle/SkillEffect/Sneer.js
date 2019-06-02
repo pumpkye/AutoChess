@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/Sneer.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, 'da381mzrDtFI4UR4gTHnu4m', 'Sneer', __filename);
+cc._RF.push(module, 'e1402VAxWpGEobYK2xw0k8C', 'Sneer', __filename);
 // Script/AutoBattle/SkillEffect/Sneer.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

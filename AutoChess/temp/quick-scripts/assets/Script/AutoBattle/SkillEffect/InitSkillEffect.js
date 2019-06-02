@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/InitSkillEffect.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '60960to1m5IuYvkhERY5AQg', 'InitSkillEffect', __filename);
+cc._RF.push(module, '6f35eMEnWJJHp5oRLwXOori', 'InitSkillEffect', __filename);
 // Script/AutoBattle/SkillEffect/InitSkillEffect.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

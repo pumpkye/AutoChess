@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/Model/ChessSkill.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '042dexg8wFLIbk6CcCVh2nV', 'ChessSkill', __filename);
+cc._RF.push(module, '34e6bX+oMBDDYvoKQYZHLxN', 'ChessSkill', __filename);
 // Script/AutoBattle/Model/ChessSkill.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -107,10 +107,7 @@ var ChessSkill = /** @class */ (function () {
         switch (this.baseData.targetType) {
             case SkillTargetType.enemy:
                 if (!defender || defender.isDead || defender.hasBuffState(SkillEffectEnum_1.BuffAndDotState.bkb)
-                    || !Util_1.g_Util.checkPosShortInRange(attacker.posX, attacker.posY, defender.posX, defender.posY, this.levelData.range)) {
-                    if (defender && defender.hasBuffState(SkillEffectEnum_1.BuffAndDotState.bkb)) {
-                        Printer_1.printBattleMsg(Printer_1.pTag.battle, Printer_1.pBattleAction.bkb, { defender: defender });
-                    }
+                    || !Util_1.g_Util.checkPosShortInRange(attacker.posX, attacker.posY, attacker.curTarget.posX, attacker.curTarget.posY, this.levelData.range)) {
                     return;
                 }
                 break;
@@ -216,12 +213,11 @@ var NormalSkill = /** @class */ (function (_super) {
         //判断是否暴击
         var critInfos = attacker.getAttrChange("crit");
         if (critInfos && critInfos.length > 0) {
-            var tempDamage = damage;
             for (var i = 0; i < critInfos.length; i++) {
                 var info = critInfos[i];
                 var rad = AutoBattleManager_1.g_AutoBattleManager.getRandomNumber(100);
                 if (rad <= info.info.per) {
-                    damage = Math.max(damage, tempDamage * info.info.mul / 100);
+                    damage = Math.max(damage, damage * info.info.mul / 100);
                 }
             }
             if (damage > attacker.damage) {
@@ -231,7 +227,7 @@ var NormalSkill = /** @class */ (function (_super) {
                 if (silentInfos && silentInfos.length > 0) {
                     var buff = new ChessBuff_1.ChessBuff(silentInfos[0].info, 0, defender, null, SkillEffectEnum_1.BuffAndDotState.silent);
                     defender.addBuff(buff);
-                    Printer_1.printBattleMsg(Printer_1.pTag.battle, Printer_1.pBattleAction.critSilent, { attacker: attacker, defender: defender, time: silentInfos[0].info });
+                    Printer_1.printBattleMsg(Printer_1.pTag.battle, Printer_1.pBattleAction.critSilent, { attacker: attacker, defender: defender, time: silentInfos[1].info });
                 }
                 //血之祭祀的血量回复
                 var bloodInfos = attacker.getAttrChange("bloodSacrifice");
@@ -239,7 +235,6 @@ var NormalSkill = /** @class */ (function (_super) {
                     for (var i = 0; i < bloodInfos.length; i++) {
                         var info = bloodInfos[i].info;
                         var recoverHp = damage * info / 100;
-                        Printer_1.printBattleMsg(Printer_1.pTag.battle, Printer_1.pBattleAction.bloodSacrificeRecoverHp, { hp: recoverHp });
                         attacker.reduceHp(-recoverHp);
                     }
                 }
@@ -260,10 +255,8 @@ var NormalSkill = /** @class */ (function (_super) {
                 effInfo_1.init(SkillEffectEnum_1.SkillEffectEnum.damage, [damage_1, damageType]);
                 for (var j = 0; j < hitList.length; j++) {
                     var npc = hitList[j];
-                    if (npc.thisId != defender.thisId) {
-                        var effData_1 = new EffectInfo_1.EffData(effInfo_1, attacker, npc);
-                        InitSkillEffect_1.skillEffects[SkillEffectEnum_1.SkillEffectEnum.damage].play(effData_1);
-                    }
+                    var effData_1 = new EffectInfo_1.EffData(effInfo_1, attacker, npc);
+                    InitSkillEffect_1.skillEffects[SkillEffectEnum_1.SkillEffectEnum.damage].play(effData_1);
                 }
             }
         }

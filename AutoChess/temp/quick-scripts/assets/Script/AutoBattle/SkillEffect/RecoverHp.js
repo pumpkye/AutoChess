@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/RecoverHp.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '13fcf01q45HmY+hg1bvugI2', 'RecoverHp', __filename);
+cc._RF.push(module, '1ebfbsAkTtLgKQ/n7QMZfYm', 'RecoverHp', __filename);
 // Script/AutoBattle/SkillEffect/RecoverHp.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

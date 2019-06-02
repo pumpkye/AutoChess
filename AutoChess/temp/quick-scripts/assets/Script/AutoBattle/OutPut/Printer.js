@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/OutPut/Printer.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '25e47eZT7ZKqJXY4PFYEoLC', 'Printer', __filename);
+cc._RF.push(module, '7b946w3oE5EjJU01FgDMCIa', 'Printer', __filename);
 // Script/AutoBattle/OutPut/Printer.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -35,8 +35,6 @@ var pBattleAction;
     pBattleAction[pBattleAction["addDebuff"] = 19] = "addDebuff";
     pBattleAction[pBattleAction["addDamage"] = 20] = "addDamage";
     pBattleAction[pBattleAction["missDamage"] = 21] = "missDamage";
-    pBattleAction[pBattleAction["bloodSacrificeRecoverHp"] = 22] = "bloodSacrificeRecoverHp";
-    pBattleAction[pBattleAction["bkb"] = 23] = "bkb";
 })(pBattleAction = exports.pBattleAction || (exports.pBattleAction = {}));
 var pErrTag;
 (function (pErrTag) {
@@ -50,12 +48,12 @@ var filterActionTag = [
     pBattleAction.tryAttack,
 ];
 function printDefault(msg) {
-    return;
+    // return;
     console.log(msg);
 }
 exports.printDefault = printDefault;
 function printChessTable(msg) {
-    return;
+    // return;
     console.log(msg);
 }
 exports.printChessTable = printChessTable;
@@ -79,7 +77,7 @@ function printErrMsg(tag, msg) {
 }
 exports.printErrMsg = printErrMsg;
 function printBattleMsg(tag, action, msg) {
-    return;
+    // return;
     for (var i = 0; i < filterActionTag.length; i++) {
         var tag_1 = filterActionTag[i];
         if (action == tag_1) {
@@ -162,9 +160,6 @@ function printBattleMsg(tag, action, msg) {
                 case pBattleAction.missDamage:
                     content = '护盾抵挡伤害';
                     break;
-                case pBattleAction.bloodSacrificeRecoverHp:
-                    content = "\u8840\u4E4B\u796D\u7940\u6062\u590D\u8840\u91CF" + msg.hp;
-                    break;
                 case pBattleAction.banish:
                     break;
                 case pBattleAction.miss:
@@ -172,9 +167,6 @@ function printBattleMsg(tag, action, msg) {
                     break;
                 case pBattleAction.cdTime:
                     content = msg.skillName + " \u6280\u80FDcd\uFF1A" + msg.cd;
-                    break;
-                case pBattleAction.bkb:
-                    content = msg.defender.printName + " \u5BF9\u6280\u80FD\u514D\u75AB";
                     break;
                 default:
                     break;

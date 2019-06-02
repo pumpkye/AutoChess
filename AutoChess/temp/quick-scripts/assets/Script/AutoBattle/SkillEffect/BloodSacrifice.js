@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/BloodSacrifice.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, 'e5fd8SyS9FJla31nIeXKX4Z', 'BloodSacrifice', __filename);
+cc._RF.push(module, '57febOgHvlLxqQSlxlsl6Zv', 'BloodSacrifice', __filename);
 // Script/AutoBattle/SkillEffect/BloodSacrifice.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -39,10 +39,9 @@ var BloodSacrifice = /** @class */ (function (_super) {
         var lifeTime = data.skillEff.effArr[3];
         var damage = Math.floor(data.defender.hp * damagePer / 100);
         var hurtSelf = Math.floor(data.attacker.hp * hurtSelfPer / 100);
-        // let hurtSelf = Math.floor(damage * hurtSelfPer / 100);        
         data.defender.reduceHp(damage);
         data.attacker.reduceHp(hurtSelf);
-        var buff = new ChessBuff_1.ChessBuff(lifeTime, 0, data.attacker, null, SkillEffectEnum_1.BuffAndDotState.bkb);
+        var buff = new ChessBuff_1.ChessBuff(lifeTime, 0, data.attacker);
         buff.setAttrChange("bloodSacrifice", recoverPer);
         data.attacker.addBuff(buff);
         return true;

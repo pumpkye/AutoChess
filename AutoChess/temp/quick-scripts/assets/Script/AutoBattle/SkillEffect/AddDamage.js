@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/AddDamage.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '08d1efxVadDL5Ub9qH0PNiQ', 'AddDamage', __filename);
+cc._RF.push(module, 'fd605YkmgxFx52r/TSMxpo3', 'AddDamage', __filename);
 // Script/AutoBattle/SkillEffect/AddDamage.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

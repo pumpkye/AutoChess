@@ -5,6 +5,7 @@ cc._RF.push(module, '4a595W3VYFI74R1xJIMQY75', 'UIChessTable');
 Object.defineProperty(exports, "__esModule", { value: true });
 var UIManager_1 = require("./UIManager");
 var InputCache_1 = require("../AutoBattle/Input/InputCache");
+var npc_data_1 = require("../AutoBattle/Tbx/npc_data");
 // Learn TypeScript:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
@@ -60,19 +61,23 @@ var UIChessTable = /** @class */ (function (_super) {
         console.log(npc);
         var idx = y * 8 + x;
         var node = this.gridArr[idx];
-        var label = cc.find("Background/npcName", node).getComponent(cc.Label);
-        label.string = npc.name;
         if (y > 3) {
             x = 7 - x;
             y = 7 - y;
         }
-        var chessNpcInfo = new InputCache_1.ChessNpcInfo(0, npc.baseId, npc.level, { x: x, y: y });
-        console.log(chessNpcInfo);
         if (!npc.baseId) {
             delete (this.layout[idx]);
         }
-        else {
+        else if (npc_data_1.npc_data[npc.baseId]) {
+            var label = cc.find("Background/npcName", node).getComponent(cc.Label);
+            label.string = npc.name;
+            var chessNpcInfo = new InputCache_1.ChessNpcInfo(0, npc.baseId, npc.level, { x: x, y: y });
+            console.log(chessNpcInfo);
             this.layout[idx] = chessNpcInfo;
+        }
+        var panel = UIManager_1.g_UIManager.getPanel("UIMain");
+        if (panel) {
+            panel.refreshCostBuff();
         }
     };
     UIChessTable = __decorate([

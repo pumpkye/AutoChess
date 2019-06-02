@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/Refraction.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '012f1SiaSRKJre68kcpzpKd', 'Refraction', __filename);
+cc._RF.push(module, '7d12axpy6tAeqIbyEzB/bEE', 'Refraction', __filename);
 // Script/AutoBattle/SkillEffect/Refraction.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -40,8 +40,10 @@ var Refraction = /** @class */ (function (_super) {
         var mTime = skillEff[2];
         var lifeTime = skillEff[3];
         var shield = new ChessBuff_1.AddDamageShield(lifeTime, aTime, defender, damage);
+        console.log(shield);
         defender.addShield(shield);
         shield = new ChessBuff_1.MissDamageShield(lifeTime, mTime, defender, null);
+        console.log(shield);
         defender.addShield(shield);
         return true;
     };

@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/NormalDamage.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, 'a012d87v7hJFY4uQ6t5xO1L', 'NormalDamage', __filename);
+cc._RF.push(module, 'f5b8fUQjtxG6rJh1QdV9lJb', 'NormalDamage', __filename);
 // Script/AutoBattle/SkillEffect/NormalDamage.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

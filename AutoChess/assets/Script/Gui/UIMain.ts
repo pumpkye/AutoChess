@@ -5,6 +5,7 @@ import { g_AutoBattle } from "../AutoBattle/AutoBattle";
 import { g_UIManager } from "./UIManager";
 import UISaveLayout from "./UISaveLayout";
 import UILoadLayout from "./UILoadLayout";
+import { npc_data } from "../AutoBattle/Tbx/npc_data";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -24,8 +25,17 @@ export default class UIMain extends cc.Component {
     @property(cc.Button)
     startBattleBtn: cc.Button = null;
 
-    @property
-    text: string = 'hello';
+    @property(cc.Label)
+    layoutACost: cc.Label = null;
+
+    @property(cc.Label)
+    layoutABuff: cc.Label = null;
+
+    @property(cc.Label)
+    layoutBCost: cc.Label = null;
+
+    @property(cc.Label)
+    layoutBBuff: cc.Label = null;
 
     battleInfo: BattleInfo;
 
@@ -38,8 +48,28 @@ export default class UIMain extends cc.Component {
         this.battleInfo.addMatch(101, 102);
     }
 
-    startBattle() {
-        console.log("onStartBattleTouch");
+    /**
+     * 刷新阵容cost和buff
+     */
+    refreshCostBuff() {
+        this.refreshBattleInfo();
+        let layoutA = this.battleInfo.getLayoutByPlayerId(101);
+        let sumCost = 0;
+        for (let i = 0; i < layoutA.npcList.length; i++) {
+            const npc = layoutA.npcList[i];
+            sumCost = sumCost + npc_data[npc.baseId].quality * Math.pow(3, npc.level - 1);
+        }
+        this.layoutACost.string = sumCost.toString();
+        sumCost = 0;
+        let layoutB = this.battleInfo.getLayoutByPlayerId(102);
+        for (let i = 0; i < layoutB.npcList.length; i++) {
+            const npc = layoutB.npcList[i];
+            sumCost = sumCost + npc_data[npc.baseId].quality * Math.pow(3, npc.level - 1);
+        }
+        this.layoutBCost.string = sumCost.toString();
+    }
+
+    refreshBattleInfo() {
         let thisId = 0;
         let chessTable: UIChessTable = g_UIManager.getPanel("UIChessTable");
         console.log(chessTable.layout)
@@ -61,6 +91,11 @@ export default class UIMain extends cc.Component {
         this.battleInfo.clearLayout()
         this.battleInfo.addLayout(layoutInfoA);
         this.battleInfo.addLayout(layoutInfoB);
+    }
+
+    startBattle() {
+        console.log("onStartBattleTouch");
+        this.refreshBattleInfo();
         console.log(this.battleInfo);
         g_InputCache.setBattleInfo(this.battleInfo);
         g_AutoBattle.doAutoBattle();

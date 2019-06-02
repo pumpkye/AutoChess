@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/Util.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, 'f99d2rksXhMP5WQVXI/ihS0', 'Util', __filename);
+cc._RF.push(module, '69b4ehHFrpAn63FdkoDUDVj', 'Util', __filename);
 // Script/AutoBattle/Util.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -61,17 +61,6 @@ var Util = /** @class */ (function () {
             return false;
         }
         return true;
-    };
-    /**
-    * 返回一个[1,num]的随机数
-    * @param num
-    */
-    Util.prototype.getRandomNumber = function (num) {
-        if (num <= 1) {
-            return num;
-        }
-        var rad = Math.floor(Math.random() * num) + 1;
-        return rad;
     };
     return Util;
 }());

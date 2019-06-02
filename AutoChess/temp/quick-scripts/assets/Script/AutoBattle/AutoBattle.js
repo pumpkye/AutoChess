@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/AutoBattle.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '24e3cHkN9RPBKlrAYGI4ABW', 'AutoBattle', __filename);
+cc._RF.push(module, '5f027UgcgZFKaZ+Tz3LRGZR', 'AutoBattle', __filename);
 // Script/AutoBattle/AutoBattle.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

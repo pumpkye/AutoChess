@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/BloodthirstySpear.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '30bd4RfKOlHdqHziBQBqS2U', 'BloodthirstySpear', __filename);
+cc._RF.push(module, 'fd7ecL9SblMyoaKfxNLNRlG', 'BloodthirstySpear', __filename);
 // Script/AutoBattle/SkillEffect/BloodthirstySpear.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/Model/ChessNpc.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '8bf6eNrDYhClZxnr11TdHv4', 'ChessNpc', __filename);
+cc._RF.push(module, '3feabKD5PNEm4ZMr3HPz8mY', 'ChessNpc', __filename);
 // Script/AutoBattle/Model/ChessNpc.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -434,14 +434,12 @@ var ChessNpc = /** @class */ (function () {
         this._skillList = new Array();
         var normalSkill = new ChessSkill_1.NormalSkill(this.normalSkillId, this);
         this._skillList.push(normalSkill);
-        if (this.skillId != 0) {
-            var skill = new ChessSkill_1.ChessSkill(this.skillId, this.level);
-            if (skill.isActive) {
-                this._skillList.push(skill);
-            }
-            else {
-                skill.play(this);
-            }
+        var skill = new ChessSkill_1.ChessSkill(this.skillId, this.level);
+        if (skill.isActive) {
+            this._skillList.push(skill);
+        }
+        else {
+            skill.play(this);
         }
     };
     /**
@@ -460,7 +458,7 @@ var ChessNpc = /** @class */ (function () {
                 && skill.id == this.skillId) {
                 continue;
             }
-            if (skill.curCdTime <= 0 && this.mp >= skill.mpCost) {
+            if (skill.curCdTime == 0 && this.mp >= skill.mpCost) {
                 if (!curSkill) {
                     curSkill = skill;
                 }
@@ -514,23 +512,17 @@ var ChessNpc = /** @class */ (function () {
     //     return this._attrShieldMap[attrName];
     // }
     ChessNpc.prototype.addBuffState = function (state) {
-        if (!this._buffStateArr[state]) {
-            this._buffStateArr[state] = 0;
-        }
-        this._buffStateArr[state] = this._buffStateArr[state] + 1;
+        this._buffStateArr[state] = true;
     };
     ChessNpc.prototype.removeBuffState = function (state) {
-        if (!this._buffStateArr[state]) {
-            this._buffStateArr[state] = 0;
-        }
-        this._buffStateArr[state] = this._buffStateArr[state] - 1;
+        this._buffStateArr[state] = false;
     };
     ChessNpc.prototype.hasBuffState = function (state) {
-        var count = this._buffStateArr[state];
-        if (!count || count == 0) {
-            return false;
+        var ret = this._buffStateArr[state];
+        if (ret == null) {
+            ret = false;
         }
-        return true;
+        return ret;
     };
     ChessNpc.prototype.setTarget = function (target) {
         if (this.curTarget) {

@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/AutoBattleManager.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '95961fIxINC3YDmnNKgm27s', 'AutoBattleManager', __filename);
+cc._RF.push(module, '34b77wemYlIPo1AKE4NLond', 'AutoBattleManager', __filename);
 // Script/AutoBattle/AutoBattleManager.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -7,7 +7,6 @@ var ChessNpc_1 = require("./Model/ChessNpc");
 var AutoBattleConfig_1 = require("./Config/AutoBattleConfig");
 var ChessSkill_1 = require("./Model/ChessSkill");
 var Printer_1 = require("./OutPut/Printer");
-var OutPutCache_1 = require("./OutPut/OutPutCache");
 var Enum_Mode;
 (function (Enum_Mode) {
     Enum_Mode[Enum_Mode["normal"] = 1] = "normal";
@@ -86,16 +85,15 @@ var AutoBattleManager = /** @class */ (function () {
     AutoBattleManager.prototype.checkGameResult = function () {
         if (this._curTime >= 60 * 1000) {
             this._isStart = false;
-            // console.log("Game finish when time over");
+            console.log("Game finish when time over");
         }
         else if (this._npcListA.length == 0) {
             this._isStart = false;
-            // console.log("Game over!");
+            console.log("Game over!");
         }
         else if (this._npcListB.length == 0) {
             this._isStart = false;
-            OutPutCache_1.g_OutputCache.isWin = true;
-            // console.log("Win!");
+            console.log("Win!");
         }
         if (!this._isStart) {
             this.printChessTable();
@@ -119,7 +117,6 @@ var AutoBattleManager = /** @class */ (function () {
         if (!layoutA || !layoutB) {
             return;
         }
-        OutPutCache_1.g_OutputCache.isWin = false;
         this._matchIdx = matchIdx;
         Printer_1.printDefault("autobattleManager start");
         this.clear();
@@ -214,7 +211,7 @@ var AutoBattleManager = /** @class */ (function () {
                         raceNum += 1;
                         if (element[raceNum]) {
                             Printer_1.printDefault("raceNum:" + raceNum);
-                            // console.log("触发种族buff:", element[raceNum]);
+                            console.log("触发种族buff:", element[raceNum]);
                             var raceSkill = new ChessSkill_1.RaceSkill(element[raceNum], Number(key), npc.isTeamA);
                             raceSkill.play();
                         }
@@ -240,7 +237,7 @@ var AutoBattleManager = /** @class */ (function () {
                         var npc = tempList[baseId];
                         careerNum += 1;
                         if (element[careerNum]) {
-                            // console.log("触发职业buff:", element[careerNum]);
+                            console.log("触发职业buff:", element[careerNum]);
                             var careerSkill = new ChessSkill_1.CareerSkill(element[careerNum], Number(key), npc.isTeamA);
                             careerSkill.play();
                         }
@@ -371,7 +368,7 @@ var AutoBattleManager = /** @class */ (function () {
         var chessTable = this.chessTable;
         for (var i = 1; i < 9; i++) {
             for (var dir = 0; dir < 8; dir++) {
-                var dirT = AutoBattleConfig_1.dirConfig[dir];
+                var dirT = AutoBattleConfig_1.dirConfig[i];
                 var x = center.x + dirT.x * i;
                 var y = center.y + dirT.y * i;
                 if (this.isInChessTable(x, y) && !chessTable[x][y]) {

@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/AddMaxHp.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, 'fdd1dZCa+9KobDjE093wZOd', 'AddMaxHp', __filename);
+cc._RF.push(module, 'd9408qaVzZLQLpcGM8grPLo', 'AddMaxHp', __filename);
 // Script/AutoBattle/SkillEffect/AddMaxHp.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

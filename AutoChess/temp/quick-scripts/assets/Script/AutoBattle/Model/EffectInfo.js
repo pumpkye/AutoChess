@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/Model/EffectInfo.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '335114bjaRDIq9Wkc9qQJw4', 'EffectInfo', __filename);
+cc._RF.push(module, '01c4dvfc2xL5oTh0Ync35fr', 'EffectInfo', __filename);
 // Script/AutoBattle/Model/EffectInfo.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/TbxModel/SkillLevelData.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '9f284WJg0pGLqIElXBv5S19', 'SkillLevelData', __filename);
+cc._RF.push(module, '0685aC8jeNL1ppsVsslYEs2', 'SkillLevelData', __filename);
 // Script/AutoBattle/TbxModel/SkillLevelData.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

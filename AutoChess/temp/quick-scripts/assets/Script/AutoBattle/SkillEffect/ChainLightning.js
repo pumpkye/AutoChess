@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/ChainLightning.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, 'ab922mixZ1BfZ1+X0ehlrfL', 'ChainLightning', __filename);
+cc._RF.push(module, '6e5c40348pJCb9DN6bIsD6r', 'ChainLightning', __filename);
 // Script/AutoBattle/SkillEffect/ChainLightning.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

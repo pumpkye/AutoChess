@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/AddAttackSpeed.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '68dc8jVpv1D1JIn6RxHAsAc', 'AddAttackSpeed', __filename);
+cc._RF.push(module, '64f32OC5ANMFp/QM6QKN1CJ', 'AddAttackSpeed', __filename);
 // Script/AutoBattle/SkillEffect/AddAttackSpeed.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

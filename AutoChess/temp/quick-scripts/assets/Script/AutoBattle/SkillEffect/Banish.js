@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/Banish.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '53257gxa3JHjI3TFaunWUNj', 'Banish', __filename);
+cc._RF.push(module, '9b86de6mp9GG5aLHFeEGVMA', 'Banish', __filename);
 // Script/AutoBattle/SkillEffect/Banish.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });

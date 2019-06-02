@@ -250,7 +250,7 @@
     "relativePath": "resources"
   },
   "2102cce0-7adb-4e0f-be7a-563b79a8c01c": {
-    "asset": 1559363777965,
+    "asset": 1559483693258,
     "meta": 1559048778507,
     "relativePath": "resources/UIPrefab"
   },
@@ -265,12 +265,12 @@
     "relativePath": "Scene"
   },
   "b56079e8-e2ac-4ed0-bfbc-a03e008e27f2": {
-    "asset": 1559048778572,
+    "asset": 1559372431896,
     "meta": 1559048778516,
     "relativePath": "Script"
   },
   "82f59f9a-6ff5-4e5f-a45f-6fd073164071": {
-    "asset": 1559370708284,
+    "asset": 1559483568454,
     "meta": 1559048778516,
     "relativePath": "Script/AutoBattle"
   },
@@ -340,14 +340,9 @@
     "relativePath": "resources/UIPrefab/UIChessTable.prefab"
   },
   "0b3e6439-f5f7-4480-8ead-646117fe13e4": {
-    "asset": 1559048778515,
-    "meta": 1559370708522,
+    "asset": 1559483857079,
+    "meta": 1559483857084,
     "relativePath": "Scene/helloworld.fire"
-  },
-  "37017716-36b4-4570-ba64-8055a3104352": {
-    "asset": 1559048778520,
-    "meta": 1559370710409,
-    "relativePath": "Script/Gui/UIMain.ts"
   },
   "0a08dc0a-332e-448e-9a11-f9867b23e78d": {
     "asset": 1559048778510,
@@ -355,8 +350,8 @@
     "relativePath": "resources/UIPrefab/UILoadLayout.prefab"
   },
   "bb5e15f1-c86b-4088-87f4-109dd75ccca1": {
-    "asset": 1559048778511,
-    "meta": 1559370708360,
+    "asset": 1559483385347,
+    "meta": 1559483703236,
     "relativePath": "resources/UIPrefab/UIMain.prefab"
   },
   "d981de93-131c-4699-b58c-75c7932d7e05": {
@@ -394,384 +389,394 @@
     "meta": 1559370710349,
     "relativePath": "Script/Gui/UILoadLayout.ts"
   },
-  "4a5955b7-5581-48ef-8475-c4920c418ef9": {
-    "asset": 1559048778518,
-    "meta": 1559370710312,
-    "relativePath": "Script/Gui/UIChessTable.ts"
-  },
   "a844e232-9904-44cb-a297-83f91e0b14d9": {
     "asset": 1559048778524,
     "meta": 1559370710440,
     "relativePath": "Script/Gui/UISetNpc.ts"
   },
-  "24e3c1e4-37d4-4f04-a96b-018188e00056": {
-    "asset": 1559048778929,
-    "meta": 1559370708542,
+  "5f027520-7206-4529-a67e-4f3dcb446651": {
+    "asset": 1559372453377,
+    "meta": 1559483568709,
     "relativePath": "Script/AutoBattle/AutoBattle.ts"
   },
-  "5d2172cd-bdd1-4a47-960b-652ace417aee": {
-    "asset": 1559048778929,
-    "meta": 1559370708704,
+  "3c98ca1b-b091-480f-946f-78f949d5d36b": {
+    "asset": 1559372453377,
+    "meta": 1559483568874,
     "relativePath": "Script/AutoBattle/AutoBattleInit.ts"
   },
-  "dc9b9074-8379-4584-9d5f-54392cd1cf8c": {
-    "asset": 1559370708264,
-    "meta": 1559370708263,
+  "01df2eea-a3d6-4c9f-a987-32bc57d9566e": {
+    "asset": 1559483568433,
+    "meta": 1559483568433,
     "relativePath": "Script/AutoBattle/Config"
   },
-  "959617c8-c483-42dd-80e6-9cd2a09b6eec": {
-    "asset": 1559363926404,
-    "meta": 1559370708779,
+  "34b77c1e-9989-483e-8d40-284e0d2e89dd": {
+    "asset": 1559372453378,
+    "meta": 1559483568934,
     "relativePath": "Script/AutoBattle/AutoBattleManager.ts"
   },
-  "d7d1bb1b-0c2f-4ab3-ba52-d5c47229de7c": {
-    "asset": 1559048778929,
-    "meta": 1559370708783,
+  "03ca5671-9f45-4101-bceb-75a24182fa12": {
+    "asset": 1559372453378,
+    "meta": 1559483568938,
     "relativePath": "Script/AutoBattle/Config/AutoBattleConfig.ts"
   },
-  "47f9b91e-fc31-4d94-b2be-973617793f29": {
-    "asset": 1559048778930,
-    "meta": 1559370708783,
+  "61595ab7-40f1-48b5-8d5b-a9e28ba22433": {
+    "asset": 1559372453378,
+    "meta": 1559483568939,
     "relativePath": "Script/AutoBattle/DataManager.ts"
   },
-  "3e4eb552-1599-4ac3-ae37-d7fb84dc4e2c": {
-    "asset": 1559370708265,
-    "meta": 1559370708264,
+  "9bf79eb2-9236-453b-9b31-efde3d3b4cf6": {
+    "asset": 1559483568434,
+    "meta": 1559483568434,
     "relativePath": "Script/AutoBattle/Input"
   },
-  "b2be2e9c-2afb-4ee8-937c-ec246f7750d2": {
-    "asset": 1559048778930,
-    "meta": 1559370708838,
+  "97be4c65-86bc-4e84-838a-aa3883031b8a": {
+    "asset": 1559372453378,
+    "meta": 1559483569007,
     "relativePath": "Script/AutoBattle/Input/InputCache.ts"
   },
-  "9bb8ece0-6b0f-4bc3-9914-a8014a8efe65": {
-    "asset": 1559048778940,
-    "meta": 1559370708839,
+  "3d0ada58-3303-4e73-ac13-c6ea4a4e8fdb": {
+    "asset": 1559372453378,
+    "meta": 1559483569008,
     "relativePath": "Script/AutoBattle/Input/TestInput.ts"
   },
-  "5a09739b-79ec-4977-a660-2be154fa16d9": {
-    "asset": 1559370708266,
-    "meta": 1559370708265,
+  "4edac075-3cb0-495b-b4e4-c6691e6d1d85": {
+    "asset": 1559483568437,
+    "meta": 1559483568435,
     "relativePath": "Script/AutoBattle/Model"
   },
-  "7d71d7df-7a2f-434e-8244-1d788fbe7039": {
-    "asset": 1559048778945,
-    "meta": 1559370709279,
+  "082af022-50ea-40fb-8cae-4062ac6252a8": {
+    "asset": 1559372453379,
+    "meta": 1559483569090,
     "relativePath": "Script/AutoBattle/Model/ChessBuff.ts"
   },
-  "0703da79-5182-47ee-b20c-b452d04cd764": {
-    "asset": 1559048778946,
-    "meta": 1559370709476,
+  "0508c2e9-88ec-4d1a-a1f8-bf05e1ad448e": {
+    "asset": 1559372453378,
+    "meta": 1559483569103,
+    "relativePath": "Script/AutoBattle/LICENSE"
+  },
+  "2c9a8ad7-2e25-4d00-9edc-10e202344c94": {
+    "asset": 1559372453379,
+    "meta": 1559483569303,
     "relativePath": "Script/AutoBattle/Model/ChessMonster.ts"
   },
-  "8bf6e36b-0d88-4295-9c67-af5d53747bf8": {
-    "asset": 1559363926405,
-    "meta": 1559370709579,
+  "3feab283-e4f3-449b-864c-af71cfcfc998": {
+    "asset": 1559372453379,
+    "meta": 1559483569428,
     "relativePath": "Script/AutoBattle/Model/ChessNpc.ts"
   },
-  "042dec60-f301-4b21-b93a-09c0958769d5": {
-    "asset": 1559363926405,
-    "meta": 1559370709591,
+  "34e6b5fe-a0c0-430d-8be8-2906191cbc4d": {
+    "asset": 1559372453379,
+    "meta": 1559483569443,
     "relativePath": "Script/AutoBattle/Model/ChessSkill.ts"
   },
-  "33511e1b-8da4-4322-af56-91cf6a409c38": {
-    "asset": 1559048778947,
-    "meta": 1559370709598,
+  "01c4dbdf-736c-4be6-84e1-d189dcdf97eb": {
+    "asset": 1559372453379,
+    "meta": 1559483569456,
     "relativePath": "Script/AutoBattle/Model/EffectInfo.ts"
   },
-  "70e08429-d5dd-4899-9da6-9a0842892cfa": {
-    "asset": 1559048778948,
-    "meta": 1559370709598,
+  "1c815741-2d89-4153-9b40-ab082931eb55": {
+    "asset": 1559372453379,
+    "meta": 1559483569457,
     "relativePath": "Script/AutoBattle/Model/MagicBall.ts"
   },
-  "d5cd9f39-7dca-4aa6-b29d-f4bb451e16b8": {
-    "asset": 1559370708267,
-    "meta": 1559370708266,
+  "aa7e7e60-fd2e-49b3-a24d-9a65e5632815": {
+    "asset": 1559483568438,
+    "meta": 1559483568437,
     "relativePath": "Script/AutoBattle/OutPut"
   },
-  "1cfed531-2706-4053-b888-f056a71ca6c2": {
-    "asset": 1559048778948,
-    "meta": 1559370709638,
+  "f6082513-a663-471c-a620-2d0750b2295c": {
+    "asset": 1559372453380,
+    "meta": 1559483569519,
     "relativePath": "Script/AutoBattle/OutPut/OutputCache.ts"
   },
-  "25e47799-4fb6-4aa8-95d8-e0f1581282c2": {
-    "asset": 1559363926406,
-    "meta": 1559370709639,
+  "7b946c37-a04e-448c-9534-d4580330221a": {
+    "asset": 1559372453380,
+    "meta": 1559483569519,
     "relativePath": "Script/AutoBattle/OutPut/Printer.ts"
   },
-  "2513c55a-abf1-4e3c-9604-f40420941fa5": {
-    "asset": 1559370708281,
-    "meta": 1559370708267,
+  "da1926f1-4f61-48cc-9830-85383de151f7": {
+    "asset": 1559483568451,
+    "meta": 1559483568438,
     "relativePath": "Script/AutoBattle/SkillEffect"
   },
-  "68dc88d5-a6fd-43d4-9227-e91c4702c01c": {
-    "asset": 1559048778949,
-    "meta": 1559370709660,
+  "64f32382-e403-4c16-9fd0-33a40a375089": {
+    "asset": 1559372453380,
+    "meta": 1559483569549,
     "relativePath": "Script/AutoBattle/SkillEffect/AddAttackSpeed.ts"
   },
-  "08d1e7f1-55a7-432f-951b-f6a1f43cd890": {
-    "asset": 1559048778950,
-    "meta": 1559370709668,
+  "fd605624-9a0c-45c7-9dab-fd348cc69a37": {
+    "asset": 1559372453380,
+    "meta": 1559483569566,
     "relativePath": "Script/AutoBattle/SkillEffect/AddDamage.ts"
   },
-  "1d3fa81a-09ae-42ad-921c-f386d27eb87e": {
-    "asset": 1559048778950,
-    "meta": 1559370709684,
+  "284a8cde-e0cb-4050-9bb5-ca4db1bddbc2": {
+    "asset": 1559372453380,
+    "meta": 1559483569581,
     "relativePath": "Script/AutoBattle/SkillEffect/AddDefence.ts"
   },
-  "fdd1d642-6bef-4aa1-b0e3-134f77c1939d": {
-    "asset": 1559048778950,
-    "meta": 1559370709693,
+  "d9408a9a-5736-4b40-ba5c-18cf20acf2e8": {
+    "asset": 1559372453381,
+    "meta": 1559483569589,
     "relativePath": "Script/AutoBattle/SkillEffect/AddMaxHp.ts"
   },
-  "33e46e33-51eb-4af1-a586-d5e9110d1c1d": {
-    "asset": 1559048778950,
-    "meta": 1559370709702,
+  "550dc89f-cf3d-4807-925c-cd6c0176a42c": {
+    "asset": 1559372453380,
+    "meta": 1559483569607,
     "relativePath": "Script/AutoBattle/SkillEffect/AddMDefence.ts"
   },
-  "0f988c81-ad81-4596-ae85-d852c73bc9e3": {
-    "asset": 1559048778951,
-    "meta": 1559370709709,
+  "b6fe07a2-ff83-4317-a8db-9ea8dd79bc9d": {
+    "asset": 1559372453381,
+    "meta": 1559483569618,
     "relativePath": "Script/AutoBattle/SkillEffect/Bang.ts"
   },
-  "53257831-6b72-478c-8dd3-15aba7594363": {
-    "asset": 1559048778951,
-    "meta": 1559370709719,
+  "9b86d7ba-9a9f-461b-968b-1c5784195300": {
+    "asset": 1559372453381,
+    "meta": 1559483569630,
     "relativePath": "Script/AutoBattle/SkillEffect/Banish.ts"
   },
-  "50c4d964-d29b-42f8-b262-610b28837301": {
-    "asset": 1559048778951,
-    "meta": 1559370709730,
+  "6566e5cd-e4e0-4869-b99f-c8c523feb13a": {
+    "asset": 1559372453381,
+    "meta": 1559483569645,
     "relativePath": "Script/AutoBattle/SkillEffect/BaseSkillEffect.ts"
   },
-  "5eabd67c-beb2-4a56-a4d8-27ef9dba2103": {
-    "asset": 1559048778952,
-    "meta": 1559370709739,
+  "dea6f42b-4109-4d48-b2d6-e11e51b68262": {
+    "asset": 1559372453381,
+    "meta": 1559483569660,
     "relativePath": "Script/AutoBattle/SkillEffect/BigFireBall.ts"
   },
-  "e5fd84b2-4bd1-4995-adf5-9c8797297e19": {
-    "asset": 1559363926406,
-    "meta": 1559370709748,
+  "57feb3a0-1ef9-4bc6-a412-97196c97a66f": {
+    "asset": 1559372453381,
+    "meta": 1559483569670,
     "relativePath": "Script/AutoBattle/SkillEffect/BloodSacrifice.ts"
   },
-  "30bd445f-28e9-4776-a1f3-881401a92d94": {
-    "asset": 1559048778952,
-    "meta": 1559370709766,
+  "fd7ec2fd-49b9-4cca-868a-7f134b351946": {
+    "asset": 1559372453382,
+    "meta": 1559483569682,
     "relativePath": "Script/AutoBattle/SkillEffect/BloodthirstySpear.ts"
   },
-  "444b189d-b347-4f57-acf8-eb897fd692f9": {
-    "asset": 1559048778953,
-    "meta": 1559370709773,
+  "3d9f7059-fa7f-419a-875d-36e487f26dcf": {
+    "asset": 1559372453382,
+    "meta": 1559483569690,
     "relativePath": "Script/AutoBattle/SkillEffect/BloodthirstySpearBuff.ts"
   },
-  "bfdd9b46-d913-4bee-a16d-939819e0822f": {
-    "asset": 1559048778953,
-    "meta": 1559370709792,
+  "69eecc6f-92c3-4860-9b0b-94a46e734992": {
+    "asset": 1559372453382,
+    "meta": 1559483569731,
     "relativePath": "Script/AutoBattle/SkillEffect/Boom.ts"
   },
-  "7ac14359-d384-4a92-a5a6-972861cd2711": {
-    "asset": 1559048778953,
-    "meta": 1559370709807,
+  "d5915007-6939-4420-a897-c5302a14db6b": {
+    "asset": 1559372453382,
+    "meta": 1559483569746,
     "relativePath": "Script/AutoBattle/SkillEffect/ChainHeal.ts"
   },
-  "ab9229a2-c59d-417d-9d7e-5f47a196b7cb": {
-    "asset": 1559048778953,
-    "meta": 1559370709820,
+  "6e5c4d37-e3ca-4909-bf43-37a6c8b03eab": {
+    "asset": 1559372453382,
+    "meta": 1559483569758,
     "relativePath": "Script/AutoBattle/SkillEffect/ChainLightning.ts"
   },
-  "ca66553c-4809-4626-91ab-e1607dc8e506": {
-    "asset": 1559048778954,
-    "meta": 1559370709827,
+  "89475e0b-86c2-4b80-8659-e4e084bba828": {
+    "asset": 1559372453382,
+    "meta": 1559483569769,
     "relativePath": "Script/AutoBattle/SkillEffect/CircleDamage.ts"
   },
-  "2dd9f0bb-6dbe-4afb-9ddd-bec94b7894ba": {
-    "asset": 1559048778954,
-    "meta": 1559370709835,
+  "03503a8c-5a30-4add-9109-725af640acc8": {
+    "asset": 1559372453382,
+    "meta": 1559483569778,
     "relativePath": "Script/AutoBattle/SkillEffect/Crit.ts"
   },
-  "e464761c-da1b-4902-8236-851b176caedf": {
-    "asset": 1559048778954,
-    "meta": 1559370709866,
+  "56ba6146-7c1d-49c9-97e8-a9a0d14d1f88": {
+    "asset": 1559372453382,
+    "meta": 1559483569802,
     "relativePath": "Script/AutoBattle/SkillEffect/CritSilent.ts"
   },
-  "58383155-fb62-4111-b767-69d34dc057b3": {
-    "asset": 1559048778955,
-    "meta": 1559370709875,
+  "4f9fabbe-c46a-4a0f-bf2d-fbaf0c0acaa3": {
+    "asset": 1559372453383,
+    "meta": 1559483569828,
     "relativePath": "Script/AutoBattle/SkillEffect/Damage.ts"
   },
-  "9f20628f-b7c0-4997-8c48-04548409293c": {
-    "asset": 1559048778955,
-    "meta": 1559370709883,
+  "63ae442f-a811-4ce7-a49a-9d933a04dbb2": {
+    "asset": 1559372453383,
+    "meta": 1559483569926,
     "relativePath": "Script/AutoBattle/SkillEffect/FlashBoom.ts"
   },
-  "aa011ffb-1051-4861-8103-9c05cbaca406": {
-    "asset": 1559048778955,
-    "meta": 1559370709911,
+  "5eef0f42-962a-47ba-aae7-0afc8a1471e3": {
+    "asset": 1559372453383,
+    "meta": 1559483569950,
     "relativePath": "Script/AutoBattle/SkillEffect/GodAvatar.ts"
   },
-  "60960b68-d66e-48b9-8be4-844458e40420": {
-    "asset": 1559048778955,
-    "meta": 1559370709924,
+  "6f35e304-9d62-491e-9e68-44bc173a8ae2": {
+    "asset": 1559372453383,
+    "meta": 1559483569967,
     "relativePath": "Script/AutoBattle/SkillEffect/InitSkillEffect.ts"
   },
-  "c4bee2a9-0661-4827-9b7d-9e7e39849a0b": {
-    "asset": 1559048778956,
-    "meta": 1559370709931,
+  "2a5bf6ef-1710-47a0-a119-10b85a873e15": {
+    "asset": 1559372453383,
+    "meta": 1559483569979,
     "relativePath": "Script/AutoBattle/SkillEffect/LineDamage.ts"
   },
-  "2bb9e3cf-d511-483b-a564-089c65fe7335": {
-    "asset": 1559048778956,
-    "meta": 1559370709948,
+  "41135f46-f919-41b2-b563-ca6b5a3cec71": {
+    "asset": 1559372453383,
+    "meta": 1559483569986,
     "relativePath": "Script/AutoBattle/SkillEffect/MagicRing.ts"
   },
-  "ae874fb5-bff5-4444-be2f-09c939ba9583": {
-    "asset": 1559048778956,
-    "meta": 1559370709957,
+  "d641796a-4890-432b-8e06-20d7618cccc8": {
+    "asset": 1559372453383,
+    "meta": 1559483569997,
     "relativePath": "Script/AutoBattle/SkillEffect/ManaBurn.ts"
   },
-  "236d2bfc-dd85-4060-b096-b2828597dd0e": {
-    "asset": 1559048778957,
-    "meta": 1559370709962,
+  "730c29e4-b608-4051-8260-6f3e71044e0f": {
+    "asset": 1559372453383,
+    "meta": 1559483570003,
     "relativePath": "Script/AutoBattle/SkillEffect/MulDamage.ts"
   },
-  "a012df3b-bfb8-4915-8e2e-43ab79c4ed4b": {
-    "asset": 1559048778958,
-    "meta": 1559370709971,
+  "f5b8f510-8edc-46ea-b261-d50755f6525b": {
+    "asset": 1559372453384,
+    "meta": 1559483570018,
     "relativePath": "Script/AutoBattle/SkillEffect/NormalDamage.ts"
   },
-  "13fcfd35-ab8e-4799-8fa1-8356efba0236": {
-    "asset": 1559048778958,
-    "meta": 1559370709979,
+  "1ebfbb00-913b-4b80-a43f-9fb40c65f626": {
+    "asset": 1559372453384,
+    "meta": 1559483570028,
     "relativePath": "Script/AutoBattle/SkillEffect/RecoverHp.ts"
   },
-  "364110e3-9532-4a57-8e31-a3fa34f63146": {
-    "asset": 1559048778958,
-    "meta": 1559370709987,
+  "aad4dc4a-c73e-440e-ae50-df7bed1c5f0e": {
+    "asset": 1559372453384,
+    "meta": 1559483570037,
     "relativePath": "Script/AutoBattle/SkillEffect/RecoverMpRange.ts"
   },
-  "8d1def5e-12bd-4920-a005-4f220f802fc7": {
-    "asset": 1559048778958,
-    "meta": 1559370709996,
+  "98679061-234a-4c66-a1bb-de6ba6f97f6c": {
+    "asset": 1559372453384,
+    "meta": 1559483570045,
     "relativePath": "Script/AutoBattle/SkillEffect/ReduceCd.ts"
   },
-  "012f14a2-6924-4a26-b7ba-f24729ce929d": {
-    "asset": 1559363926407,
-    "meta": 1559370710007,
+  "7d12ac69-cbab-407a-a21b-c84cc1fdb104": {
+    "asset": 1559372453384,
+    "meta": 1559483570055,
     "relativePath": "Script/AutoBattle/SkillEffect/Refraction.ts"
   },
-  "9db50219-b606-4f96-b908-6e0457948060": {
-    "asset": 1559048778960,
-    "meta": 1559370710018,
+  "0ef8b0f7-967a-46c7-b122-026181ac6415": {
+    "asset": 1559372453384,
+    "meta": 1559483570069,
     "relativePath": "Script/AutoBattle/SkillEffect/Roar.ts"
   },
-  "724c0c75-4b34-4a40-9fad-9bda84bfae34": {
-    "asset": 1559363926407,
-    "meta": 1559370710038,
+  "fdec3607-33e3-4ac0-89dc-622c8ca2d20a": {
+    "asset": 1559372453384,
+    "meta": 1559483570080,
     "relativePath": "Script/AutoBattle/SkillEffect/SkillEffectEnum.ts"
   },
-  "da3819b3-ac3b-4523-8511-e204c79eee26": {
-    "asset": 1559048778960,
-    "meta": 1559370710045,
+  "e1402540-c56a-4612-86d8-2b6c70d24f02": {
+    "asset": 1559372453384,
+    "meta": 1559483570088,
     "relativePath": "Script/AutoBattle/SkillEffect/Sneer.ts"
   },
-  "1b10d8b6-1fa4-447c-b831-5ddc41d2243f": {
-    "asset": 1559048778961,
-    "meta": 1559370710054,
+  "347282c6-e23d-433a-98f0-323938ffe6f7": {
+    "asset": 1559372453384,
+    "meta": 1559483570107,
     "relativePath": "Script/AutoBattle/SkillEffect/Sputtering.ts"
   },
-  "53f44049-9a36-4395-a352-fdb03e244209": {
-    "asset": 1559048778962,
-    "meta": 1559370710064,
+  "b20fc671-3e34-40ff-8744-bf02f8970a12": {
+    "asset": 1559372453385,
+    "meta": 1559483570121,
     "relativePath": "Script/AutoBattle/SkillEffect/Summon.ts"
   },
-  "cd9aec86-04d2-468b-b0b4-98412dc1e0dc": {
-    "asset": 1559048778971,
-    "meta": 1559370710074,
+  "b4f6341e-90d8-4613-a76d-fd35bc4288b0": {
+    "asset": 1559372453385,
+    "meta": 1559483570133,
     "relativePath": "Script/AutoBattle/SkillEffect/Sweep.ts"
   },
-  "1f5ecede-2fa7-4d38-843f-172e7eb7c467": {
-    "asset": 1559048778971,
-    "meta": 1559370710081,
+  "52eb9184-2d6f-4a19-b701-cc48ef64eabd": {
+    "asset": 1559372453385,
+    "meta": 1559483570141,
     "relativePath": "Script/AutoBattle/SkillEffect/SwordStorm.ts"
   },
-  "9e58c5a3-3fdd-4113-96b5-81ee856e0cb1": {
-    "asset": 1559048778971,
-    "meta": 1559370710089,
+  "0037bef5-b189-4c97-a05b-3c057e62ce3b": {
+    "asset": 1559372453385,
+    "meta": 1559483570149,
     "relativePath": "Script/AutoBattle/SkillEffect/Tear.ts"
   },
-  "a08b9a52-77b0-4729-9217-5a258f738f6e": {
-    "asset": 1559048778972,
-    "meta": 1559370710108,
+  "2f13f2f0-6ab7-473f-9796-14b33960e1b4": {
+    "asset": 1559372453385,
+    "meta": 1559483570158,
     "relativePath": "Script/AutoBattle/SkillEffect/Tenacity.ts"
   },
-  "b641cb31-767a-429d-bc36-170fc6101239": {
-    "asset": 1559048778972,
-    "meta": 1559370710117,
+  "34a8b23f-a738-4dae-96a5-150eb38c2fa6": {
+    "asset": 1559372453385,
+    "meta": 1559483570169,
     "relativePath": "Script/AutoBattle/SkillEffect/ThunderClap.ts"
   },
-  "93b35ce0-c677-4896-a735-5049a84cc1a3": {
-    "asset": 1559048778972,
-    "meta": 1559370710125,
+  "084a0b2e-b64a-4dd5-832c-e764e677a70d": {
+    "asset": 1559372453385,
+    "meta": 1559483570183,
     "relativePath": "Script/AutoBattle/SkillEffect/WarCry.ts"
   },
-  "a81f1e5f-23b2-4f56-9b72-ab9a9dc53756": {
-    "asset": 1559370708282,
-    "meta": 1559370708281,
+  "057df138-b345-4891-bb3d-e514d0951b40": {
+    "asset": 1559483568452,
+    "meta": 1559483568451,
     "relativePath": "Script/AutoBattle/Tbx"
   },
-  "8305d294-d07b-45d1-b8b0-19ee2dc80235": {
-    "asset": 1559048778973,
-    "meta": 1559370710148,
+  "584151e2-0f49-4686-bb6b-a34398b478e4": {
+    "asset": 1559372453385,
+    "meta": 1559483570211,
     "relativePath": "Script/AutoBattle/SkillEffect/WarFever.ts"
   },
-  "3b549f21-ef9f-46b2-a02b-5f39b36026de": {
-    "asset": 1559363926407,
-    "meta": 1559370710182,
+  "ef517b17-bd77-4ec6-8827-a479d6ec0cbc": {
+    "asset": 1559372453386,
+    "meta": 1559483570248,
     "relativePath": "Script/AutoBattle/Tbx/npc_data.ts"
   },
-  "0d51e5e9-ea38-4a43-a6ba-e3e74179d0f2": {
-    "asset": 1559048778974,
-    "meta": 1559370710199,
+  "18a87281-e3a4-4f16-bd8c-428074b4e527": {
+    "asset": 1559372453386,
+    "meta": 1559483570262,
     "relativePath": "Script/AutoBattle/Tbx/skill_data.ts"
   },
-  "f2479d42-c11c-43bb-b98b-474d518b735d": {
-    "asset": 1559370708283,
-    "meta": 1559370708282,
+  "0c553e9a-acc3-46d9-8ec8-0000c53d3336": {
+    "asset": 1559483568453,
+    "meta": 1559483568452,
     "relativePath": "Script/AutoBattle/TbxModel"
   },
-  "05659696-64ce-487a-838d-0029abd41517": {
-    "asset": 1559363926408,
-    "meta": 1559370710226,
+  "b1415224-9c74-4fc7-b634-5573a5e7c51e": {
+    "asset": 1559372453386,
+    "meta": 1559483570293,
     "relativePath": "Script/AutoBattle/Tbx/skill_level_data.ts"
   },
-  "29ceebeb-d627-4558-a5b2-b43456e2f2a9": {
-    "asset": 1559048778975,
-    "meta": 1559370710232,
+  "10c95e48-ed9d-4fa4-9804-1ed813ec7cb5": {
+    "asset": 1559372453386,
+    "meta": 1559483570300,
     "relativePath": "Script/AutoBattle/TbxModel/ChessNpcBaseData.ts"
   },
-  "0616af6a-4fb9-4476-a931-725ad946b8d0": {
-    "asset": 1559048778975,
-    "meta": 1559370710239,
+  "6ec729e5-7528-4087-bfab-7657c4b394dc": {
+    "asset": 1559372453386,
+    "meta": 1559483570308,
     "relativePath": "Script/AutoBattle/TbxModel/skillBaseData.ts"
   },
-  "babd4d5c-310c-4933-a497-111b9a8c5cfe": {
-    "asset": 1559370708283,
-    "meta": 1559370708283,
+  "c0185bad-d669-4a24-8848-3e3679bbde46": {
+    "asset": 1559483568453,
+    "meta": 1559483568453,
     "relativePath": "Script/AutoBattle/Test"
   },
-  "9f284589-834a-462e-a204-95706fe52d7d": {
-    "asset": 1559048778975,
-    "meta": 1559370710244,
+  "0685a0bc-8de3-4bd6-9a6c-56cb25604b36": {
+    "asset": 1559372453386,
+    "meta": 1559483570313,
     "relativePath": "Script/AutoBattle/TbxModel/SkillLevelData.ts"
   },
-  "7c856f98-5b02-4601-b210-e38bcfca203e": {
-    "asset": 1559048778976,
-    "meta": 1559370710265,
+  "9953f7d7-4cb5-482d-ad78-ae694a5da78c": {
+    "asset": 1559372453386,
+    "meta": 1559483570337,
     "relativePath": "Script/AutoBattle/Test/UnitTest.ts"
   },
-  "f99d2ae4-b178-4c3f-9590-55723f8a14b4": {
-    "asset": 1559363926408,
-    "meta": 1559370710268,
+  "69b4e847-16ba-409f-adc5-764a03503563": {
+    "asset": 1559372453387,
+    "meta": 1559483570337,
     "relativePath": "Script/AutoBattle/Util.ts"
+  },
+  "4a5955b7-5581-48ef-8475-c4920c418ef9": {
+    "asset": 1559483333451,
+    "meta": 1559483796506,
+    "relativePath": "Script/Gui/UIChessTable.ts"
+  },
+  "37017716-36b4-4570-ba64-8055a3104352": {
+    "asset": 1559483059881,
+    "meta": 1559483796506,
+    "relativePath": "Script/Gui/UIMain.ts"
   }
 }

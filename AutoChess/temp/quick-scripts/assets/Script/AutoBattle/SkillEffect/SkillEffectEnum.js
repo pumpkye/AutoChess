@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/SkillEffect/SkillEffectEnum.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '724c0x1SzRKQJ+tm9qEv640', 'SkillEffectEnum', __filename);
+cc._RF.push(module, 'fdec3YHM+NKwIncYiyMotIK', 'SkillEffectEnum', __filename);
 // Script/AutoBattle/SkillEffect/SkillEffectEnum.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -172,39 +172,39 @@ var BuffAndDotState;
     /**
      * 技能免疫
      */
-    BuffAndDotState[BuffAndDotState["bkb"] = 1] = "bkb";
+    BuffAndDotState[BuffAndDotState["bkb"] = 0] = "bkb";
     /**
      * 眩晕
      */
-    BuffAndDotState[BuffAndDotState["coma"] = 2] = "coma";
+    BuffAndDotState[BuffAndDotState["coma"] = 1] = "coma";
     /**
      * 被缴械
      */
-    BuffAndDotState[BuffAndDotState["beDisarm"] = 3] = "beDisarm";
+    BuffAndDotState[BuffAndDotState["beDisarm"] = 2] = "beDisarm";
     /**
      * 被沉默
      */
-    BuffAndDotState[BuffAndDotState["silent"] = 4] = "silent";
+    BuffAndDotState[BuffAndDotState["silent"] = 3] = "silent";
     /**
      * 减甲
      */
-    BuffAndDotState[BuffAndDotState["dengdengdeng"] = 5] = "dengdengdeng";
+    BuffAndDotState[BuffAndDotState["dengdengdeng"] = 4] = "dengdengdeng";
     /**
      * 被缠绕
      */
-    BuffAndDotState[BuffAndDotState["beTwine"] = 6] = "beTwine";
+    BuffAndDotState[BuffAndDotState["beTwine"] = 5] = "beTwine";
     /**
      * 溅射
      */
-    BuffAndDotState[BuffAndDotState["sputtering"] = 7] = "sputtering";
+    BuffAndDotState[BuffAndDotState["sputtering"] = 6] = "sputtering";
     /**
      * 被嘲讽
      */
-    BuffAndDotState[BuffAndDotState["beSneer"] = 8] = "beSneer";
+    BuffAndDotState[BuffAndDotState["beSneer"] = 7] = "beSneer";
     /**
      * 被放逐，无法攻击，但也不会受到物理攻击
      */
-    BuffAndDotState[BuffAndDotState["beBanish"] = 9] = "beBanish";
+    BuffAndDotState[BuffAndDotState["beBanish"] = 8] = "beBanish";
 })(BuffAndDotState = exports.BuffAndDotState || (exports.BuffAndDotState = {}));
 /**
  * 负面状态列表
