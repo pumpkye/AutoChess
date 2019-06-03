@@ -6,6 +6,7 @@ import { g_UIManager } from "./UIManager";
 import UISaveLayout from "./UISaveLayout";
 import UILoadLayout from "./UILoadLayout";
 import { npc_data } from "../AutoBattle/Tbx/npc_data";
+import { g_Util } from "../AutoBattle/Util";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -60,6 +61,8 @@ export default class UIMain extends cc.Component {
             sumCost = sumCost + npc_data[npc.baseId].quality * Math.pow(3, npc.level - 1);
         }
         this.layoutACost.string = sumCost.toString();
+        let buffStr = g_Util.getCareerAndRaceBuffStr(layoutA.npcList);
+        this.layoutABuff.string = buffStr;
         sumCost = 0;
         let layoutB = this.battleInfo.getLayoutByPlayerId(102);
         for (let i = 0; i < layoutB.npcList.length; i++) {
@@ -67,6 +70,8 @@ export default class UIMain extends cc.Component {
             sumCost = sumCost + npc_data[npc.baseId].quality * Math.pow(3, npc.level - 1);
         }
         this.layoutBCost.string = sumCost.toString();
+        buffStr = g_Util.getCareerAndRaceBuffStr(layoutB.npcList);
+        this.layoutBBuff.string = buffStr;
     }
 
     refreshBattleInfo() {
@@ -104,6 +109,7 @@ export default class UIMain extends cc.Component {
     clearLayout() {
         let chessTable = g_UIManager.getPanel("UIChessTable");
         chessTable.clear();
+        this.refreshCostBuff();
     }
 
     saveLayout() {

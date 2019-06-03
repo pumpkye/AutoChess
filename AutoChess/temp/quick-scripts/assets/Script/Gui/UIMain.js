@@ -7,6 +7,7 @@ var InputCache_1 = require("../AutoBattle/Input/InputCache");
 var AutoBattle_1 = require("../AutoBattle/AutoBattle");
 var UIManager_1 = require("./UIManager");
 var npc_data_1 = require("../AutoBattle/Tbx/npc_data");
+var Util_1 = require("../AutoBattle/Util");
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
@@ -47,6 +48,8 @@ var UIMain = /** @class */ (function (_super) {
             sumCost = sumCost + npc_data_1.npc_data[npc.baseId].quality * Math.pow(3, npc.level - 1);
         }
         this.layoutACost.string = sumCost.toString();
+        var buffStr = Util_1.g_Util.getCareerAndRaceBuffStr(layoutA.npcList);
+        this.layoutABuff.string = buffStr;
         sumCost = 0;
         var layoutB = this.battleInfo.getLayoutByPlayerId(102);
         for (var i = 0; i < layoutB.npcList.length; i++) {
@@ -54,6 +57,8 @@ var UIMain = /** @class */ (function (_super) {
             sumCost = sumCost + npc_data_1.npc_data[npc.baseId].quality * Math.pow(3, npc.level - 1);
         }
         this.layoutBCost.string = sumCost.toString();
+        buffStr = Util_1.g_Util.getCareerAndRaceBuffStr(layoutB.npcList);
+        this.layoutBBuff.string = buffStr;
     };
     UIMain.prototype.refreshBattleInfo = function () {
         var thisId = 0;
@@ -89,6 +94,7 @@ var UIMain = /** @class */ (function (_super) {
     UIMain.prototype.clearLayout = function () {
         var chessTable = UIManager_1.g_UIManager.getPanel("UIChessTable");
         chessTable.clear();
+        this.refreshCostBuff();
     };
     UIMain.prototype.saveLayout = function () {
         var panel = UIManager_1.g_UIManager.getOrCreatePanel("UISaveLayout");

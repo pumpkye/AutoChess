@@ -1,9 +1,11 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/AutoBattle/Util.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '69b4ehHFrpAn63FdkoDUDVj', 'Util', __filename);
+cc._RF.push(module, '9a6cdGQGvVBdraNQc6XUmra', 'Util', __filename);
 // Script/AutoBattle/Util.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
+var ChessNpc_1 = require("./Model/ChessNpc");
 var AutoBattleConfig_1 = require("./Config/AutoBattleConfig");
+var WordsConfig_1 = require("./Config/WordsConfig");
 /**
  *
  */
@@ -61,6 +63,94 @@ var Util = /** @class */ (function () {
             return false;
         }
         return true;
+    };
+    /**
+     * 获取阵容触发的职业和种族buff
+     * @param baseIdList 阵容的baseId列表，可重复
+     */
+    Util.prototype.getCareerAndRaceBuffList = function (npcInfoList) {
+        var npcList = new Array();
+        for (var i = 0; i < npcInfoList.length; i++) {
+            var info = npcInfoList[i];
+            var chessNpc = new ChessNpc_1.ChessNpc(info.thisId, info.baseId, info.level, true);
+            npcList.push(chessNpc);
+        }
+        var careerArr = new Array();
+        var raceArr = new Array();
+        for (var key in AutoBattleConfig_1.careerBuffConfig) {
+            if (AutoBattleConfig_1.careerBuffConfig.hasOwnProperty(key)) {
+                var element = AutoBattleConfig_1.careerBuffConfig[key];
+                var careerNum = 0;
+                var tempList = new Array();
+                for (var i = 0; i < npcList.length; i++) {
+                    var npc = npcList[i];
+                    if (npc.career == Number(key)) {
+                        tempList[npc.baseId] = 1;
+                    }
+                }
+                for (var baseId in tempList) {
+                    if (tempList.hasOwnProperty(baseId)) {
+                        careerNum += 1;
+                        if (element[careerNum]) {
+                            careerArr[Number(key)] = careerNum;
+                        }
+                    }
+                }
+            }
+        }
+        for (var key in AutoBattleConfig_1.raceBuffConfig) {
+            if (AutoBattleConfig_1.raceBuffConfig.hasOwnProperty(key)) {
+                var tempList = new Array();
+                for (var i = 0; i < npcList.length; i++) {
+                    var npc = npcList[i];
+                    if (npc.race == Number(key)) {
+                        tempList[npc.baseId] = 1;
+                    }
+                }
+                var element = AutoBattleConfig_1.raceBuffConfig[key];
+                var raceNum = 0;
+                for (var baseId in tempList) {
+                    if (tempList.hasOwnProperty(baseId)) {
+                        raceNum += 1;
+                        if (element[raceNum]) {
+                            raceArr[Number(key)] = raceNum;
+                        }
+                    }
+                }
+            }
+        }
+        var buffArr = {
+            careerArr: careerArr,
+            raceArr: raceArr,
+        };
+        return buffArr;
+    };
+    /**
+     * 获取触发的种族和职业buff描述字符串
+     * @param npcInfoList 阵容的baseId列表，可重复
+     */
+    Util.prototype.getCareerAndRaceBuffStr = function (npcInfoList) {
+        var str = "";
+        var buffArr = this.getCareerAndRaceBuffList(npcInfoList);
+        /**
+         * 职业描述字符串
+         */
+        for (var careerId in buffArr.careerArr) {
+            if (buffArr.careerArr.hasOwnProperty(careerId)) {
+                var num = buffArr.careerArr[careerId];
+                str = str + WordsConfig_1.WorsConfig.career[Number(careerId)] + num.toString();
+            }
+        }
+        /**
+         * 种族描述字符串
+         */
+        for (var raceId in buffArr.raceArr) {
+            if (buffArr.raceArr.hasOwnProperty(raceId)) {
+                var num = buffArr.raceArr[raceId];
+                str = str + WordsConfig_1.WorsConfig.race[Number(raceId)] + num.toString();
+            }
+        }
+        return str;
     };
     return Util;
 }());
