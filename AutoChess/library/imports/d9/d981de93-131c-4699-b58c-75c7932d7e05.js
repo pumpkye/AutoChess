@@ -3,7 +3,7 @@ cc._RF.push(module, 'd981d6TExxGmbWMdceTLX4F', 'NetUtil');
 // Script/Net/NetUtil.ts
 
 /**
- * @description 网络接口与api
+ * @description 网络接口与api，http连接
  * @author  pumpkye
  */
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -75,42 +75,5 @@ var NetUtil = /** @class */ (function () {
     return NetUtil;
 }());
 exports.g_NetUtil = new NetUtil();
-/**
- * @description 客户端发送给服务器的消息基类
- */
-var MessageBase = /** @class */ (function () {
-    function MessageBase() {
-    }
-    MessageBase.prototype.testUrl = function () {
-        console.log("testUrl:", exports.g_NetUtil.formatUrl(this.url, this.reqObj));
-    };
-    /**
-     * @description 将消息返回的json对象转化为对应消息的ts对象，若该函数没有被重写，则直接返回json对象，
-     * 对于返回消息不包含复杂对象结构的消息不需要重写该函数
-     * @param ret 一个json对象
-     */
-    MessageBase.prototype.getResObj = function (ret) {
-        // this.resObj.msg = ret.msg;
-        // return this.resObj;
-        return ret;
-    };
-    MessageBase.prototype.send = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var url, resObj;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        console.log('url:', this.url);
-                        url = exports.g_NetUtil.formatUrl(this.url, this.reqObj);
-                        return [4 /*yield*/, exports.g_NetUtil.sendHttpRequest(url, "GET")];
-                    case 1:
-                        resObj = _a.sent();
-                        return [2 /*return*/, this.getResObj(resObj)];
-                }
-            });
-        });
-    };
-    return MessageBase;
-}());
 
 cc._RF.pop();

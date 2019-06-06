@@ -8,6 +8,7 @@ var AutoBattle_1 = require("../AutoBattle/AutoBattle");
 var UIManager_1 = require("./UIManager");
 var npc_data_1 = require("../AutoBattle/Tbx/npc_data");
 var Util_1 = require("../AutoBattle/Util");
+var LoginData_1 = require("../Data/LoginData");
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
@@ -101,6 +102,9 @@ var UIMain = /** @class */ (function (_super) {
     };
     UIMain.prototype.loadLayout = function () {
         var panel = UIManager_1.g_UIManager.getOrCreatePanel("UILoadLayout");
+    };
+    UIMain.prototype.testLogin = function () {
+        LoginData_1.g_LoginData.login();
     };
     __decorate([
         property(cc.Button)

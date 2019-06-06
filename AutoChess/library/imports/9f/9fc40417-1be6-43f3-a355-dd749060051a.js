@@ -18,6 +18,7 @@ var UIManager = /** @class */ (function () {
         this.node = null;
     }
     UIManager.prototype.init = function () {
+        this.uiList = {};
         this.node = cc.find('Canvas/Gui');
         this.loadPrefabRes();
     };
@@ -115,14 +116,18 @@ var UIManager = /** @class */ (function () {
      */
     UIManager.prototype.getOrCreatePanel = function (panelName) {
         console.log("getOrCreatePanel", panelName);
+        if (this.uiList[panelName]) {
+            return this.uiList[panelName];
+        }
         if (uiPrefabConfig.hasOwnProperty(panelName)) {
             if (uiPrefabConfig[panelName]) {
-                if (uiPrefabConfig[panelName].panel) {
-                    return uiPrefabConfig[panelName].panel;
-                }
+                // if (uiPrefabConfig[panelName].panel) {
+                //     return uiPrefabConfig[panelName].panel
+                // }
                 var panel = this.createPanelOnly(panelName);
                 if (panel) {
-                    uiPrefabConfig[panelName].panel = panel;
+                    this.uiList[panelName] = panel;
+                    // uiPrefabConfig[panelName].panel = panel
                     if (uiPrefabConfig[panelName].zIndex) {
                         panel.node.zIndex = uiPrefabConfig[panelName].zIndex;
                     }
@@ -163,13 +168,11 @@ var UIManager = /** @class */ (function () {
      * @returns {cc.Component}
      */
     UIManager.prototype.getPanel = function (panelName) {
-        if (uiPrefabConfig.hasOwnProperty(panelName)) {
-            return uiPrefabConfig[panelName].panel;
-        }
-        // if (panelName == "UIHome") {
-        //     return this.uiHome
+        return this.uiList[panelName];
+        // if (uiPrefabConfig.hasOwnProperty(panelName)) {
+        //     return uiPrefabConfig[panelName].panel
         // }
-        return null;
+        // return null
     };
     /**
      * 关闭一个panel
@@ -185,7 +188,8 @@ var UIManager = /** @class */ (function () {
         }
         if (uiPrefabConfig.hasOwnProperty(panelName) && uiPrefabConfig[panelName].panel) {
             uiPrefabConfig[panelName].panel.node.destroy();
-            uiPrefabConfig[panelName].panel = null;
+            // uiPrefabConfig[panelName].panel = null
+            delete (this.uiList[panelName]);
         }
     };
     /**
@@ -194,10 +198,6 @@ var UIManager = /** @class */ (function () {
     * @returns {cc.Component} panel
     */
     UIManager.prototype.showPanel = function (panelName) {
-        // if (panelName == "UIHome") {
-        //     this.uiHome.node.active = true
-        //     return this.uiHome
-        // }
         var panel = this.getOrCreatePanel(panelName);
         if (panel) {
             panel.node.active = true;
@@ -209,13 +209,23 @@ var UIManager = /** @class */ (function () {
      * @param {cc.Component} panel 需要隐藏的panel component
      */
     UIManager.prototype.hidePanel = function (panel) {
-        // if (panel == this.uiHome) {
-        //     this.uiHome.node.active = false
-        //     return this.uiHome
-        // }
         if (panel != null && panel.node != null) {
             panel.node.active = false;
             return panel;
+        }
+    };
+    /**
+     * 向管理器中维护的ui分发消息
+     * @param msg
+     */
+    UIManager.prototype.dispatchMsg = function (msg) {
+        for (var name in this.uiList) {
+            if (this.uiList.hasOwnProperty(name)) {
+                var panel = this.uiList[name];
+                if (typeof (panel[msg.name]) === "function") {
+                    panel[msg.name](msg.data);
+                }
+            }
         }
     };
     return UIManager;

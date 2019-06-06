@@ -7,6 +7,7 @@ import UISaveLayout from "./UISaveLayout";
 import UILoadLayout from "./UILoadLayout";
 import { npc_data } from "../AutoBattle/Tbx/npc_data";
 import { g_Util } from "../AutoBattle/Util";
+import { g_LoginData } from "../Data/LoginData";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -107,7 +108,7 @@ export default class UIMain extends cc.Component {
     }
 
     clearLayout() {
-        let chessTable = g_UIManager.getPanel("UIChessTable");
+        let chessTable: UIChessTable = g_UIManager.getPanel("UIChessTable");
         chessTable.clear();
         this.refreshCostBuff();
     }
@@ -119,6 +120,10 @@ export default class UIMain extends cc.Component {
 
     loadLayout() {
         let panel: UILoadLayout = g_UIManager.getOrCreatePanel("UILoadLayout")
+    }
+
+    testLogin() {
+        g_LoginData.login();
     }
     // update (dt) {}
 }

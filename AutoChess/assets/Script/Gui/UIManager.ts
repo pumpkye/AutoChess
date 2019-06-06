@@ -1,4 +1,5 @@
 import { GameConfig } from "../GameConfig";
+import { MessageBase } from "../Message/MessagegBase";
 
 var uiPrefabConfig = {
     // UiOperation: { name: "UIOperation", zIndex: 0 },
@@ -18,11 +19,13 @@ var uiPrefabConfig = {
 }
 
 class UIManager {
+    uiList: { [index: string]: any };
     node: cc.Node = null;
     constructor() {
 
     }
     init() {
+        this.uiList = {};
         this.node = cc.find('Canvas/Gui');
         this.loadPrefabRes();
     }
@@ -121,20 +124,25 @@ class UIManager {
      */
     getOrCreatePanel(panelName) {
         console.log("getOrCreatePanel", panelName)
+        if (this.uiList[panelName]) {
+            return this.uiList[panelName];
+        }
+
         if (uiPrefabConfig.hasOwnProperty(panelName)) {
             if (uiPrefabConfig[panelName]) {
-                if (uiPrefabConfig[panelName].panel) {
-                    return uiPrefabConfig[panelName].panel
-                }
-                let panel = this.createPanelOnly(panelName)
+                // if (uiPrefabConfig[panelName].panel) {
+                //     return uiPrefabConfig[panelName].panel
+                // }
+                let panel = this.createPanelOnly(panelName);
                 if (panel) {
-                    uiPrefabConfig[panelName].panel = panel
+                    this.uiList[panelName] = panel;
+                    // uiPrefabConfig[panelName].panel = panel
                     if (uiPrefabConfig[panelName].zIndex) {
-                        panel.node.zIndex = uiPrefabConfig[panelName].zIndex
+                        panel.node.zIndex = uiPrefabConfig[panelName].zIndex;
                     }
-                    panel.node.parent = this.node
+                    panel.node.parent = this.node;
                 }
-                return panel
+                return panel;
             }
         } else {
             console.log("创建panel失败，请检查uiPrefabConfig里是否包含该项配置")
@@ -149,16 +157,16 @@ class UIManager {
     createPanelOnly(panelName) {
         if (uiPrefabConfig.hasOwnProperty(panelName)) {
             if (uiPrefabConfig[panelName].prefab) {
-                let panelNode = cc.instantiate(uiPrefabConfig[panelName].prefab)
+                let panelNode = cc.instantiate(uiPrefabConfig[panelName].prefab);
                 if (panelNode != null) {
-                    let panel = panelNode.getComponent(uiPrefabConfig[panelName].prefab.name)
-                    return panel
+                    let panel = panelNode.getComponent(uiPrefabConfig[panelName].prefab.name);
+                    return panel;
                 }
             } else {
-                console.log("创建panel失败，该panel的prefab未加载")
+                console.log("创建panel失败，该panel的prefab未加载");
             }
         } else {
-            console.log("创建panel失败，请检查uiPrefabConfig里是否包含该项配置")
+            console.log("创建panel失败，请检查uiPrefabConfig里是否包含该项配置");
         }
     }
 
@@ -168,14 +176,11 @@ class UIManager {
      * @returns {cc.Component} 
      */
     getPanel(panelName) {
-        if (uiPrefabConfig.hasOwnProperty(panelName)) {
-            return uiPrefabConfig[panelName].panel
-        }
-
-        // if (panelName == "UIHome") {
-        //     return this.uiHome
+        return this.uiList[panelName];
+        // if (uiPrefabConfig.hasOwnProperty(panelName)) {
+        //     return uiPrefabConfig[panelName].panel
         // }
-        return null
+        // return null
     }
 
     closePanel(panelName: string);
@@ -192,8 +197,9 @@ class UIManager {
             panelName = arg1.node.name;
         }
         if (uiPrefabConfig.hasOwnProperty(panelName) && uiPrefabConfig[panelName].panel) {
-            uiPrefabConfig[panelName].panel.node.destroy()
-            uiPrefabConfig[panelName].panel = null
+            uiPrefabConfig[panelName].panel.node.destroy();
+            // uiPrefabConfig[panelName].panel = null
+            delete (this.uiList[panelName]);
         }
 
     }
@@ -204,14 +210,10 @@ class UIManager {
     * @returns {cc.Component} panel 
     */
     showPanel(panelName) {
-        // if (panelName == "UIHome") {
-        //     this.uiHome.node.active = true
-        //     return this.uiHome
-        // }
-        let panel = this.getOrCreatePanel(panelName)
+        let panel = this.getOrCreatePanel(panelName);
         if (panel) {
-            panel.node.active = true
-            return panel
+            panel.node.active = true;
+            return panel;
         }
     }
 
@@ -220,13 +222,24 @@ class UIManager {
      * @param {cc.Component} panel 需要隐藏的panel component
      */
     hidePanel(panel) {
-        // if (panel == this.uiHome) {
-        //     this.uiHome.node.active = false
-        //     return this.uiHome
-        // }
         if (panel != null && panel.node != null) {
-            panel.node.active = false
-            return panel
+            panel.node.active = false;
+            return panel;
+        }
+    }
+
+    /**
+     * 向管理器中维护的ui分发消息
+     * @param msg 
+     */
+    dispatchMsg(msg: MessageBase) {
+        for (const name in this.uiList) {
+            if (this.uiList.hasOwnProperty(name)) {
+                const panel = this.uiList[name];
+                if (typeof (panel[msg.name]) === "function") {
+                    panel[msg.name](msg.data);
+                }
+            }
         }
     }
 }
