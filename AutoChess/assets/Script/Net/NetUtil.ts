@@ -1,5 +1,5 @@
 /**
- * @description 网络接口与api
+ * @description 网络接口与api，http连接
  * @author  pumpkye
  */
 
@@ -72,38 +72,3 @@ class NetUtil {
 }
 
 export var g_NetUtil = new NetUtil()
-
-/**
- * @description 客户端发送给服务器的消息基类
- */
-class MessageBase {
-    protected readonly url: string;
-    protected reqObj: {};   //消息结构，定义消息中需要传递的参数
-    protected resObj: {     //返回消息的结构定义，用于存储返回结果对象化之后的结果
-        success: boolean;        //success or fail
-    };
-    constructor() {
-
-    }
-    testUrl() {
-        console.log("testUrl:", g_NetUtil.formatUrl(this.url, this.reqObj))
-    }
-    /**
-     * @description 将消息返回的json对象转化为对应消息的ts对象，若该函数没有被重写，则直接返回json对象，
-     * 对于返回消息不包含复杂对象结构的消息不需要重写该函数
-     * @param ret 一个json对象
-     */
-    getResObj(ret): any {
-        // this.resObj.msg = ret.msg;
-        // return this.resObj;
-        return ret;
-    }
-
-    async send() {
-        console.log('url:', this.url);
-        let url = g_NetUtil.formatUrl(this.url, this.reqObj);
-        let resObj = await g_NetUtil.sendHttpRequest(url, "GET");
-        return this.getResObj(resObj);
-    }
-}
-
