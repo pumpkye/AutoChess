@@ -71,4 +71,4 @@ class NetUtil {
 
 }
 
-export var g_NetUtil = new NetUtil()
+export const g_NetUtil = new NetUtil()

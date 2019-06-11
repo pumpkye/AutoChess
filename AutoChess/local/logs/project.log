@@ -1,75 +1,71 @@
-2019-06-06T17:15:33.232Z - normal: Load ~/.CocosCreator/settings.json
-2019-06-06T17:15:33.284Z - normal: Initializing Asset Database
-2019-06-06T17:15:33.286Z - normal: checking language setting...
-2019-06-06T17:15:33.286Z - normal: Language: zh
-2019-06-06T17:15:33.985Z - success: preview server running at http://localhost:7456
-2019-06-06T17:15:34.036Z - success: protocol editor-framework registered
-2019-06-06T17:15:34.036Z - success: protocol app registered
-2019-06-06T17:15:34.036Z - success: protocol theme registered
-2019-06-06T17:15:34.036Z - success: protocol packages registered
-2019-06-06T17:15:34.036Z - success: protocol uuid registerred
-2019-06-06T17:15:34.036Z - success: protocol db registerred
-2019-06-06T17:15:34.036Z - success: protocol thumbnail registerred
-2019-06-06T17:15:34.037Z - success: protocol unpack registerred
-2019-06-06T17:15:34.037Z - success: protocol disable-commonjs registerred
-2019-06-06T17:15:34.108Z - normal: connected!
-2019-06-06T17:15:34.110Z - normal: Check project /Users/yenan/Documents/github/AutoChess/AutoChess
-2019-06-06T17:15:34.111Z - normal: Initializing project /Users/yenan/Documents/github/AutoChess/AutoChess
-2019-06-06T17:15:34.452Z - normal: Initializing Cocos2d
-2019-06-06T17:15:35.145Z - normal: Initializing engine extends
-2019-06-06T17:15:35.219Z - success: asset-db-debugger loaded
-2019-06-06T17:15:35.220Z - success: baidu-adapter loaded
-2019-06-06T17:15:35.221Z - success: color-picker loaded
-2019-06-06T17:15:35.306Z - success: fb-audience-network loaded
-2019-06-06T17:15:35.353Z - success: fb-live-stream loaded
-2019-06-06T17:15:35.356Z - success: google-play-instant loaded
-2019-06-06T17:15:35.362Z - success: huawei-runtime loaded
-2019-06-06T17:15:35.363Z - success: jsb-adapter loaded
-2019-06-06T17:15:35.368Z - success: oppo-runtime loaded
-2019-06-06T17:15:35.380Z - success: package-manager loaded
-2019-06-06T17:15:35.503Z - success: qqplay-adapter loaded
-2019-06-06T17:15:35.505Z - success: runtime-dev-tools loaded
-2019-06-06T17:15:35.518Z - success: sdkbox loaded
-2019-06-06T17:15:35.531Z - success: tester loaded
-2019-06-06T17:15:35.544Z - success: ui-grid loaded
-2019-06-06T17:15:35.552Z - success: ui-kit-preview-extra loaded
-2019-06-06T17:15:35.565Z - success: ui-kit-preview loaded
-2019-06-06T17:15:35.580Z - success: ui-kit loaded
-2019-06-06T17:15:35.589Z - success: ui-tree loaded
-2019-06-06T17:15:35.593Z - success: vivo-runtime loaded
-2019-06-06T17:15:35.594Z - success: weapp-adapter loaded
-2019-06-06T17:15:35.637Z - success: assets loaded
-2019-06-06T17:15:35.649Z - success: builder loaded
-2019-06-06T17:15:35.899Z - success: cocos-services loaded
-2019-06-06T17:15:35.913Z - success: console loaded
-2019-06-06T17:15:35.944Z - success: fb-instant-games loaded
-2019-06-06T17:15:35.947Z - success: google-instant-games loaded
-2019-06-06T17:15:35.961Z - success: hierarchy loaded
-2019-06-06T17:15:35.972Z - success: inspector loaded
-2019-06-06T17:15:35.973Z - success: keystore loaded
-2019-06-06T17:15:35.984Z - success: node-library loaded
-2019-06-06T17:15:35.985Z - success: package-asset loaded
-2019-06-06T17:15:35.986Z - success: preferences loaded
-2019-06-06T17:15:35.998Z - success: project-exporter loaded
-2019-06-06T17:15:36.015Z - success: project-importer loaded
-2019-06-06T17:15:36.028Z - success: project-settings loaded
-2019-06-06T17:15:36.039Z - success: scene loaded
-2019-06-06T17:15:36.041Z - success: simulator-debugger loaded
-2019-06-06T17:15:36.044Z - success: sprite-editor loaded
-2019-06-06T17:15:36.054Z - success: store loaded
-2019-06-06T17:15:36.067Z - success: timeline loaded
-2019-06-06T17:15:37.436Z - info: Cocos Services load base data!
-2019-06-06T17:15:40.421Z - normal: Loading packages
-2019-06-06T17:15:40.426Z - normal: Watching packages
-2019-06-06T17:15:40.520Z - normal: Run Application
-2019-06-06T17:15:45.624Z - failed: load script [/Users/yenan/Documents/github/AutoChess/AutoChess/temp/quick-scripts/assets/Script/Data/UserData.js] failed : ReferenceError: BaseData is not defined
-    at __define (/Users/yenan/Documents/github/AutoChess/AutoChess/temp/quick-scripts/assets/Script/Data/UserData.js:17:3)
-    at /Users/yenan/Documents/github/AutoChess/AutoChess/temp/quick-scripts/assets/Script/Data/UserData.js:23:13
-    at Object.<anonymous> (/Users/yenan/Documents/github/AutoChess/AutoChess/temp/quick-scripts/assets/Script/Data/UserData.js:30:11)
-    at Object.<anonymous> (/Users/yenan/Documents/github/AutoChess/AutoChess/temp/quick-scripts/assets/Script/Data/UserData.js:33:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
+2019-06-11T08:24:55.819Z - normal: Load ~/.CocosCreator/settings.json
+2019-06-11T08:24:56.974Z - normal: Initializing Asset Database
+2019-06-11T08:24:56.977Z - normal: checking language setting...
+2019-06-11T08:24:56.977Z - normal: Language: zh
+2019-06-11T08:24:57.587Z - success: preview server running at http://localhost:7456
+2019-06-11T08:24:57.589Z - success: protocol editor-framework registered
+2019-06-11T08:24:57.589Z - success: protocol app registered
+2019-06-11T08:24:57.589Z - success: protocol theme registered
+2019-06-11T08:24:57.590Z - success: protocol packages registered
+2019-06-11T08:24:57.590Z - success: protocol uuid registerred
+2019-06-11T08:24:57.590Z - success: protocol db registerred
+2019-06-11T08:24:57.590Z - success: protocol thumbnail registerred
+2019-06-11T08:24:57.590Z - success: protocol unpack registerred
+2019-06-11T08:24:57.590Z - success: protocol disable-commonjs registerred
+2019-06-11T08:24:57.885Z - normal: connected!
+2019-06-11T08:24:57.886Z - normal: Check project D:\github\AutoChess\AutoChess
+2019-06-11T08:24:57.887Z - normal: Initializing project D:\github\AutoChess\AutoChess
+2019-06-11T08:24:58.240Z - normal: Initializing Cocos2d
+2019-06-11T08:24:58.974Z - normal: Initializing engine extends
+2019-06-11T08:24:58.993Z - success: asset-db-debugger loaded
+2019-06-11T08:24:58.994Z - success: baidu-adapter loaded
+2019-06-11T08:24:58.997Z - success: code-editor loaded
+2019-06-11T08:24:58.999Z - success: color-picker loaded
+2019-06-11T08:24:59.081Z - success: fb-audience-network loaded
+2019-06-11T08:24:59.128Z - success: fb-live-stream loaded
+2019-06-11T08:24:59.131Z - success: google-play-instant loaded
+2019-06-11T08:24:59.135Z - success: huawei-runtime loaded
+2019-06-11T08:24:59.136Z - success: jsb-adapter loaded
+2019-06-11T08:24:59.141Z - success: oppo-runtime loaded
+2019-06-11T08:24:59.144Z - success: package-manager loaded
+2019-06-11T08:24:59.253Z - success: qqplay-adapter loaded
+2019-06-11T08:24:59.255Z - success: runtime-dev-tools loaded
+2019-06-11T08:24:59.258Z - success: sdkbox loaded
+2019-06-11T08:24:59.261Z - success: tester loaded
+2019-06-11T08:24:59.264Z - success: ui-grid loaded
+2019-06-11T08:24:59.266Z - success: ui-kit-preview-extra loaded
+2019-06-11T08:24:59.267Z - success: ui-kit-preview loaded
+2019-06-11T08:24:59.269Z - success: ui-kit loaded
+2019-06-11T08:24:59.270Z - success: ui-tree loaded
+2019-06-11T08:24:59.274Z - success: vivo-runtime loaded
+2019-06-11T08:24:59.275Z - success: weapp-adapter loaded
+2019-06-11T08:24:59.313Z - success: assets loaded
+2019-06-11T08:24:59.315Z - success: builder loaded
+2019-06-11T08:24:59.561Z - success: cocos-services loaded
+2019-06-11T08:24:59.565Z - success: console loaded
+2019-06-11T08:24:59.600Z - success: fb-instant-games loaded
+2019-06-11T08:24:59.602Z - success: google-instant-games loaded
+2019-06-11T08:24:59.606Z - success: hierarchy loaded
+2019-06-11T08:24:59.608Z - success: inspector loaded
+2019-06-11T08:24:59.609Z - success: keystore loaded
+2019-06-11T08:24:59.613Z - success: node-library loaded
+2019-06-11T08:24:59.614Z - success: package-asset loaded
+2019-06-11T08:24:59.615Z - success: preferences loaded
+2019-06-11T08:24:59.617Z - success: project-exporter loaded
+2019-06-11T08:24:59.618Z - success: project-importer loaded
+2019-06-11T08:24:59.620Z - success: project-settings loaded
+2019-06-11T08:24:59.623Z - success: scene loaded
+2019-06-11T08:24:59.624Z - success: simulator-debugger loaded
+2019-06-11T08:24:59.626Z - success: sprite-editor loaded
+2019-06-11T08:24:59.629Z - success: store loaded
+2019-06-11T08:24:59.631Z - success: timeline loaded
+2019-06-11T08:25:01.439Z - normal: Loading packages
+2019-06-11T08:25:01.445Z - normal: Watching packages
+2019-06-11T08:25:01.739Z - info: Cocos Services load base data!
+2019-06-11T08:25:01.961Z - normal: Run Application
+2019-06-11T09:27:47.190Z - warn: The Label referenced by component "UIMain" is invalid. Detailed information:
+Node path: "Canvas/Gui/UIGameMain"
+
+2019-06-11T09:27:47.192Z - warn: The Label referenced by component "UIMain" is invalid. Detailed information:
+Node path: "Canvas/Gui/UIGameMain"
+
