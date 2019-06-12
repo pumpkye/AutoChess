@@ -142,6 +142,11 @@ export class MsgRefreshCardPool extends MessageBase {
     }
 }
 
+export class MsgReqRefreshCardPool extends MessageBase {
+    name = "msgReqRefreshCardPool";
+    data: {}
+}
+
 /**
  * 从商店购买卡牌
  */

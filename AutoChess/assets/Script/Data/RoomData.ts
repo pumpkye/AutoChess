@@ -1,6 +1,7 @@
-import { MsgResEnterRoom, PlayerInfo, MsgRefreshRoomPlayer, MsgResStartGame, MsgRoundState, RoundState } from "../Message/RoomMsg";
+import { MsgResEnterRoom, PlayerInfo, MsgRefreshRoomPlayer, MsgResStartGame, MsgRoundState, RoundState, MsgRefreshCardPool } from "../Message/RoomMsg";
 import { g_UIManager } from "../Gui/UIManager";
 import { g_UserData } from "./UserData";
+import UICardPool from "../Gui/UICardPool";
 
 class RoomData {
     roomId: number;
@@ -8,6 +9,10 @@ class RoomData {
      * {playerId:playerInfo}
      */
     playerList: { [index: number]: PlayerInfo };
+    /**
+     * {idx:baseId}
+     */
+    cardPool: Array<{ idx: number, baseId: number }>;
 
     gameStart: boolean;
     roundIdx: number;
@@ -16,6 +21,7 @@ class RoomData {
 
     constructor() {
         this.playerList = {};
+        this.cardPool = new Array();
     }
 
     clearGameInfo() {
@@ -87,6 +93,16 @@ class RoomData {
         panel = g_UIManager.getPanel("UIGameMain");
         if (panel) {
             panel.refreshPlayerInfo();
+        }
+    }
+
+    msgRefreshCardPool(msg: MsgRefreshCardPool['data']) {
+        if (g_UserData.id == msg.userId) {
+            this.cardPool = msg.cardPool;
+        }
+        let panel: UICardPool = g_UIManager.getOrCreatePanel("UICardPool");
+        if (panel) {
+            panel.refreshPool();
         }
     }
 }

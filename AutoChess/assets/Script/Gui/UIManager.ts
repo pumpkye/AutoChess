@@ -16,6 +16,8 @@ var uiPrefabConfig = {
     UILobby: { name: "UILobby", zIndex: 10 },
     UIRoom: { name: "UIRoom", zIndex: 10 },
     UIRoomItem: { name: "UIRoomItem", zIndex: 10 },
+    UICardPool: { name: "UICardPool", zIndex: 10 },
+    UICardPoolItem: { name: "UICardPoolItem" }
     // UiReliveIntroduction : {
     //     nameInExam : "UiReliveIntroduction",
     //     namePassExam : "UiReliveIntroductionPE",
@@ -26,7 +28,7 @@ var uiPrefabConfig = {
 }
 
 var dataUI = ["UIChessTable", "UIMain", "UISetNpc", "UISaveLayout", "UILoadLayout"]
-var gameUI = ["UIGameTable", "UIGameMain", "UICardList"]
+var gameUI = ["UIGameTable", "UIGameMain", "UICardList", "UILobby", "UIRoom", "UICardPool"]
 
 class UIManager {
     uiList: { [index: string]: any };

@@ -1,6 +1,6 @@
 import { RoundState } from "../Message/RoomMsg";
 
-export const WorsConfig = {
+export const GameWorsConfig = {
     battleState: {
         [RoundState.none]: "",
         [RoundState.layout]: "布局阶段",

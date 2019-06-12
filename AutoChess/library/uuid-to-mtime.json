@@ -250,7 +250,7 @@
     "relativePath": "resources"
   },
   "2102cce0-7adb-4e0f-be7a-563b79a8c01c": {
-    "asset": 1560131334595,
+    "asset": 1560328341786,
     "meta": 1560131334589,
     "relativePath": "resources\\UIPrefab"
   },
@@ -265,17 +265,17 @@
     "relativePath": "Scene"
   },
   "b56079e8-e2ac-4ed0-bfbc-a03e008e27f2": {
-    "asset": 1560135899459,
+    "asset": 1560323433862,
     "meta": 1560131334572,
     "relativePath": "Script"
   },
   "82f59f9a-6ff5-4e5f-a45f-6fd073164071": {
-    "asset": 1560132833804,
+    "asset": 1560301848400,
     "meta": 1560131334572,
     "relativePath": "Script\\AutoBattle"
   },
   "2622c66e-c940-4e18-b8f9-b3721026c23a": {
-    "asset": 1560131334580,
+    "asset": 1560328404214,
     "meta": 1560131334576,
     "relativePath": "Script\\Gui"
   },
@@ -330,8 +330,8 @@
     "relativePath": "resources\\UIPrefab\\UIChessTable.prefab"
   },
   "0b3e6439-f5f7-4480-8ead-646117fe13e4": {
-    "asset": 1560313543155,
-    "meta": 1560313543167,
+    "asset": 1560332292962,
+    "meta": 1560332292969,
     "relativePath": "Scene\\helloworld.fire"
   },
   "0a08dc0a-332e-448e-9a11-f9867b23e78d": {
@@ -380,7 +380,7 @@
     "relativePath": "Script\\Connect"
   },
   "8b9161e6-0702-4e7d-b118-ea3349a96f5c": {
-    "asset": 1560240906914,
+    "asset": 1560328389026,
     "meta": 1560131334573,
     "relativePath": "Script\\Data"
   },
@@ -408,11 +408,6 @@
     "asset": 1560131341197,
     "meta": 1560132835176,
     "relativePath": "Script\\AutoBattle\\Config\\AutoBattleConfig.ts"
-  },
-  "e5c092d5-4a9e-4fef-add0-259cbf282036": {
-    "asset": 1560131341198,
-    "meta": 1560132835179,
-    "relativePath": "Script\\AutoBattle\\Config\\WordsConfig.ts"
   },
   "131ded19-91d1-4088-bb46-9db759fa155b": {
     "asset": 1560132833761,
@@ -729,11 +724,6 @@
     "meta": 1560132836459,
     "relativePath": "Script\\AutoBattle\\Tbx\\skill_level_data.ts"
   },
-  "3d5eafad-4432-4ba7-83b1-c37cd83db2cd": {
-    "asset": 1560131341215,
-    "meta": 1560132836516,
-    "relativePath": "Script\\AutoBattle\\TbxModel\\ChessNpcBaseData.ts"
-  },
   "cdf6d7cd-2b27-4f21-969d-db92c6e4bed2": {
     "asset": 1560131341215,
     "meta": 1560132836530,
@@ -775,8 +765,8 @@
     "relativePath": "resources\\UIPrefab\\UIGameMain.prefab"
   },
   "619d66bf-4a53-4a2d-92bd-6641a877fba9": {
-    "asset": 1560249839789,
-    "meta": 1560249839793,
+    "asset": 1560332291482,
+    "meta": 1560332291493,
     "relativePath": "resources\\UIPrefab\\UICardPool.prefab"
   },
   "b7650dfd-39fa-46ee-9e68-a5c17609f06e": {
@@ -864,25 +854,10 @@
     "meta": 1560313480221,
     "relativePath": "Script\\Gui\\UIRoomItem.ts"
   },
-  "cf4dd1d1-b937-4710-acb5-03056b23584b": {
-    "asset": 1560322603618,
-    "meta": 1560323309427,
-    "relativePath": "Script\\AutoBattle\\Util.ts"
-  },
-  "9fc40417-1be6-43f3-a355-dd749060051a": {
-    "asset": 1560322240359,
-    "meta": 1560323309553,
-    "relativePath": "Script\\Gui\\UIManager.ts"
-  },
   "e1968ce6-3d77-45f4-975f-2f1832ac50e3": {
     "asset": 1560323309199,
     "meta": 1560323309198,
     "relativePath": "Script\\Config"
-  },
-  "1c89e0e8-c342-409c-a97e-936ffde6e441": {
-    "asset": 1560321882444,
-    "meta": 1560323309563,
-    "relativePath": "Script\\Message\\RoomMsg.ts"
   },
   "4efb69fd-0d41-4139-8a85-ea4ced82629b": {
     "asset": 1560322119484,
@@ -899,29 +874,74 @@
     "meta": 1560323607707,
     "relativePath": "Script\\Helloworld.ts"
   },
-  "f3e59df2-b5c7-477f-91c9-da968151b3de": {
-    "asset": 1560324241459,
-    "meta": 1560324285517,
-    "relativePath": "Script\\Config\\WordsConfig.ts"
-  },
   "9fcd01ef-fb43-4c36-a436-7d63443af3d6": {
     "asset": 1560324415286,
     "meta": 1560324715430,
     "relativePath": "Script\\Gui\\UIGameTable.ts"
-  },
-  "238b13d2-0e24-4117-b7c6-dd04f1e834b1": {
-    "asset": 1560325967121,
-    "meta": 1560326068055,
-    "relativePath": "Script\\Gui\\UIGameMain.ts"
   },
   "a844e232-9904-44cb-a297-83f91e0b14d9": {
     "asset": 1560324823583,
     "meta": 1560326068061,
     "relativePath": "Script\\Gui\\UISetNpc.ts"
   },
+  "c2f8197c-852b-40ab-898f-f1395a2c50fd": {
+    "asset": 1560329587810,
+    "meta": 1560329587815,
+    "relativePath": "resources\\UIPrefab\\UICardPoolItem.prefab"
+  },
+  "3d5eafad-4432-4ba7-83b1-c37cd83db2cd": {
+    "asset": 1560328864347,
+    "meta": 1560329254952,
+    "relativePath": "Script\\AutoBattle\\TbxModel\\ChessNpcBaseData.ts"
+  },
   "688623bb-861d-4192-96b3-c589c13e81b3": {
-    "asset": 1560326131511,
-    "meta": 1560326132077,
+    "asset": 1560329060102,
+    "meta": 1560329254977,
     "relativePath": "Script\\Data\\RoomData.ts"
+  },
+  "9fc40417-1be6-43f3-a355-dd749060051a": {
+    "asset": 1560329846399,
+    "meta": 1560329847529,
+    "relativePath": "Script\\Gui\\UIManager.ts"
+  },
+  "e5c092d5-4a9e-4fef-add0-259cbf282036": {
+    "asset": 1560331072123,
+    "meta": 1560331113643,
+    "relativePath": "Script\\AutoBattle\\Config\\WordsConfig.ts"
+  },
+  "cf4dd1d1-b937-4710-acb5-03056b23584b": {
+    "asset": 1560331102101,
+    "meta": 1560331113671,
+    "relativePath": "Script\\AutoBattle\\Util.ts"
+  },
+  "238b13d2-0e24-4117-b7c6-dd04f1e834b1": {
+    "asset": 1560331083258,
+    "meta": 1560331113715,
+    "relativePath": "Script\\Gui\\UIGameMain.ts"
+  },
+  "cd235b27-506a-48f5-9705-ff426a0aa6b7": {
+    "asset": 1560331100227,
+    "meta": 1560331113734,
+    "relativePath": "Script\\aaa.ts"
+  },
+  "8df98bf1-5005-4961-b22d-94d4654ba24d": {
+    "asset": 1560331081854,
+    "meta": 1560331113734,
+    "relativePath": "Script\\Config\\GameWordsConfig.ts"
+  },
+  "78c717ac-1d7e-431d-ae18-954312261a82": {
+    "asset": 1560331173154,
+    "meta": 1560331205364,
+    "relativePath": "Script\\Gui\\UICardPoolItem.ts"
+  },
+  "b78c7da5-1568-4938-ac7a-1d5f8ad50108": {
+    "asset": 1560332718896,
+    "meta": 1560332724838,
+    "relativePath": "Script\\Gui\\UICardPool.ts"
+  },
+  "1c89e0e8-c342-409c-a97e-936ffde6e441": {
+    "asset": 1560332688579,
+    "meta": 1560332724839,
+    "relativePath": "Script\\Message\\RoomMsg.ts"
   }
 }

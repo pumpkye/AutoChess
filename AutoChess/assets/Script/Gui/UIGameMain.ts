@@ -1,6 +1,6 @@
 import { g_UserData } from "../Data/UserData";
 import { g_RoomData } from "../Data/RoomData";
-import { WorsConfig } from "../config/WordsConfig";
+import { GameWorsConfig } from "../Config/GameWordsConfig";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -50,7 +50,7 @@ export default class UIGameMain extends cc.Component {
     refreshRoundInfo() {
         this.playerNameLabel.string = g_UserData.name;
         this.roundIdxLabel.string = "round " + g_RoomData.roundIdx;
-        this.roundStateLabel.string = WorsConfig.battleState[g_RoomData.roundState];
+        this.roundStateLabel.string = GameWorsConfig.battleState[g_RoomData.roundState];
         let finishTime = g_RoomData.curStateFinishTime;
         this.countdownTime = finishTime - new Date().getTime();
         this.timeLabel.string = Math.ceil(this.countdownTime / 1000).toString();
