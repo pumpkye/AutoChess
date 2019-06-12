@@ -125,5 +125,9 @@ export default class UIMain extends cc.Component {
     testLogin() {
         g_LoginData.login();
     }
+
+    gameLogin() {
+        g_UIManager.getOrCreatePanel("UILogin");
+    }
     // update (dt) {}
 }

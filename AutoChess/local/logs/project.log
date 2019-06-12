@@ -69,3 +69,23 @@ Node path: "Canvas/Gui/UIGameMain"
 2019-06-11T09:27:47.192Z - warn: The Label referenced by component "UIMain" is invalid. Detailed information:
 Node path: "Canvas/Gui/UIGameMain"
 
+2019-06-12T01:10:48.377Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Script/AutoBattle/AutoBattleInit.ts.meta
+2019-06-12T01:10:48.401Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Script/AutoBattle/DataManager.ts.meta
+2019-06-12T03:34:30.170Z - warn: The Node referenced by component "cc.Button" is invalid. Detailed information:
+Node path: "Canvas/Gui/UIRoom/closeBtn"
+
+2019-06-12T03:34:43.768Z - warn: The Node referenced by component "cc.Button" is invalid. Detailed information:
+Node path: "Canvas/Gui/UIRoom/closeBtn"
+
+2019-06-12T03:38:45.005Z - warn: The Node referenced by component "cc.Button" is invalid. Detailed information:
+Node path: "Canvas/Gui/UIRoom/closeBtn"
+
+2019-06-12T03:38:45.222Z - warn: The Node referenced by component "cc.Button" is invalid. Detailed information:
+Node path: "Canvas/Gui/UIRoom/closeBtn"
+
+2019-06-12T03:38:45.449Z - warn: The Node referenced by component "cc.Button" is invalid. Detailed information:
+Node path: "Canvas/Gui/UIRoom/closeBtn"
+
+2019-06-12T03:38:45.681Z - warn: The Node referenced by component "cc.Button" is invalid. Detailed information:
+Node path: "Canvas/Gui/UIRoom/closeBtn"
+

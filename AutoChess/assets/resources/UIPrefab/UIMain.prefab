@@ -2389,7 +2389,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "clearLayout",
+    "_name": "gameBtn",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -2593,8 +2593,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "测试\n登录",
-    "_N$string": "测试\n登录",
+    "_string": "游戏\n登录",
+    "_N$string": "游戏\n登录",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": false,
@@ -2777,7 +2777,7 @@
     },
     "component": "",
     "_componentId": "37017cWNrRFcLpkgFWjEENS",
-    "handler": "testLogin",
+    "handler": "gameLogin",
     "customEventData": ""
   },
   {

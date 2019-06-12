@@ -5,10 +5,17 @@ var uiPrefabConfig = {
     // UiOperation: { name: "UIOperation", zIndex: 0 },
     UIChessTable: { name: "UIChessTable", createAfterLoad: true, zIndex: 0 },
     UIMain: { name: "UIMain", createAfterLoad: true, zIndex: 1 },
-    UISetNpc: { name: "UISetNpc" },
-    UISaveLayout: { name: "UISaveLayout" },
-    UILoadLayoutItem: { name: "UILoadLayoutItem" },
-    UILoadLayout: { name: "UILoadLayout" },
+    UISetNpc: { name: "UISetNpc", zIndex: 10 },
+    UISaveLayout: { name: "UISaveLayout", zIndex: 10 },
+    UILoadLayoutItem: { name: "UILoadLayoutItem", zIndex: 10 },
+    UILoadLayout: { name: "UILoadLayout", zIndex: 10 },
+    UILogin: { name: "UILogin", zIndex: 10 },
+    UIGameTable: { name: "UIGameTable", zIndex: 0 },
+    UIGameMain: { name: "UIGameMain", zIndex: 10 },
+    UICardList: { name: "UICardList", zIndex: 10 },
+    UILobby: { name: "UILobby", zIndex: 10 },
+    UIRoom: { name: "UIRoom", zIndex: 10 },
+    UIRoomItem: { name: "UIRoomItem", zIndex: 10 },
     // UiReliveIntroduction : {
     //     nameInExam : "UiReliveIntroduction",
     //     namePassExam : "UiReliveIntroductionPE",
@@ -17,6 +24,9 @@ var uiPrefabConfig = {
     // }, //根据审核状态加载不同的prefab, nameInExam 表示在审核中, namePassExam 表示审核已通过
 
 }
+
+var dataUI = ["UIChessTable", "UIMain", "UISetNpc", "UISaveLayout", "UILoadLayout"]
+var gameUI = ["UIGameTable", "UIGameMain", "UICardList"]
 
 class UIManager {
     uiList: { [index: string]: any };
@@ -118,11 +128,10 @@ class UIManager {
     }
 
     /**
-     * 根据prefab创建一个node，并将该node引用保存在uiPrefabConfig里
-     * @param {string} panelName 同uiPrefabConfig的key
-     * @returns {cc.Component} 
+     * 根据prefab创建一个node，并将该node引用保存在UIManager的uiList里
+     * @param panelName 同uiPrefabConfig的key 
      */
-    getOrCreatePanel(panelName) {
+    getOrCreatePanel(panelName: string) {
         console.log("getOrCreatePanel", panelName)
         if (this.uiList[panelName]) {
             return this.uiList[panelName];
@@ -130,13 +139,9 @@ class UIManager {
 
         if (uiPrefabConfig.hasOwnProperty(panelName)) {
             if (uiPrefabConfig[panelName]) {
-                // if (uiPrefabConfig[panelName].panel) {
-                //     return uiPrefabConfig[panelName].panel
-                // }
                 let panel = this.createPanelOnly(panelName);
                 if (panel) {
                     this.uiList[panelName] = panel;
-                    // uiPrefabConfig[panelName].panel = panel
                     if (uiPrefabConfig[panelName].zIndex) {
                         panel.node.zIndex = uiPrefabConfig[panelName].zIndex;
                     }
@@ -151,10 +156,10 @@ class UIManager {
 
     /**
      * 根据prefab创建一个node，并且不保存该node的引用
-     * @param {string} panelName
+     * @param panelName
      * @return {cc.Component} 与prefab名称相同uiComponet对象
      */
-    createPanelOnly(panelName) {
+    createPanelOnly(panelName: string) {
         if (uiPrefabConfig.hasOwnProperty(panelName)) {
             if (uiPrefabConfig[panelName].prefab) {
                 let panelNode = cc.instantiate(uiPrefabConfig[panelName].prefab);
@@ -172,15 +177,10 @@ class UIManager {
 
     /**
      * 获取一个panel
-     * @param {string} panelName 
-     * @returns {cc.Component} 
+     * @param panelName  
      */
-    getPanel(panelName) {
+    getPanel(panelName: string) {
         return this.uiList[panelName];
-        // if (uiPrefabConfig.hasOwnProperty(panelName)) {
-        //     return uiPrefabConfig[panelName].panel
-        // }
-        // return null
     }
 
     closePanel(panelName: string);
@@ -196,9 +196,8 @@ class UIManager {
         } else {
             panelName = arg1.node.name;
         }
-        if (uiPrefabConfig.hasOwnProperty(panelName) && uiPrefabConfig[panelName].panel) {
-            uiPrefabConfig[panelName].panel.node.destroy();
-            // uiPrefabConfig[panelName].panel = null
+        if (this.uiList[panelName]) {
+            this.uiList[panelName].node.destroy();
             delete (this.uiList[panelName]);
         }
 
@@ -206,10 +205,10 @@ class UIManager {
 
     /**
     * 显示一个panel，如果这个panel未创建则创建这个panel
-    * @param {string} panelName 同uiPrefabConfig的key
-    * @returns {cc.Component} panel 
+    * @param panelName 同uiPrefabConfig的key
+    * @returns panel 
     */
-    showPanel(panelName) {
+    showPanel(panelName: string) {
         let panel = this.getOrCreatePanel(panelName);
         if (panel) {
             panel.node.active = true;
@@ -219,12 +218,26 @@ class UIManager {
 
     /**
      * 隐藏一个panel
-     * @param {cc.Component} panel 需要隐藏的panel component
+     * @param panel 需要隐藏的panel
      */
-    hidePanel(panel) {
+    hidePanel(panel: cc.Component) {
         if (panel != null && panel.node != null) {
             panel.node.active = false;
             return panel;
+        }
+    }
+
+    closeAllDataUI() {
+        for (let i = 0; i < dataUI.length; i++) {
+            const name = dataUI[i];
+            this.closePanel(name);
+        }
+    }
+
+    closeAllGameUI() {
+        for (let i = 0; i < gameUI.length; i++) {
+            const name = gameUI[i];
+            this.closePanel(name);
         }
     }
 

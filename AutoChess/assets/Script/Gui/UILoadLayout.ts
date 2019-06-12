@@ -32,6 +32,7 @@ export default class UILoadLayout extends cc.Component {
 
     async init() {
         console.log("UILoadLayout init");
+        this.container.removeAllChildren();
         let ret = await g_layoutMessage.listAllLayout();
         console.log(ret);
         if (ret.success) {
@@ -74,6 +75,6 @@ export default class UILoadLayout extends cc.Component {
     }
 
     onCloseClick() {
-        g_UIManager.closePanel(this)
+        g_UIManager.closePanel(this);
     }
 }

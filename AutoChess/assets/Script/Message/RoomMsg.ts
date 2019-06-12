@@ -13,7 +13,7 @@ export class MsgReqEnterFreeRoom extends MessageBase {
 export class MsgReqEnterRoom extends MessageBase {
     name = "msgReqEnterRoom";
     data: {
-
+        roomId: number;
     }
 }
 
@@ -25,12 +25,60 @@ export class MsgResEnterRoom extends MessageBase {
 }
 
 /**
+ * 开始游戏
+ */
+export class MsgReqStartGame extends MessageBase {
+    name = "msgReqStartGame";
+    data: {}
+}
+
+export class MsgResStartGame extends MessageBase {
+    name = "msgResStartGame";
+    data: {
+        isStart: boolean;
+    }
+}
+
+/**
+ * 回合状态
+ */
+export class MsgRoundState extends MessageBase {
+    name = "msgRoundState";
+    data: {
+        /**
+         * 第几回合
+         */
+        roundIdx: number;
+        /**
+         * 0-none;
+         * 
+         * 1-layout;
+         * 
+         * 2-prepare;
+         * 
+         * 3-battle;
+         * 
+         * 4-battleEnd;
+         */
+        state: number;
+        /**
+         * 当前回合state结束时刻，ms
+         */
+        finishTime: number;
+    }
+}
+
+/**
  * 刷新房间内的玩家
  */
 export class MsgRefreshRoomPlayer extends MessageBase {
     name = "msgRefreshRoomPlayer";
     data: {
         roomId: number;
+        /**
+         * 是否刷新全部，true的时候刷新房间内所有玩家，false的时候只刷新列表中的一个或者几个玩家
+         */
+        refreshAll: boolean;
         playerList: Array<PlayerInfo>;
     }
 }
@@ -38,7 +86,7 @@ export class MsgRefreshRoomPlayer extends MessageBase {
 /**
  * 玩家数据
  */
-interface PlayerInfo {
+export interface PlayerInfo {
     id: number;
     name: string;
     level: number;
@@ -47,7 +95,7 @@ interface PlayerInfo {
     winContinueCount: number;
     loseContinueCount: number;
     //手牌
-    cardList: Array<{ idx: number, baseId: number }>;
+    cardList: Array<{ idx: number, npcInfo: ChessNpcInfo }>;
     //布局
     layoutList: Array<ChessNpcInfo>;
 }

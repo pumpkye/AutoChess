@@ -21,13 +21,15 @@ class MsgHandler {
     async connectToServer() {
         if (this.ws && this.ws.readyState == WebSocket.OPEN) {
             console.log("已连接");
-            return;
+            return true;
         }
         let ret: any = await this.createWsConnect();
         console.log(`connect ${ret}`);
         if (ret.success) {
             this.ws = ret.ws;
+            return true;
         }
+        return false;
     }
 
     createWsConnect() {

@@ -335,8 +335,8 @@
     "relativePath": "resources\\UIPrefab\\UIChessTable.prefab"
   },
   "0b3e6439-f5f7-4480-8ead-646117fe13e4": {
-    "asset": 1560249869816,
-    "meta": 1560249869825,
+    "asset": 1560313543155,
+    "meta": 1560313543167,
     "relativePath": "Scene\\helloworld.fire"
   },
   "0a08dc0a-332e-448e-9a11-f9867b23e78d": {
@@ -345,8 +345,8 @@
     "relativePath": "resources\\UIPrefab\\UILoadLayout.prefab"
   },
   "bb5e15f1-c86b-4088-87f4-109dd75ccca1": {
-    "asset": 1560131334594,
-    "meta": 1560132834667,
+    "asset": 1560302973546,
+    "meta": 1560302973582,
     "relativePath": "resources\\UIPrefab\\UIMain.prefab"
   },
   "d981de93-131c-4699-b58c-75c7932d7e05": {
@@ -374,11 +374,6 @@
     "meta": 1560132836970,
     "relativePath": "Script\\Net\\Layout.ts"
   },
-  "2c3ea851-abcc-4fdd-92a4-db08a029739c": {
-    "asset": 1560131334578,
-    "meta": 1560132836818,
-    "relativePath": "Script\\Gui\\UILoadLayout.ts"
-  },
   "a844e232-9904-44cb-a297-83f91e0b14d9": {
     "asset": 1560131334580,
     "meta": 1560132836914,
@@ -388,11 +383,6 @@
     "asset": 1560131334576,
     "meta": 1560132836763,
     "relativePath": "Script\\Gui\\UIChessTable.ts"
-  },
-  "37017716-36b4-4570-ba64-8055a3104352": {
-    "asset": 1560131334579,
-    "meta": 1560132836874,
-    "relativePath": "Script\\Gui\\UIMain.ts"
   },
   "ce21c832-d5a9-4277-9569-9708f779cbdd": {
     "asset": 1560131334573,
@@ -414,30 +404,10 @@
     "meta": 1560132836637,
     "relativePath": "Script\\Data\\BaseData.ts"
   },
-  "9fc40417-1be6-43f3-a355-dd749060051a": {
-    "asset": 1560132477164,
-    "meta": 1560132836884,
-    "relativePath": "Script\\Gui\\UIManager.ts"
-  },
   "c73b55fb-0944-4250-98a1-401a690dd35b": {
     "asset": 1560131334581,
     "meta": 1560132836930,
     "relativePath": "Script\\Message\\MessagegBase.ts"
-  },
-  "c6f449af-e906-45e1-b8d0-65d0347e229d": {
-    "asset": 1560132499579,
-    "meta": 1560132834873,
-    "relativePath": "Script\\AutoBattle\\AutoBattle.ts"
-  },
-  "2cdca9ad-2491-456d-9b5e-67c98acaf977": {
-    "asset": 1560131341196,
-    "meta": 1560132835089,
-    "relativePath": "Script\\AutoBattle\\AutoBattleInit.ts"
-  },
-  "f25bc069-4f03-4e91-bd18-a02a8b8e5c5a": {
-    "asset": 1560132506199,
-    "meta": 1560132835094,
-    "relativePath": "Script\\AutoBattle\\AutoBattleManager.ts"
   },
   "189ab8ef-079b-4b52-8311-894be597eb7b": {
     "asset": 1560132833758,
@@ -458,11 +428,6 @@
     "asset": 1560132833761,
     "meta": 1560132833759,
     "relativePath": "Script\\AutoBattle\\Input"
-  },
-  "5e309245-687a-4066-949f-337ab359106e": {
-    "asset": 1560131341198,
-    "meta": 1560132835265,
-    "relativePath": "Script\\AutoBattle\\DataManager.ts"
   },
   "1aa748e1-b4c6-47c4-8558-baa8431440fa": {
     "asset": 1560131341198,
@@ -799,59 +764,29 @@
     "meta": 1560132836596,
     "relativePath": "Script\\AutoBattle\\Test\\UnitTest.ts"
   },
-  "cf4dd1d1-b937-4710-acb5-03056b23584b": {
-    "asset": 1560132512467,
-    "meta": 1560132836597,
-    "relativePath": "Script\\AutoBattle\\Util.ts"
-  },
   "c9485f81-1ad0-45aa-a05d-c01b8af56ae2": {
     "asset": 1560133785311,
     "meta": 1560133786608,
     "relativePath": "Script\\Data\\UserData.ts"
-  },
-  "50cafaaf-7746-4f7e-99ba-fbef57cc22de": {
-    "asset": 1560134830743,
-    "meta": 1560134842202,
-    "relativePath": "Script\\Data\\LoginData.ts"
-  },
-  "395bee5c-bd55-4462-ac41-2bf59938811a": {
-    "asset": 1560135899522,
-    "meta": 1560135925018,
-    "relativePath": "Script\\Data\\DataManager.ts"
   },
   "1e609927-7ed7-430d-9e45-b3a61724f892": {
     "asset": 1560135899460,
     "meta": 1560135925019,
     "relativePath": "Script\\Helloworld.ts"
   },
-  "791d2a7c-4c0b-49b2-b25a-6965a41a4135": {
-    "asset": 1560138067233,
-    "meta": 1560147887428,
-    "relativePath": "Script\\Connect\\MsgHandler.ts"
-  },
   "a0db7e82-700c-4e35-9e1e-feb822042f8c": {
     "asset": 1560131740905,
     "meta": 1560240907589,
     "relativePath": "Script\\Message\\UserMsg.ts"
   },
-  "688623bb-861d-4192-96b3-c589c13e81b3": {
-    "asset": 1560159995879,
-    "meta": 1560240907694,
-    "relativePath": "Script\\Data\\RoomData.ts"
-  },
-  "1c89e0e8-c342-409c-a97e-936ffde6e441": {
-    "asset": 1560160201355,
-    "meta": 1560240907773,
-    "relativePath": "Script\\Message\\RoomMsg.ts"
-  },
   "0f1285b8-0522-40a9-a289-a8713bfedc8f": {
-    "asset": 1560249833098,
-    "meta": 1560249833147,
+    "asset": 1560305209427,
+    "meta": 1560305209444,
     "relativePath": "resources\\UIPrefab\\UIGameTable.prefab"
   },
   "7a402d99-be70-4c98-9b6f-6f354af2e6ed": {
-    "asset": 1560249836555,
-    "meta": 1560249836559,
+    "asset": 1560307064592,
+    "meta": 1560307064599,
     "relativePath": "resources\\UIPrefab\\UIGameMain.prefab"
   },
   "619d66bf-4a53-4a2d-92bd-6641a877fba9": {
@@ -860,8 +795,118 @@
     "relativePath": "resources\\UIPrefab\\UICardPool.prefab"
   },
   "b7650dfd-39fa-46ee-9e68-a5c17609f06e": {
-    "asset": 1560249841981,
-    "meta": 1560249841987,
+    "asset": 1560305215013,
+    "meta": 1560305215023,
     "relativePath": "resources\\UIPrefab\\UICardList.prefab"
+  },
+  "7d7395d8-3701-4ecc-8507-1ae60a8e4bff": {
+    "asset": 1560310485947,
+    "meta": 1560310485954,
+    "relativePath": "resources\\UIPrefab\\UILogin.prefab"
+  },
+  "c6f449af-e906-45e1-b8d0-65d0347e229d": {
+    "asset": 1560301708483,
+    "meta": 1560301849276,
+    "relativePath": "Script\\AutoBattle\\AutoBattle.ts"
+  },
+  "f25bc069-4f03-4e91-bd18-a02a8b8e5c5a": {
+    "asset": 1560301688513,
+    "meta": 1560301849335,
+    "relativePath": "Script\\AutoBattle\\AutoBattleManager.ts"
+  },
+  "cf4dd1d1-b937-4710-acb5-03056b23584b": {
+    "asset": 1560301681391,
+    "meta": 1560301849354,
+    "relativePath": "Script\\AutoBattle\\Util.ts"
+  },
+  "791d2a7c-4c0b-49b2-b25a-6965a41a4135": {
+    "asset": 1560302375466,
+    "meta": 1560302741573,
+    "relativePath": "Script\\Connect\\MsgHandler.ts"
+  },
+  "37017716-36b4-4570-ba64-8055a3104352": {
+    "asset": 1560302685035,
+    "meta": 1560302741716,
+    "relativePath": "Script\\Gui\\UIMain.ts"
+  },
+  "5981d6c3-06ff-4a8b-9ab3-f08f62d9f031": {
+    "asset": 1560304310680,
+    "meta": 1560304311254,
+    "relativePath": "Script\\Gui\\UILogin.ts"
+  },
+  "aaa26cec-f24d-4431-b370-9d8b69515a3e": {
+    "asset": 1560304543665,
+    "meta": 1560304549368,
+    "relativePath": "Script\\Gui\\UICardList.ts"
+  },
+  "238b13d2-0e24-4117-b7c6-dd04f1e834b1": {
+    "asset": 1560306628224,
+    "meta": 1560306994473,
+    "relativePath": "Script\\Gui\\UIGameMain.ts"
+  },
+  "50cafaaf-7746-4f7e-99ba-fbef57cc22de": {
+    "asset": 1560308553403,
+    "meta": 1560308565432,
+    "relativePath": "Script\\Data\\LoginData.ts"
+  },
+  "360a91e4-790e-4c3a-9d39-6a3d73a7ce5c": {
+    "asset": 1560310734792,
+    "meta": 1560310734799,
+    "relativePath": "resources\\UIPrefab\\UILobby.prefab"
+  },
+  "3eb9770d-dd70-4ebb-bbbd-c48055ce1bab": {
+    "asset": 1560313652976,
+    "meta": 1560313652994,
+    "relativePath": "resources\\UIPrefab\\UIRoomItem.prefab"
+  },
+  "e28f6aca-9d57-4949-a91a-7322adf9b2c0": {
+    "asset": 1560313785483,
+    "meta": 1560313785501,
+    "relativePath": "resources\\UIPrefab\\UIRoom.prefab"
+  },
+  "395bee5c-bd55-4462-ac41-2bf59938811a": {
+    "asset": 1560311072125,
+    "meta": 1560311072501,
+    "relativePath": "Script\\Data\\DataManager.ts"
+  },
+  "9fc40417-1be6-43f3-a355-dd749060051a": {
+    "asset": 1560311135030,
+    "meta": 1560311193663,
+    "relativePath": "Script\\Gui\\UIManager.ts"
+  },
+  "9fcd01ef-fb43-4c36-a436-7d63443af3d6": {
+    "asset": 1560313018819,
+    "meta": 1560313480174,
+    "relativePath": "Script\\Gui\\UIGameTable.ts"
+  },
+  "2c3ea851-abcc-4fdd-92a4-db08a029739c": {
+    "asset": 1560313373296,
+    "meta": 1560313480192,
+    "relativePath": "Script\\Gui\\UILoadLayout.ts"
+  },
+  "75be6a58-31f2-4577-9320-529848f2bfac": {
+    "asset": 1560313007819,
+    "meta": 1560313480208,
+    "relativePath": "Script\\Gui\\UILobby.ts"
+  },
+  "e253b299-9b67-48b1-80f8-6442835d02bf": {
+    "asset": 1560313478114,
+    "meta": 1560313480220,
+    "relativePath": "Script\\Gui\\UIRoom.ts"
+  },
+  "388003d6-b36b-4fbc-a164-4b475f3564d9": {
+    "asset": 1560313432789,
+    "meta": 1560313480221,
+    "relativePath": "Script\\Gui\\UIRoomItem.ts"
+  },
+  "688623bb-861d-4192-96b3-c589c13e81b3": {
+    "asset": 1560314137070,
+    "meta": 1560320222435,
+    "relativePath": "Script\\Data\\RoomData.ts"
+  },
+  "1c89e0e8-c342-409c-a97e-936ffde6e441": {
+    "asset": 1560314020115,
+    "meta": 1560320222435,
+    "relativePath": "Script\\Message\\RoomMsg.ts"
   }
 }

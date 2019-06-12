@@ -1,6 +1,7 @@
 import { g_UserData } from "./UserData";
 import { MessageBase } from "../Message/MessagegBase";
 import { g_LoginData } from "./LoginData";
+import { g_RoomData } from "./RoomData";
 
 
 class DataManager {
@@ -10,6 +11,7 @@ class DataManager {
     readonly dataList = [
         g_LoginData,
         g_UserData,
+        g_RoomData,
     ];
     constructor() {
 
