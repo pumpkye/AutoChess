@@ -39,6 +39,26 @@ export class MsgResStartGame extends MessageBase {
     }
 }
 
+export enum RoundState {
+    none,
+    /**
+     * 布局阶段
+     */
+    layout,
+    /**
+     * 战斗倒计时
+     */
+    prepare,
+    /**
+     * 战斗
+     */
+    battle,
+    /**
+     * 战斗结算
+     */
+    battleEnd,
+}
+
 /**
  * 回合状态
  */

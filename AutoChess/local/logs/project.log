@@ -89,3 +89,4 @@ Node path: "Canvas/Gui/UIRoom/closeBtn"
 2019-06-12T03:38:45.681Z - warn: The Node referenced by component "cc.Button" is invalid. Detailed information:
 Node path: "Canvas/Gui/UIRoom/closeBtn"
 
+2019-06-12T07:08:29.134Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Script/GameConfig.ts.meta

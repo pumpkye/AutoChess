@@ -1,5 +1,6 @@
-import { MsgResEnterRoom, PlayerInfo, MsgRefreshRoomPlayer, MsgResStartGame } from "../Message/RoomMsg";
+import { MsgResEnterRoom, PlayerInfo, MsgRefreshRoomPlayer, MsgResStartGame, MsgRoundState, RoundState } from "../Message/RoomMsg";
 import { g_UIManager } from "../Gui/UIManager";
+import { g_UserData } from "./UserData";
 
 class RoomData {
     roomId: number;
@@ -7,8 +8,26 @@ class RoomData {
      * {playerId:playerInfo}
      */
     playerList: { [index: number]: PlayerInfo };
+
+    gameStart: boolean;
+    roundIdx: number;
+    roundState: RoundState;
+    curStateFinishTime: number;
+
     constructor() {
         this.playerList = {};
+    }
+
+    clearGameInfo() {
+        this.gameStart = false;
+        this.roundIdx = 0;
+        this.roundState = 0;
+        this.curStateFinishTime = 0;
+    }
+
+    getMainPlayerInfo() {
+        let id = g_UserData.id;
+        return this.playerList[id];
     }
 
     /**
@@ -21,14 +40,30 @@ class RoomData {
         g_UIManager.getOrCreatePanel("UIRoom");
     }
 
+    /**
+     * 开始游戏
+     * @param msg 
+     */
     msgResStartGame(msg: MsgResStartGame['data']) {
         if (msg.isStart) {
             let panel = g_UIManager.getPanel("UIRoom")
             if (panel) {
                 panel.closePanel();
             }
+            this.clearGameInfo();
+            this.gameStart = true;
             g_UIManager.getOrCreatePanel("UIGameTable");
-            panel = g_UIManager.getOrCreatePanel("UIGameMain");
+            g_UIManager.getOrCreatePanel("UIGameMain");
+        }
+    }
+
+    msgRoundState(msg: MsgRoundState['data']) {
+        this.roundIdx = msg.roundIdx;
+        this.roundState = msg.state;
+        this.curStateFinishTime = msg.finishTime;
+        let panel = g_UIManager.getPanel("UIGameMain")
+        if (panel) {
+            panel.refreshRoundInfo();
         }
     }
 
@@ -45,9 +80,13 @@ class RoomData {
                 this.playerList[playerInfo.id] = playerInfo;
             }
         }
-        let panel = g_UIManager.getPanel("UIRoom")
+        let panel = g_UIManager.getPanel("UIRoom");
         if (panel) {
             panel.refreshPlayerList();
+        }
+        panel = g_UIManager.getPanel("UIGameMain");
+        if (panel) {
+            panel.refreshPlayerInfo();
         }
     }
 }

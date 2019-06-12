@@ -1,3 +1,7 @@
+import { g_UserData } from "../Data/UserData";
+import { g_RoomData } from "../Data/RoomData";
+import { WorsConfig } from "../config/WordsConfig";
+
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
@@ -34,17 +38,33 @@ export default class UIGameMain extends cc.Component {
     @property(cc.Label)
     expLabel: cc.Label = null;
 
+    countdownTime: number;
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
 
     start() {
-
+        this.refreshRoundInfo();
     }
 
-    setName(name: string) {
-        this.playerNameLabel.string = name;
+    refreshRoundInfo() {
+        this.playerNameLabel.string = g_UserData.name;
+        this.roundIdxLabel.string = "round " + g_RoomData.roundIdx;
+        this.roundStateLabel.string = WorsConfig.battleState[g_RoomData.roundState];
+        let finishTime = g_RoomData.curStateFinishTime;
+        this.countdownTime = finishTime - new Date().getTime();
+        this.timeLabel.string = Math.ceil(this.countdownTime / 1000).toString();
     }
 
-    // update (dt) {}
+    refreshPlayerInfo() {
+        let playInfo = g_RoomData.getMainPlayerInfo();
+        this.goldLabel.string = "gold:" + playInfo.gold;
+        this.levelLabel.string = "level:" + playInfo.level;
+        this.expLabel.string = "exp:" + playInfo.exp;
+    }
+
+    update(dt) {
+        this.countdownTime = this.countdownTime - dt * 1000;
+        this.timeLabel.string = Math.ceil(this.countdownTime / 1000).toString();
+    }
 }

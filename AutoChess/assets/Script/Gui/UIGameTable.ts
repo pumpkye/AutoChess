@@ -1,3 +1,10 @@
+import { ChessNpcInfo } from "../AutoBattle/Input/InputCache";
+import UISetNpc from "./UISetNpc";
+import { g_UIManager } from "./UIManager";
+import { ChessNpc } from "../AutoBattle/Model/ChessNpc";
+import { npc_data } from "../AutoBattle/Tbx/npc_data";
+import UIMain from "./UIMain";
+
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
@@ -12,20 +19,61 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class UIGameTable extends cc.Component {
+    gridArr = new Array<cc.Node>();
 
-    @property(cc.Label)
-    label: cc.Label = null;
-
-    @property
-    text: string = 'hello';
+    layout: Array<ChessNpcInfo>;
 
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
 
     start() {
-
+        let lines = this.node.children;
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            let grids = line.children;
+            for (let j = 0; j < grids.length; j++) {
+                const grid = grids[j];
+                grid.name = `grid${j}${i}`;
+                grid.on('click', this.onGridClick, this);
+                this.gridArr.push(grid);
+                let label = cc.find("Background/npcName", grid).getComponent(cc.Label);
+                label.string = "";
+            }
+        }
+        this.layout = new Array<ChessNpcInfo>();
     }
 
+    onGridClick(event) {
+        let gridName: string = event.target.parent.name;
+        let x = gridName.substr(4, 1);
+        let y = gridName.substr(5, 1);
+
+        let panel: UISetNpc = g_UIManager.getOrCreatePanel("UISetNpc");
+        panel.setGridPos(Number(x), Number(y));
+    }
+
+    setGridLabel(x: number, y: number, npc: ChessNpc) {
+        console.log(npc);
+        let idx = y * 8 + x;
+        let node = this.gridArr[idx];
+        if (y > 3) {
+            x = 7 - x;
+            y = 7 - y;
+        }
+        if (!npc.baseId) {
+            delete (this.layout[idx]);
+        } else if (npc_data[npc.baseId]) {
+            let label = cc.find("Background/npcName", node).getComponent(cc.Label);
+            label.string = npc.name;
+            let chessNpcInfo = new ChessNpcInfo(0, npc.baseId, npc.level, { x: x, y: y })
+            console.log(chessNpcInfo);
+            this.layout[idx] = chessNpcInfo;
+        }
+        let panel: UIMain = g_UIManager.getPanel("UIMain")
+        if (panel) {
+            panel.refreshCostBuff();
+        }
+    }
     // update (dt) {}
 }

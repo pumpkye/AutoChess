@@ -28,16 +28,7 @@ export default class UISetNpc extends cc.Component {
     damageText: cc.Label = null;
 
     gridPos = { x: 0, y: 0 };
-    // @property(cc.Label)
-    // label: cc.Label = null;
 
-    // @property
-    // text: string = 'hello';
-
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad() {
-    // }
     start() {
         this.hpText.string = "hp: 0";
         this.damageText.string = "damage: 0";
@@ -48,8 +39,14 @@ export default class UISetNpc extends cc.Component {
         let level = Number(this.editBox.string) % 10;
         let npcData = new ChessNpc(0, baseId, level, true);
         let chessTable: UIChessTable = g_UIManager.getPanel("UIChessTable");
-        chessTable.setGridLabel(this.gridPos.x, this.gridPos.y, npcData);
+        if (!chessTable) {
+            chessTable = g_UIManager.getPanel("UIGameTable");
+        }
+        if (chessTable) {
+            chessTable.setGridLabel(this.gridPos.x, this.gridPos.y, npcData);
+        }
         g_UIManager.closePanel(this);
+
     }
 
     onCloseClick() {

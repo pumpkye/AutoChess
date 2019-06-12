@@ -1,4 +1,4 @@
-import { GameConfig } from "../GameConfig";
+import { GameConfig } from "../config/GameConfig";
 import { MessageBase } from "../Message/MessagegBase";
 
 var uiPrefabConfig = {

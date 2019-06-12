@@ -274,11 +274,6 @@
     "meta": 1560131334572,
     "relativePath": "Script\\AutoBattle"
   },
-  "b8d90b6f-7e03-4289-89db-87467e35b52a": {
-    "asset": 1560131334576,
-    "meta": 1560132836751,
-    "relativePath": "Script\\GameConfig.ts"
-  },
   "2622c66e-c940-4e18-b8f9-b3721026c23a": {
     "asset": 1560131334580,
     "meta": 1560131334576,
@@ -373,11 +368,6 @@
     "asset": 1560131334582,
     "meta": 1560132836970,
     "relativePath": "Script\\Net\\Layout.ts"
-  },
-  "a844e232-9904-44cb-a297-83f91e0b14d9": {
-    "asset": 1560131334580,
-    "meta": 1560132836914,
-    "relativePath": "Script\\Gui\\UISetNpc.ts"
   },
   "4a5955b7-5581-48ef-8475-c4920c418ef9": {
     "asset": 1560131334576,
@@ -769,11 +759,6 @@
     "meta": 1560133786608,
     "relativePath": "Script\\Data\\UserData.ts"
   },
-  "1e609927-7ed7-430d-9e45-b3a61724f892": {
-    "asset": 1560135899460,
-    "meta": 1560135925019,
-    "relativePath": "Script\\Helloworld.ts"
-  },
   "a0db7e82-700c-4e35-9e1e-feb822042f8c": {
     "asset": 1560131740905,
     "meta": 1560240907589,
@@ -814,11 +799,6 @@
     "meta": 1560301849335,
     "relativePath": "Script\\AutoBattle\\AutoBattleManager.ts"
   },
-  "cf4dd1d1-b937-4710-acb5-03056b23584b": {
-    "asset": 1560301681391,
-    "meta": 1560301849354,
-    "relativePath": "Script\\AutoBattle\\Util.ts"
-  },
   "791d2a7c-4c0b-49b2-b25a-6965a41a4135": {
     "asset": 1560302375466,
     "meta": 1560302741573,
@@ -838,11 +818,6 @@
     "asset": 1560304543665,
     "meta": 1560304549368,
     "relativePath": "Script\\Gui\\UICardList.ts"
-  },
-  "238b13d2-0e24-4117-b7c6-dd04f1e834b1": {
-    "asset": 1560306628224,
-    "meta": 1560306994473,
-    "relativePath": "Script\\Gui\\UIGameMain.ts"
   },
   "50cafaaf-7746-4f7e-99ba-fbef57cc22de": {
     "asset": 1560308553403,
@@ -869,16 +844,6 @@
     "meta": 1560311072501,
     "relativePath": "Script\\Data\\DataManager.ts"
   },
-  "9fc40417-1be6-43f3-a355-dd749060051a": {
-    "asset": 1560311135030,
-    "meta": 1560311193663,
-    "relativePath": "Script\\Gui\\UIManager.ts"
-  },
-  "9fcd01ef-fb43-4c36-a436-7d63443af3d6": {
-    "asset": 1560313018819,
-    "meta": 1560313480174,
-    "relativePath": "Script\\Gui\\UIGameTable.ts"
-  },
   "2c3ea851-abcc-4fdd-92a4-db08a029739c": {
     "asset": 1560313373296,
     "meta": 1560313480192,
@@ -899,14 +864,64 @@
     "meta": 1560313480221,
     "relativePath": "Script\\Gui\\UIRoomItem.ts"
   },
-  "688623bb-861d-4192-96b3-c589c13e81b3": {
-    "asset": 1560314137070,
-    "meta": 1560320222435,
-    "relativePath": "Script\\Data\\RoomData.ts"
+  "cf4dd1d1-b937-4710-acb5-03056b23584b": {
+    "asset": 1560322603618,
+    "meta": 1560323309427,
+    "relativePath": "Script\\AutoBattle\\Util.ts"
+  },
+  "9fc40417-1be6-43f3-a355-dd749060051a": {
+    "asset": 1560322240359,
+    "meta": 1560323309553,
+    "relativePath": "Script\\Gui\\UIManager.ts"
+  },
+  "e1968ce6-3d77-45f4-975f-2f1832ac50e3": {
+    "asset": 1560323309199,
+    "meta": 1560323309198,
+    "relativePath": "Script\\Config"
   },
   "1c89e0e8-c342-409c-a97e-936ffde6e441": {
-    "asset": 1560314020115,
-    "meta": 1560320222435,
+    "asset": 1560321882444,
+    "meta": 1560323309563,
     "relativePath": "Script\\Message\\RoomMsg.ts"
+  },
+  "4efb69fd-0d41-4139-8a85-ea4ced82629b": {
+    "asset": 1560322119484,
+    "meta": 1560323309571,
+    "relativePath": "Script\\Config\\GameConfig.ts"
+  },
+  "7c70ce0b-549a-44ba-ba92-3cda4c70258b": {
+    "asset": 1560322665853,
+    "meta": 1560323309578,
+    "relativePath": "Script\\GameUtil.ts"
+  },
+  "1e609927-7ed7-430d-9e45-b3a61724f892": {
+    "asset": 1560323368878,
+    "meta": 1560323607707,
+    "relativePath": "Script\\Helloworld.ts"
+  },
+  "f3e59df2-b5c7-477f-91c9-da968151b3de": {
+    "asset": 1560324241459,
+    "meta": 1560324285517,
+    "relativePath": "Script\\Config\\WordsConfig.ts"
+  },
+  "9fcd01ef-fb43-4c36-a436-7d63443af3d6": {
+    "asset": 1560324415286,
+    "meta": 1560324715430,
+    "relativePath": "Script\\Gui\\UIGameTable.ts"
+  },
+  "238b13d2-0e24-4117-b7c6-dd04f1e834b1": {
+    "asset": 1560325967121,
+    "meta": 1560326068055,
+    "relativePath": "Script\\Gui\\UIGameMain.ts"
+  },
+  "a844e232-9904-44cb-a297-83f91e0b14d9": {
+    "asset": 1560324823583,
+    "meta": 1560326068061,
+    "relativePath": "Script\\Gui\\UISetNpc.ts"
+  },
+  "688623bb-861d-4192-96b3-c589c13e81b3": {
+    "asset": 1560326131511,
+    "meta": 1560326132077,
+    "relativePath": "Script\\Data\\RoomData.ts"
   }
 }
