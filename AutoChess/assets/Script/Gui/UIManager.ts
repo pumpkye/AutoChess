@@ -19,6 +19,7 @@ var uiPrefabConfig = {
     UIRoomItem: { name: "UIRoomItem", zIndex: 10 },
     UICardPool: { name: "UICardPool", zIndex: 10 },
     UICardPoolItem: { name: "UICardPoolItem" },
+    UITableGrid: { name: "UITableGrid" },
     // UiReliveIntroduction : {
     //     nameInExam : "UiReliveIntroduction",
     //     namePassExam : "UiReliveIntroductionPE",

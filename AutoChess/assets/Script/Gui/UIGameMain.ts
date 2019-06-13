@@ -98,22 +98,18 @@ export default class UIGameMain extends cc.Component {
     }
 
     refreshBattleInfo() {
-        let thisId = 0;
         let chessTable: UIGameTable = g_UIManager.getPanel("UIGameTable");
         let layoutInfoA = new LayoutInfo(101);
         let layoutInfoB = new LayoutInfo(102);
         for (const idx in chessTable.layout) {
             if (chessTable.layout.hasOwnProperty(idx)) {
                 const npc = chessTable.layout[idx];
-                thisId = thisId + 1;
                 let y = Math.floor(Number(idx) / 8);
-                npc.thisId = thisId;
                 if (y < 4) {
                     layoutInfoA.addChessNpcInfo(npc);
                 }
             }
         }
-        console.log(this.battleInfo);
         this.battleInfo.clearLayout();
         this.battleInfo.addLayout(layoutInfoA);
         this.battleInfo.addLayout(layoutInfoB);

@@ -2,6 +2,9 @@ import { g_RoomData } from "../Data/RoomData";
 import UICardListItem from "./UICardListItem";
 import { g_UIManager } from "./UIManager";
 import { ChessNpcInfo } from "../AutoBattle/Input/InputCache";
+import { MsgGetBackNpc } from "../Message/RoomMsg";
+import UIGameTable from "./UIGameTable";
+import { g_MsgHandler } from "../Connect/MsgHandler";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -34,11 +37,13 @@ export default class UIcardList extends cc.Component {
             event.stopPropagation();
         }, this);
         this.node.on('touchend', function (event) {
+            this.touchEmptySlot();
             event.stopPropagation();
         }, this);
     }
 
     refreshList() {
+        this.selectItem();
         this.container.removeAllChildren();
         let playerInfo = g_RoomData.getMainPlayerInfo()
         if (!playerInfo) {
@@ -60,9 +65,9 @@ export default class UIcardList extends cc.Component {
      * 
      * @param thisId 选中的npcId
      */
-    selectItem(npcInfo: ChessNpcInfo) {
+    selectItem(npcInfo?: ChessNpcInfo) {
         //二次点击则取消选中
-        if (this.currentSelectedNpcInfo && npcInfo.thisId == this.currentSelectedNpcInfo.thisId) {
+        if (this.currentSelectedNpcInfo && npcInfo && npcInfo.thisId == this.currentSelectedNpcInfo.thisId) {
             this.currentSelectedNpcInfo = null;
         } else {
             this.currentSelectedNpcInfo = npcInfo;
@@ -74,7 +79,25 @@ export default class UIcardList extends cc.Component {
                 item.setSelected(this.currentSelectedNpcInfo && item.npcInfo.thisId == this.currentSelectedNpcInfo.thisId);
             }
         }
+        if (npcInfo) {
+            let panel = g_UIManager.getPanel("UIGameTable");
+            if (panel) {
+                panel.selectItem();
+            }
+        }
     }
 
+    /**
+     * 点击卡槽空白区域收回卡片
+     */
+    touchEmptySlot() {
+        console.log("touch empty");
+        let table: UIGameTable = g_UIManager.getPanel("UIGameTable");
+        if (table && table.currentSelectedNpc) {
+            let msg = new MsgGetBackNpc();
+            msg.data.thisId = table.currentSelectedNpc.thisId;
+            g_MsgHandler.sendMsg(msg);
+        }
+    }
     // update (dt) {}
 }

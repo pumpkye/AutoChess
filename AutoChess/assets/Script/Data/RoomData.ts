@@ -87,6 +87,7 @@ class RoomData {
                 this.playerList[playerInfo.id] = playerInfo;
             }
         }
+        console.log(this.playerList);
         let panel = g_UIManager.getPanel("UIRoom");
         if (panel) {
             panel.refreshPlayerList();

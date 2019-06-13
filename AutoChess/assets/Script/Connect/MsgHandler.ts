@@ -63,13 +63,20 @@ class MsgHandler {
         this.ws.send(JSON.stringify(msg));
     }
 
-    dispatchMsg(data: any) {
+    dispatchMsg(data: string) {
+        let msg = undefined;
         console.log(`dispatchMsg msg:${data}`);
-        let msg = JSON.parse(data);
+        msg = JSON.parse(data);
+        console.log(msg);
+        let msg1 = JSON.parse(data);
+        console.log(msg1);
+        let msg2 = JSON.parse(data);
+        console.log(msg2);
+
         //先分发给DataManager
-        g_DataManager.dispatchMsg(msg);
+        g_DataManager.dispatchMsg(msg2);
         //再分发给UIManager
-        g_UIManager.dispatchMsg(msg);
+        g_UIManager.dispatchMsg(msg2);
     }
 
     formatUrl(path: string) {

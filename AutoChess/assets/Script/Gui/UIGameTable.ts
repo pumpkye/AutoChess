@@ -4,10 +4,11 @@ import { ChessNpc } from "../AutoBattle/Model/ChessNpc";
 import { npc_data } from "../AutoBattle/Tbx/npc_data";
 import UIMain from "./UIMain";
 import UIcardList from "./UICardList";
-import { MsgPutNpcToBoard } from "../Message/RoomMsg";
+import { MsgPutNpcToBoard, MsgMoveNpc } from "../Message/RoomMsg";
 import { g_MsgHandler } from "../Connect/MsgHandler";
 import { g_RoomData } from "../Data/RoomData";
 import { ChessNpcBaseData } from "../AutoBattle/TbxModel/ChessNpcBaseData";
+import UITableGrid from "./UITableGrid";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -23,7 +24,10 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class UIGameTable extends cc.Component {
-    gridArr = new Array<cc.Node>();
+    @property(cc.Node)
+    lineNode: cc.Node = null;
+
+    gridArr = new Array<UITableGrid>();
 
     layout: Array<ChessNpcInfo>;
 
@@ -36,51 +40,78 @@ export default class UIGameTable extends cc.Component {
     // onLoad () {}
 
     start() {
-        let lines = this.node.children;
+        this.initGrid();
+        this.layout = new Array<ChessNpcInfo>();
+    }
+
+    initGrid() {
+        let lines = this.lineNode.children;
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i];
-            let grids = line.children;
-            for (let j = 0; j < grids.length; j++) {
-                const grid = grids[j];
-                grid.name = `grid${j}${i}`;
-                grid.on('click', this.onGridClick, this);
-                this.gridArr.push(grid);
-                let label = cc.find("Background/npcName", grid).getComponent(cc.Label);
-                label.string = "";
+            for (let j = 0; j < 8; j++) {
+                let grid: UITableGrid = g_UIManager.createPanelOnly("UITableGrid");
+                if (grid) {
+                    grid.pos = { x: j, y: i };
+                    grid.setNpcInfo();
+                    let color: cc.Color;
+                    if ((i + j) % 2 == 0) {
+                        color = new cc.Color(0xA3, 0xA3, 0xA3);
+                    } else {
+                        color = new cc.Color(0xE6, 0xE6, 0xE6);
+                    }
+                    grid.setColor(color);
+                    grid.node.x = -700 + 200 * j;
+                    grid.node.parent = line;
+
+                    grid.node.on('click', function (event) {
+                        let idx = grid.pos.y * 8 + grid.pos.x;
+                        let handListPanel: UIcardList = g_UIManager.getPanel("UICardList");
+                        if (this.layout[idx]) {
+                            console.log("选中了一个棋盘上的npc", this.layout[idx]);
+                            this.selectItem(this.layout[idx]);
+                            // this.currentSelectedNpc = this.layout[idx];
+                            if (handListPanel) {
+                                handListPanel.selectItem();
+                            }
+                            return;
+                        } else if (this.currentSelectedNpc) {
+                            //移动棋子
+                            let msg = new MsgMoveNpc();
+                            msg.data.thisId = this.currentSelectedNpc.thisId;
+                            msg.data.pos = grid.pos;
+                            g_MsgHandler.sendMsg(msg);
+                            return;
+                        }
+                        if (handListPanel) {
+                            let selectInHand = handListPanel.currentSelectedNpcInfo;
+                            if (selectInHand) {
+                                let msg = new MsgPutNpcToBoard();
+                                msg.data.thisId = selectInHand.thisId;
+                                msg.data.pos = grid.pos;
+                                g_MsgHandler.sendMsg(msg);
+                            }
+                        }
+                    }, this);
+                    grid.node.on('mouseenter', function (event) {
+                        grid.setColor(new cc.Color(255, 255, 255));
+                    }, this);
+                    grid.node.on('mouseleave', function (event) {
+                        grid.setColor(color);
+                    }, this);
+                    this.gridArr.push(grid);
+                }
+
             }
         }
-        this.layout = new Array<ChessNpcInfo>();
     }
 
     clear() {
         this.layout = new Array();
         for (let i = 0; i < this.gridArr.length; i++) {
-            const node = this.gridArr[i];
-            let label = cc.find("Background/npcName", node).getComponent(cc.Label);
-            label.string = "";
+            const grid = this.gridArr[i];
+            grid.setNpcInfo();
         }
-    }
-
-    onGridClick(event) {
-        let gridName: string = event.target.parent.name;
-        let x = Number(gridName.substr(4, 1));
-        let y = Number(gridName.substr(5, 1));
-        let idx = y * 8 + x;
-        if (this.layout[idx]) {
-            console.log("选中了一个棋盘上的npc")
-            return;
-        }
-        let handListPanel: UIcardList = g_UIManager.getPanel("UICardList")
-        if (handListPanel) {
-            let selectInHand = handListPanel.currentSelectedNpcInfo;
-            if (selectInHand) {
-                let msg = new MsgPutNpcToBoard();
-                msg.data.thisId = selectInHand.thisId;
-                msg.data.pos = { x, y };
-                g_MsgHandler.sendMsg(msg);
-            }
-        }
-
+        this.selectItem();
     }
 
     refreshLayout() {
@@ -91,13 +122,13 @@ export default class UIGameTable extends cc.Component {
         }
         let npcList = playerInfo.layoutList;
         for (let i = 0; i < npcList.length; i++) {
-            const npcInfo = npcList[i];
+            const npcInfo = npcList[i].npcInfo;
+            npcInfo.thisId = npcList[i].thisId;
             let idx = npcInfo.pos.y * 8 + npcInfo.pos.x;
-            let node = this.gridArr[idx];
-            let label = cc.find("Background/npcName", node).getComponent(cc.Label);
-            let baseData = new ChessNpcBaseData(npcInfo.baseId);
-            label.string = baseData.name;
+            let grid = this.gridArr[idx];
+            grid.setNpcInfo(npcInfo);
             this.layout[idx] = npcInfo;
+            this.layout[idx].thisId = npcInfo.thisId;
         }
         let panel = g_UIManager.getPanel("UIGameMain");
         if (panel) {
@@ -105,26 +136,19 @@ export default class UIGameTable extends cc.Component {
         }
     }
 
-    setGridLabel(x: number, y: number, npc: ChessNpc) {
-        console.log(npc);
-        let idx = y * 8 + x;
-        let node = this.gridArr[idx];
-        if (y > 3) {
-            x = 7 - x;
-            y = 7 - y;
+    selectItem(npcInfo?: ChessNpcInfo) {
+        if (this.currentSelectedNpc && npcInfo && this.currentSelectedNpc.thisId == npcInfo.thisId) {
+            this.currentSelectedNpc = null;
+        } else {
+            this.currentSelectedNpc = npcInfo;
         }
-        if (!npc.baseId) {
-            delete (this.layout[idx]);
-        } else if (npc_data[npc.baseId]) {
-            let label = cc.find("Background/npcName", node).getComponent(cc.Label);
-            label.string = npc.name;
-            let chessNpcInfo = new ChessNpcInfo(0, npc.baseId, npc.level, { x: x, y: y })
-            console.log(chessNpcInfo);
-            this.layout[idx] = chessNpcInfo;
-        }
-        let panel: UIMain = g_UIManager.getPanel("UIMain")
-        if (panel) {
-            panel.refreshCostBuff();
+        for (let i = 0; i < this.gridArr.length; i++) {
+            const grid = this.gridArr[i];
+            if (grid.npcInfo && this.currentSelectedNpc && grid.npcInfo.thisId == this.currentSelectedNpc.thisId) {
+                grid.setSelect(true);
+            } else {
+                grid.setSelect(false);
+            }
         }
     }
     // update (dt) {}

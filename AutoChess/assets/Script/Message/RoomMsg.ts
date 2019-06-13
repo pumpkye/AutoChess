@@ -117,7 +117,7 @@ export interface PlayerInfo {
     //手牌
     cardList: Array<{ idx: number, npcInfo: ChessNpcInfo }>;
     //布局
-    layoutList: Array<ChessNpcInfo>;
+    layoutList: Array<{ thisId: number, npcInfo: ChessNpcInfo }>;
 }
 
 export interface ChessNpcInfo {

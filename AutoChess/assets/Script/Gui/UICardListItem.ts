@@ -47,6 +47,7 @@ export default class UICardListItem extends cc.Component {
             if (panel) {
                 panel.selectItem(this.npcInfo);
             }
+            event.stopPropagation();
         }, this);
     }
 
