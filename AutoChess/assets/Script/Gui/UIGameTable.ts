@@ -1,9 +1,13 @@
 import { ChessNpcInfo } from "../AutoBattle/Input/InputCache";
-import UISetNpc from "./UISetNpc";
 import { g_UIManager } from "./UIManager";
 import { ChessNpc } from "../AutoBattle/Model/ChessNpc";
 import { npc_data } from "../AutoBattle/Tbx/npc_data";
 import UIMain from "./UIMain";
+import UIcardList from "./UICardList";
+import { MsgPutNpcToBoard } from "../Message/RoomMsg";
+import { g_MsgHandler } from "../Connect/MsgHandler";
+import { g_RoomData } from "../Data/RoomData";
+import { ChessNpcBaseData } from "../AutoBattle/TbxModel/ChessNpcBaseData";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -23,6 +27,10 @@ export default class UIGameTable extends cc.Component {
 
     layout: Array<ChessNpcInfo>;
 
+    /**
+     * 当前棋盘上被选中的npc
+     */
+    currentSelectedNpc: ChessNpcInfo;
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
@@ -44,13 +52,57 @@ export default class UIGameTable extends cc.Component {
         this.layout = new Array<ChessNpcInfo>();
     }
 
+    clear() {
+        this.layout = new Array();
+        for (let i = 0; i < this.gridArr.length; i++) {
+            const node = this.gridArr[i];
+            let label = cc.find("Background/npcName", node).getComponent(cc.Label);
+            label.string = "";
+        }
+    }
+
     onGridClick(event) {
         let gridName: string = event.target.parent.name;
-        let x = gridName.substr(4, 1);
-        let y = gridName.substr(5, 1);
+        let x = Number(gridName.substr(4, 1));
+        let y = Number(gridName.substr(5, 1));
+        let idx = y * 8 + x;
+        if (this.layout[idx]) {
+            console.log("选中了一个棋盘上的npc")
+            return;
+        }
+        let handListPanel: UIcardList = g_UIManager.getPanel("UICardList")
+        if (handListPanel) {
+            let selectInHand = handListPanel.currentSelectedNpcInfo;
+            if (selectInHand) {
+                let msg = new MsgPutNpcToBoard();
+                msg.data.thisId = selectInHand.thisId;
+                msg.data.pos = { x, y };
+                g_MsgHandler.sendMsg(msg);
+            }
+        }
 
-        let panel: UISetNpc = g_UIManager.getOrCreatePanel("UISetNpc");
-        panel.setGridPos(Number(x), Number(y));
+    }
+
+    refreshLayout() {
+        this.clear();
+        let playerInfo = g_RoomData.getMainPlayerInfo();
+        if (!playerInfo) {
+            return;
+        }
+        let npcList = playerInfo.layoutList;
+        for (let i = 0; i < npcList.length; i++) {
+            const npcInfo = npcList[i];
+            let idx = npcInfo.pos.y * 8 + npcInfo.pos.x;
+            let node = this.gridArr[idx];
+            let label = cc.find("Background/npcName", node).getComponent(cc.Label);
+            let baseData = new ChessNpcBaseData(npcInfo.baseId);
+            label.string = baseData.name;
+            this.layout[idx] = npcInfo;
+        }
+        let panel = g_UIManager.getPanel("UIGameMain");
+        if (panel) {
+            panel.refreshCostBuff();
+        }
     }
 
     setGridLabel(x: number, y: number, npc: ChessNpc) {

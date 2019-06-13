@@ -120,7 +120,7 @@ export interface PlayerInfo {
     layoutList: Array<ChessNpcInfo>;
 }
 
-interface ChessNpcInfo {
+export interface ChessNpcInfo {
     thisId: number;
     baseId: number;
     level: number;
@@ -180,10 +180,7 @@ export class MsgMoveNpc extends MessageBase {
 export class MsgPutNpcToBoard extends MessageBase {
     name = "msgPutNpcToBoard";
     data: {
-        /**
-         * 在手牌中的位置idx
-         */
-        idx: number;
+        thisId: number;
         pos: {
             x: number;
             y: number;

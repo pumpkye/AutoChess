@@ -13,11 +13,12 @@ var uiPrefabConfig = {
     UIGameTable: { name: "UIGameTable", zIndex: 0 },
     UIGameMain: { name: "UIGameMain", zIndex: 10 },
     UICardList: { name: "UICardList", zIndex: 10 },
+    UICardListItem: { name: "UICardListItem", zIndex: 10 },
     UILobby: { name: "UILobby", zIndex: 10 },
     UIRoom: { name: "UIRoom", zIndex: 10 },
     UIRoomItem: { name: "UIRoomItem", zIndex: 10 },
     UICardPool: { name: "UICardPool", zIndex: 10 },
-    UICardPoolItem: { name: "UICardPoolItem" }
+    UICardPoolItem: { name: "UICardPoolItem" },
     // UiReliveIntroduction : {
     //     nameInExam : "UiReliveIntroduction",
     //     namePassExam : "UiReliveIntroductionPE",

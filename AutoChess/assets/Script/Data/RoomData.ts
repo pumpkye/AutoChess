@@ -60,6 +60,7 @@ class RoomData {
             this.gameStart = true;
             g_UIManager.getOrCreatePanel("UIGameTable");
             g_UIManager.getOrCreatePanel("UIGameMain");
+            g_UIManager.getOrCreatePanel("UICardList");
         }
     }
 
@@ -94,6 +95,16 @@ class RoomData {
         if (panel) {
             panel.refreshPlayerInfo();
         }
+
+        panel = g_UIManager.getPanel("UICardList");
+        if (panel) {
+            panel.refreshList();
+        }
+
+        panel = g_UIManager.getPanel("UIGameTable");
+        if (panel) {
+            panel.refreshLayout();
+        }
     }
 
     msgRefreshCardPool(msg: MsgRefreshCardPool['data']) {
@@ -105,6 +116,7 @@ class RoomData {
             panel.refreshPool();
         }
     }
+
 }
 
 export const g_RoomData = new RoomData();

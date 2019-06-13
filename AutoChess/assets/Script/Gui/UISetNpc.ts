@@ -39,9 +39,6 @@ export default class UISetNpc extends cc.Component {
         let level = Number(this.editBox.string) % 10;
         let npcData = new ChessNpc(0, baseId, level, true);
         let chessTable: UIChessTable = g_UIManager.getPanel("UIChessTable");
-        if (!chessTable) {
-            chessTable = g_UIManager.getPanel("UIGameTable");
-        }
         if (chessTable) {
             chessTable.setGridLabel(this.gridPos.x, this.gridPos.y, npcData);
         }

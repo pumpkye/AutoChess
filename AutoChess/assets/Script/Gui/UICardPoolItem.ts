@@ -1,7 +1,8 @@
-// import { ChessNpcBaseData } from "../AutoBattle/TbxModel/ChessNpcBaseData";
-// import { WorsConfig } from "../AutoBattle/Config/WordsConfig";
-import { npc_data } from "../AutoBattle/Tbx/npc_data";
+// import { npc_data } from "../AutoBattle/Tbx/npc_data";
 import { WorsConfig } from "../AutoBattle/Config/WordsConfig";
+import { ChessNpcBaseData } from "../AutoBattle/TbxModel/ChessNpcBaseData";
+import { MsgBuyCard } from "../Message/RoomMsg";
+import { g_MsgHandler } from "../Connect/MsgHandler";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -27,22 +28,37 @@ export default class UICardPoolItem extends cc.Component {
     @property(cc.Label)
     costLabel: cc.Label = null;
 
+    idx = -1;
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
 
     start() {
+        this.node.on('touchstart', function (event) {
 
+        }, this);
+
+        this.node.on('touchend', function (event) {
+            this.buyCard();
+        }, this);
     }
 
-    setData(baseId: number) {
-        // let npcBaseData = new ChessNpcBaseData(baseId);
-        let npcBaseData = npc_data[baseId];
+    setData(baseId: number, idx: number) {
+        this.idx = idx;
+        let npcBaseData = new ChessNpcBaseData(baseId);
+        // let npcBaseData = npc_data[baseId];
         this.nameLabel.string = npcBaseData.name;
         let careerStr = WorsConfig.career[npcBaseData.career];
         let raceStr = WorsConfig.race[npcBaseData.race];
         this.careerRaceLabel.string = raceStr + "·" + careerStr;
         this.costLabel.string = "cost: " + npcBaseData.quality;
+    }
+
+    buyCard() {
+        console.log("buyCard");
+        let msg = new MsgBuyCard();
+        msg.data.idx = this.idx;
+        g_MsgHandler.sendMsg(msg);
     }
 
     // update (dt) {}

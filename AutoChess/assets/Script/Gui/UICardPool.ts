@@ -26,7 +26,13 @@ export default class UICardPool extends cc.Component {
     // onLoad () {}
 
     start() {
+        this.node.on('touchstart', function (event) {
+            event.stopPropagation();
+        }, this);
 
+        this.node.on('touchend', function (event) {
+            event.stopPropagation();
+        }, this);
     }
 
     refreshPool() {
@@ -34,9 +40,9 @@ export default class UICardPool extends cc.Component {
         let poolData = g_RoomData.cardPool;
         for (let i = 0; i < poolData.length; i++) {
             const info = poolData[i];
-            let item: UICardPoolItem = g_UIManager.createPanelOnly("UICardPoolItem")
+            let item: UICardPoolItem = g_UIManager.createPanelOnly("UICardPoolItem");
             if (item) {
-                item.setData(info.baseId);
+                item.setData(info.baseId, info.idx);
                 item.node.x = -600 + 300 * info.idx;
                 item.node.parent = this.container;
             }

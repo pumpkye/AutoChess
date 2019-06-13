@@ -1,6 +1,12 @@
 import { g_UserData } from "../Data/UserData";
 import { g_RoomData } from "../Data/RoomData";
 import { GameWorsConfig } from "../Config/GameWordsConfig";
+import { g_UIManager } from "./UIManager";
+import UICardPool from "./UICardPool";
+import { BattleInfo, LayoutInfo } from "../AutoBattle/Input/InputCache";
+import { npc_data } from "../AutoBattle/Tbx/npc_data";
+import { g_Util } from "../AutoBattle/Util";
+import UIGameTable from "./UIGameTable";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -39,9 +45,20 @@ export default class UIGameMain extends cc.Component {
     expLabel: cc.Label = null;
 
     countdownTime: number;
+
+    @property(cc.Label)
+    layoutACost: cc.Label = null;
+
+    @property(cc.Label)
+    layoutABuff: cc.Label = null;
+
+    battleInfo: BattleInfo;
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {}
+    onLoad() {
+        this.battleInfo = new BattleInfo(1);
+        this.battleInfo.addMatch(101, 102);
+    }
 
     start() {
         this.refreshRoundInfo();
@@ -61,6 +78,52 @@ export default class UIGameMain extends cc.Component {
         this.goldLabel.string = "gold:" + playInfo.gold;
         this.levelLabel.string = "level:" + playInfo.level;
         this.expLabel.string = "exp:" + playInfo.exp;
+    }
+
+
+    /**
+     * 刷新阵容cost和buff
+     */
+    refreshCostBuff() {
+        this.refreshBattleInfo();
+        let layoutA = this.battleInfo.getLayoutByPlayerId(101);
+        let sumCost = 0;
+        for (let i = 0; i < layoutA.npcList.length; i++) {
+            const npc = layoutA.npcList[i];
+            sumCost = sumCost + npc_data[npc.baseId].quality * Math.pow(3, npc.level - 1);
+        }
+        this.layoutACost.string = sumCost.toString();
+        let buffStr = g_Util.getCareerAndRaceBuffStr(layoutA.npcList);
+        this.layoutABuff.string = buffStr;
+    }
+
+    refreshBattleInfo() {
+        let thisId = 0;
+        let chessTable: UIGameTable = g_UIManager.getPanel("UIGameTable");
+        let layoutInfoA = new LayoutInfo(101);
+        let layoutInfoB = new LayoutInfo(102);
+        for (const idx in chessTable.layout) {
+            if (chessTable.layout.hasOwnProperty(idx)) {
+                const npc = chessTable.layout[idx];
+                thisId = thisId + 1;
+                let y = Math.floor(Number(idx) / 8);
+                npc.thisId = thisId;
+                if (y < 4) {
+                    layoutInfoA.addChessNpcInfo(npc);
+                }
+            }
+        }
+        console.log(this.battleInfo);
+        this.battleInfo.clearLayout();
+        this.battleInfo.addLayout(layoutInfoA);
+        this.battleInfo.addLayout(layoutInfoB);
+    }
+
+    openShop() {
+        let panel: UICardPool = g_UIManager.getOrCreatePanel("UICardPool");
+        if (panel) {
+            panel.refreshPool();
+        }
     }
 
     update(dt) {
