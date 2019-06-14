@@ -122,8 +122,7 @@ export default class UIGameTable extends cc.Component {
         }
         let npcList = playerInfo.layoutList;
         for (let i = 0; i < npcList.length; i++) {
-            const npcInfo = npcList[i].npcInfo;
-            npcInfo.thisId = npcList[i].thisId;
+            const npcInfo = npcList[i];
             let idx = npcInfo.pos.y * 8 + npcInfo.pos.x;
             let grid = this.gridArr[idx];
             grid.setNpcInfo(npcInfo);

@@ -7,6 +7,7 @@ import { BattleInfo, LayoutInfo } from "../AutoBattle/Input/InputCache";
 import { npc_data } from "../AutoBattle/Tbx/npc_data";
 import { g_Util } from "../AutoBattle/Util";
 import UIGameTable from "./UIGameTable";
+import { MsgBattleResult } from "../Message/RoomMsg";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -52,6 +53,9 @@ export default class UIGameMain extends cc.Component {
     @property(cc.Label)
     layoutABuff: cc.Label = null;
 
+    @property(cc.Label)
+    battleResult: cc.Label = null;
+
     battleInfo: BattleInfo;
     // LIFE-CYCLE CALLBACKS:
 
@@ -80,7 +84,25 @@ export default class UIGameMain extends cc.Component {
         this.expLabel.string = "exp:" + playInfo.exp;
     }
 
+    setLastBattleResult(win: boolean, point: number) {
+        let str = "";
+        if (win) {
+            str = "win - " + point + ":0";
+        } else {
+            str = "lost-0:" + point;
+        }
+        this.battleResult.string = str;
+    }
 
+    msgBattleResult(msg: MsgBattleResult['data']) {
+        for (let i = 0; i < msg.resultList.length; i++) {
+            const ret = msg.resultList[i];
+            if (ret.playerId == g_UserData.id) {
+                this.setLastBattleResult(ret.win, ret.point);
+                return;
+            }
+        }
+    }
     /**
      * 刷新阵容cost和buff
      */

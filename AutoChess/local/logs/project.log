@@ -1,77 +1,66 @@
-2019-06-13T12:19:26.110Z - normal: Load ~/.CocosCreator/settings.json
-2019-06-13T12:19:26.161Z - normal: Initializing Asset Database
-2019-06-13T12:19:26.163Z - normal: checking language setting...
-2019-06-13T12:19:26.163Z - normal: Language: zh
-2019-06-13T12:19:26.813Z - success: preview server running at http://localhost:7456
-2019-06-13T12:19:26.857Z - success: protocol editor-framework registered
-2019-06-13T12:19:26.857Z - success: protocol app registered
-2019-06-13T12:19:26.857Z - success: protocol theme registered
-2019-06-13T12:19:26.857Z - success: protocol packages registered
-2019-06-13T12:19:26.857Z - success: protocol uuid registerred
-2019-06-13T12:19:26.857Z - success: protocol db registerred
-2019-06-13T12:19:26.858Z - success: protocol thumbnail registerred
-2019-06-13T12:19:26.858Z - success: protocol unpack registerred
-2019-06-13T12:19:26.858Z - success: protocol disable-commonjs registerred
-2019-06-13T12:19:26.970Z - normal: connected!
-2019-06-13T12:19:26.971Z - normal: Check project /Users/yenan/Documents/github/AutoChess/AutoChess
-2019-06-13T12:19:26.972Z - normal: Initializing project /Users/yenan/Documents/github/AutoChess/AutoChess
-2019-06-13T12:19:27.266Z - normal: Initializing Cocos2d
-2019-06-13T12:19:27.918Z - normal: Initializing engine extends
-2019-06-13T12:19:27.983Z - success: asset-db-debugger loaded
-2019-06-13T12:19:27.984Z - success: baidu-adapter loaded
-2019-06-13T12:19:27.985Z - success: color-picker loaded
-2019-06-13T12:19:28.064Z - success: fb-audience-network loaded
-2019-06-13T12:19:28.103Z - success: fb-live-stream loaded
-2019-06-13T12:19:28.107Z - success: google-play-instant loaded
-2019-06-13T12:19:28.112Z - success: huawei-runtime loaded
-2019-06-13T12:19:28.113Z - success: jsb-adapter loaded
-2019-06-13T12:19:28.119Z - success: oppo-runtime loaded
-2019-06-13T12:19:28.130Z - success: package-manager loaded
-2019-06-13T12:19:28.254Z - success: qqplay-adapter loaded
-2019-06-13T12:19:28.256Z - success: runtime-dev-tools loaded
-2019-06-13T12:19:28.268Z - success: sdkbox loaded
-2019-06-13T12:19:28.281Z - success: tester loaded
-2019-06-13T12:19:28.294Z - success: ui-grid loaded
-2019-06-13T12:19:28.303Z - success: ui-kit-preview-extra loaded
-2019-06-13T12:19:28.315Z - success: ui-kit-preview loaded
-2019-06-13T12:19:28.327Z - success: ui-kit loaded
-2019-06-13T12:19:28.336Z - success: ui-tree loaded
-2019-06-13T12:19:28.340Z - success: vivo-runtime loaded
-2019-06-13T12:19:28.341Z - success: weapp-adapter loaded
-2019-06-13T12:19:28.385Z - success: assets loaded
-2019-06-13T12:19:28.397Z - success: builder loaded
-2019-06-13T12:19:28.650Z - success: cocos-services loaded
-2019-06-13T12:19:28.662Z - success: console loaded
-2019-06-13T12:19:28.692Z - success: fb-instant-games loaded
-2019-06-13T12:19:28.695Z - success: google-instant-games loaded
-2019-06-13T12:19:28.707Z - success: hierarchy loaded
-2019-06-13T12:19:28.717Z - success: inspector loaded
-2019-06-13T12:19:28.718Z - success: keystore loaded
-2019-06-13T12:19:28.730Z - success: node-library loaded
-2019-06-13T12:19:28.732Z - success: package-asset loaded
-2019-06-13T12:19:28.733Z - success: preferences loaded
-2019-06-13T12:19:28.746Z - success: project-exporter loaded
-2019-06-13T12:19:28.756Z - success: project-importer loaded
-2019-06-13T12:19:28.766Z - success: project-settings loaded
-2019-06-13T12:19:28.778Z - success: scene loaded
-2019-06-13T12:19:28.779Z - success: simulator-debugger loaded
-2019-06-13T12:19:28.780Z - success: sprite-editor loaded
-2019-06-13T12:19:28.792Z - success: store loaded
-2019-06-13T12:19:28.802Z - success: timeline loaded
-2019-06-13T12:19:30.225Z - info: Cocos Services load base data!
-2019-06-13T12:19:32.943Z - normal: Loading packages
-2019-06-13T12:19:32.947Z - normal: Watching packages
-2019-06-13T12:19:33.033Z - normal: Run Application
-2019-06-13T12:34:26.896Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:16908
-2019-06-13T12:34:26.899Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:16916
-2019-06-13T12:34:26.900Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:16924
-2019-06-13T12:39:28.947Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:20102
-2019-06-13T12:39:28.949Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:20104
-2019-06-13T13:25:25.244Z - warn: Please specifiy a default value for "UIGameTable" property at its declaration:
- 
-// Before:
-@property(...)
-value; 
-// After:
-@property(...)
-value = 0 lineNode
+2019-06-14T01:18:33.063Z - normal: Load ~/.CocosCreator/settings.json
+2019-06-14T01:18:34.265Z - normal: Initializing Asset Database
+2019-06-14T01:18:34.269Z - normal: checking language setting...
+2019-06-14T01:18:34.269Z - normal: Language: zh
+2019-06-14T01:18:34.921Z - success: preview server running at http://localhost:7456
+2019-06-14T01:18:34.923Z - success: protocol editor-framework registered
+2019-06-14T01:18:34.923Z - success: protocol app registered
+2019-06-14T01:18:34.924Z - success: protocol theme registered
+2019-06-14T01:18:34.924Z - success: protocol packages registered
+2019-06-14T01:18:34.925Z - success: protocol uuid registerred
+2019-06-14T01:18:34.925Z - success: protocol db registerred
+2019-06-14T01:18:34.925Z - success: protocol thumbnail registerred
+2019-06-14T01:18:34.925Z - success: protocol unpack registerred
+2019-06-14T01:18:34.925Z - success: protocol disable-commonjs registerred
+2019-06-14T01:18:35.275Z - normal: connected!
+2019-06-14T01:18:35.277Z - normal: Check project D:\github\AutoChess\AutoChess
+2019-06-14T01:18:35.278Z - normal: Initializing project D:\github\AutoChess\AutoChess
+2019-06-14T01:18:35.688Z - normal: Initializing Cocos2d
+2019-06-14T01:18:36.483Z - normal: Initializing engine extends
+2019-06-14T01:18:36.504Z - success: asset-db-debugger loaded
+2019-06-14T01:18:36.505Z - success: baidu-adapter loaded
+2019-06-14T01:18:36.507Z - success: code-editor loaded
+2019-06-14T01:18:36.508Z - success: color-picker loaded
+2019-06-14T01:18:36.613Z - success: fb-audience-network loaded
+2019-06-14T01:18:36.663Z - success: fb-live-stream loaded
+2019-06-14T01:18:36.666Z - success: google-play-instant loaded
+2019-06-14T01:18:36.671Z - success: huawei-runtime loaded
+2019-06-14T01:18:36.672Z - success: jsb-adapter loaded
+2019-06-14T01:18:36.676Z - success: oppo-runtime loaded
+2019-06-14T01:18:36.679Z - success: package-manager loaded
+2019-06-14T01:18:36.799Z - success: qqplay-adapter loaded
+2019-06-14T01:18:36.800Z - success: runtime-dev-tools loaded
+2019-06-14T01:18:36.803Z - success: sdkbox loaded
+2019-06-14T01:18:36.806Z - success: tester loaded
+2019-06-14T01:18:36.808Z - success: ui-grid loaded
+2019-06-14T01:18:36.811Z - success: ui-kit-preview-extra loaded
+2019-06-14T01:18:36.813Z - success: ui-kit-preview loaded
+2019-06-14T01:18:36.815Z - success: ui-kit loaded
+2019-06-14T01:18:36.816Z - success: ui-tree loaded
+2019-06-14T01:18:36.821Z - success: vivo-runtime loaded
+2019-06-14T01:18:36.821Z - success: weapp-adapter loaded
+2019-06-14T01:18:36.859Z - success: assets loaded
+2019-06-14T01:18:36.861Z - success: builder loaded
+2019-06-14T01:18:37.128Z - success: cocos-services loaded
+2019-06-14T01:18:37.135Z - success: console loaded
+2019-06-14T01:18:37.172Z - success: fb-instant-games loaded
+2019-06-14T01:18:37.173Z - success: google-instant-games loaded
+2019-06-14T01:18:37.177Z - success: hierarchy loaded
+2019-06-14T01:18:37.179Z - success: inspector loaded
+2019-06-14T01:18:37.180Z - success: keystore loaded
+2019-06-14T01:18:37.183Z - success: node-library loaded
+2019-06-14T01:18:37.185Z - success: package-asset loaded
+2019-06-14T01:18:37.186Z - success: preferences loaded
+2019-06-14T01:18:37.187Z - success: project-exporter loaded
+2019-06-14T01:18:37.189Z - success: project-importer loaded
+2019-06-14T01:18:37.191Z - success: project-settings loaded
+2019-06-14T01:18:37.194Z - success: scene loaded
+2019-06-14T01:18:37.196Z - success: simulator-debugger loaded
+2019-06-14T01:18:37.197Z - success: sprite-editor loaded
+2019-06-14T01:18:37.201Z - success: store loaded
+2019-06-14T01:18:37.204Z - success: timeline loaded
+2019-06-14T01:18:39.088Z - info: Cocos Services load base data!
+2019-06-14T01:18:44.032Z - normal: Loading packages
+2019-06-14T01:18:44.039Z - normal: Watching packages
+2019-06-14T01:18:44.648Z - normal: Run Application
+2019-06-14T10:03:44.920Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:114155
