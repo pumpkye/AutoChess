@@ -112,6 +112,7 @@ export interface PlayerInfo {
     level: number;
     exp: number;
     gold: number;
+    hp: number;
     winContinueCount: number;
     loseContinueCount: number;
     //手牌

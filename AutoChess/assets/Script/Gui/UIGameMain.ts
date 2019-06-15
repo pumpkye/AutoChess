@@ -56,6 +56,9 @@ export default class UIGameMain extends cc.Component {
     @property(cc.Label)
     battleResult: cc.Label = null;
 
+    @property(cc.Label)
+    hpLabel: cc.Label = null;
+
     battleInfo: BattleInfo;
     // LIFE-CYCLE CALLBACKS:
 
@@ -82,6 +85,7 @@ export default class UIGameMain extends cc.Component {
         this.goldLabel.string = "gold:" + playInfo.gold;
         this.levelLabel.string = "level:" + playInfo.level;
         this.expLabel.string = "exp:" + playInfo.exp;
+        this.hpLabel.string = "hp:" + playInfo.hp;
     }
 
     setLastBattleResult(win: boolean, point: number) {

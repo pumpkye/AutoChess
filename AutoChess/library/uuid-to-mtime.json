@@ -1,967 +1,967 @@
 {
   "f8e6b000-5643-4b86-9080-aa680ce1f599": {
-    "asset": 1555899209549,
-    "meta": 1552197698000,
+    "asset": 1552197907000,
+    "meta": 1552197907000,
     "relativePath": "image"
   },
   "71561142-4c83-4933-afca-cb7a17f67053": {
-    "asset": 1552197698000,
-    "meta": 1560475118597,
-    "relativePath": "image\\default_btn_disabled.png"
+    "asset": 1552197907000,
+    "meta": 1560607043668,
+    "relativePath": "image/default_btn_disabled.png"
   },
   "e851e89b-faa2-4484-bea6-5c01dd9f06e2": {
-    "asset": 1552197698000,
-    "meta": 1560475118600,
-    "relativePath": "image\\default_btn_normal.png"
+    "asset": 1552197907000,
+    "meta": 1560607043666,
+    "relativePath": "image/default_btn_normal.png"
   },
   "d81ec8ad-247c-4e62-aa3c-d35c4193c7af": {
-    "asset": 1552197698000,
-    "meta": 1560475118672,
-    "relativePath": "image\\default_panel.png"
+    "asset": 1552197907000,
+    "meta": 1560607043682,
+    "relativePath": "image/default_panel.png"
   },
   "b43ff3c2-02bb-4874-81f7-f2dea6970f18": {
-    "asset": 1552197698000,
-    "meta": 1560475118635,
-    "relativePath": "image\\default_btn_pressed.png"
+    "asset": 1552197907000,
+    "meta": 1560607043674,
+    "relativePath": "image/default_btn_pressed.png"
   },
   "99170b0b-d210-46f1-b213-7d9e3f23098a": {
-    "asset": 1552197698000,
-    "meta": 1560475118683,
-    "relativePath": "image\\default_progressbar_bg.png"
+    "asset": 1552197907000,
+    "meta": 1560607043683,
+    "relativePath": "image/default_progressbar_bg.png"
   },
   "cfef78f1-c8df-49b7-8ed0-4c953ace2621": {
-    "asset": 1552197698000,
-    "meta": 1560475118696,
-    "relativePath": "image\\default_progressbar.png"
+    "asset": 1552197907000,
+    "meta": 1560607043688,
+    "relativePath": "image/default_progressbar.png"
   },
   "567dcd80-8bf4-4535-8a5a-313f1caf078a": {
-    "asset": 1552197698000,
-    "meta": 1560475118707,
-    "relativePath": "image\\default_radio_button_off.png"
+    "asset": 1552197907000,
+    "meta": 1560607043690,
+    "relativePath": "image/default_radio_button_off.png"
   },
   "9d60001f-b5f4-4726-a629-2659e3ded0b8": {
-    "asset": 1552197698000,
-    "meta": 1560475118737,
-    "relativePath": "image\\default_radio_button_on.png"
+    "asset": 1552197907000,
+    "meta": 1560607043701,
+    "relativePath": "image/default_radio_button_on.png"
   },
   "4bab67cb-18e6-4099-b840-355f0473f890": {
-    "asset": 1552197698000,
-    "meta": 1560475118736,
-    "relativePath": "image\\default_scrollbar_bg.png"
+    "asset": 1552197907000,
+    "meta": 1560607043702,
+    "relativePath": "image/default_scrollbar_bg.png"
   },
   "617323dd-11f4-4dd3-8eec-0caf6b3b45b9": {
-    "asset": 1552197698000,
-    "meta": 1560475118768,
-    "relativePath": "image\\default_scrollbar_vertical_bg.png"
+    "asset": 1552197907000,
+    "meta": 1560607043710,
+    "relativePath": "image/default_scrollbar_vertical_bg.png"
   },
   "d6d3ca85-4681-47c1-b5dd-d036a9d39ea2": {
-    "asset": 1552197698000,
-    "meta": 1560475118766,
-    "relativePath": "image\\default_scrollbar_vertical.png"
+    "asset": 1552197907000,
+    "meta": 1560607043712,
+    "relativePath": "image/default_scrollbar_vertical.png"
   },
   "0291c134-b3da-4098-b7b5-e397edbe947f": {
-    "asset": 1552197698000,
-    "meta": 1560475118799,
-    "relativePath": "image\\default_scrollbar.png"
+    "asset": 1552197907000,
+    "meta": 1560607043719,
+    "relativePath": "image/default_scrollbar.png"
   },
   "0275e94c-56a7-410f-bd1a-fc7483f7d14a": {
-    "asset": 1552197698000,
-    "meta": 1560475118800,
-    "relativePath": "image\\default_sprite_splash.png"
+    "asset": 1552197907000,
+    "meta": 1560607043717,
+    "relativePath": "image/default_sprite_splash.png"
   },
   "6e056173-d285-473c-b206-40a7fff5386e": {
-    "asset": 1552197698000,
-    "meta": 1560475118840,
-    "relativePath": "image\\default_sprite.png"
+    "asset": 1552197907000,
+    "meta": 1560607043726,
+    "relativePath": "image/default_sprite.png"
   },
   "73a0903d-d80e-4e3c-aa67-f999543c08f5": {
-    "asset": 1552197698000,
-    "meta": 1560475118842,
-    "relativePath": "image\\default_toggle_checkmark.png"
+    "asset": 1552197907000,
+    "meta": 1560607043725,
+    "relativePath": "image/default_toggle_checkmark.png"
   },
   "c25b9d50-c8fc-4d27-beeb-6e7c1f2e5c0f": {
-    "asset": 1552197698000,
-    "meta": 1560475118867,
-    "relativePath": "image\\default_toggle_disabled.png"
+    "asset": 1552197907000,
+    "meta": 1560607043735,
+    "relativePath": "image/default_toggle_disabled.png"
   },
   "d29077ba-1627-4a72-9579-7b56a235340c": {
-    "asset": 1552197698000,
-    "meta": 1560475118875,
-    "relativePath": "image\\default_toggle_normal.png"
+    "asset": 1552197907000,
+    "meta": 1560607043734,
+    "relativePath": "image/default_toggle_normal.png"
   },
   "fc09f9bd-2cce-4605-b630-8145ef809ed6": {
-    "asset": 1555899169978,
-    "meta": 1552197698000,
+    "asset": 1552197907000,
+    "meta": 1552197907000,
     "relativePath": "misc"
   },
   "2be36297-9abb-4fee-8049-9ed5e271da8a": {
-    "asset": 1552197698000,
-    "meta": 1560475118886,
-    "relativePath": "misc\\default_video.mp4"
+    "asset": 1552197907000,
+    "meta": 1560607043739,
+    "relativePath": "misc/default_video.mp4"
   },
   "f6e6dd15-71d1-4ffe-ace7-24fd39942c05": {
-    "asset": 1555899209788,
-    "meta": 1552197698000,
+    "asset": 1552197907000,
+    "meta": 1552197907000,
     "relativePath": "obsolete"
   },
   "b8223619-7e38-47c4-841f-9160c232495a": {
-    "asset": 1552197698000,
-    "meta": 1560475119001,
-    "relativePath": "obsolete\\atom.plist"
+    "asset": 1552197907000,
+    "meta": 1560607043812,
+    "relativePath": "obsolete/atom.plist"
   },
   "f743d2b6-b7ea-4c14-a55b-547ed4d0a045": {
-    "asset": 1555899209798,
-    "meta": 1552197698000,
+    "asset": 1552197907000,
+    "meta": 1552197907000,
     "relativePath": "particle"
   },
   "b181c1e4-0a72-4a91-bfb0-ae6f36ca60bd": {
-    "asset": 1552197698000,
-    "meta": 1560475118897,
-    "relativePath": "image\\default_toggle_pressed.png"
+    "asset": 1552197907000,
+    "meta": 1560607043741,
+    "relativePath": "image/default_toggle_pressed.png"
   },
   "b2687ac4-099e-403c-a192-ff477686f4f5": {
-    "asset": 1552197698000,
-    "meta": 1560475119002,
-    "relativePath": "particle\\atom.plist"
+    "asset": 1552197907000,
+    "meta": 1560607043812,
+    "relativePath": "particle/atom.plist"
   },
   "ae6c6c98-11e4-452f-8758-75f5c6a56e83": {
-    "asset": 1555899209559,
-    "meta": 1552197698000,
+    "asset": 1552197907000,
+    "meta": 1552197907000,
     "relativePath": "prefab"
   },
   "972b9a4d-47ee-4c74-b5c3-61d8a69bc29f": {
-    "asset": 1552197698000,
-    "meta": 1560475118924,
-    "relativePath": "prefab\\button.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043765,
+    "relativePath": "prefab/button.prefab"
   },
   "2c937608-2562-40ea-b264-7395df6f0cea": {
-    "asset": 1552197698000,
-    "meta": 1560475118927,
-    "relativePath": "prefab\\canvas.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043766,
+    "relativePath": "prefab/canvas.prefab"
   },
   "61aeb05b-3b32-452b-8eed-2b76deeed554": {
-    "asset": 1552197698000,
-    "meta": 1560475118930,
-    "relativePath": "prefab\\editbox.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043769,
+    "relativePath": "prefab/editbox.prefab"
   },
   "27756ebb-3d33-44b0-9b96-e858fadd4dd4": {
-    "asset": 1552197698000,
-    "meta": 1560475118932,
-    "relativePath": "prefab\\label.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043769,
+    "relativePath": "prefab/label.prefab"
   },
   "785a442c-3ceb-45be-a46e-7317f625f3b9": {
-    "asset": 1552197698000,
-    "meta": 1560475118935,
-    "relativePath": "prefab\\layout.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043772,
+    "relativePath": "prefab/layout.prefab"
   },
   "ca8401fe-ad6e-41a8-bd46-8e3e4e9945be": {
-    "asset": 1552197698000,
-    "meta": 1560475118937,
-    "relativePath": "prefab\\pageview.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043773,
+    "relativePath": "prefab/pageview.prefab"
   },
   "cd33edea-55f5-46c2-958d-357a01384a36": {
-    "asset": 1552197698000,
-    "meta": 1560475118940,
-    "relativePath": "prefab\\particlesystem.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043775,
+    "relativePath": "prefab/particlesystem.prefab"
   },
   "5965ffac-69da-4b55-bcde-9225d0613c28": {
-    "asset": 1552197698000,
-    "meta": 1560475118943,
-    "relativePath": "prefab\\progressBar.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043775,
+    "relativePath": "prefab/progressBar.prefab"
   },
   "4a37dd57-78cd-4cec-aad4-f11a73d12b63": {
-    "asset": 1552197698000,
-    "meta": 1560475118948,
-    "relativePath": "prefab\\richtext.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043777,
+    "relativePath": "prefab/richtext.prefab"
   },
   "32044bd2-481f-4cf1-a656-e2b2fb1594eb": {
-    "asset": 1552197698000,
-    "meta": 1560475118952,
-    "relativePath": "prefab\\scrollview.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043778,
+    "relativePath": "prefab/scrollview.prefab"
   },
   "0004d1cf-a0ad-47d8-ab17-34d3db9d35a3": {
-    "asset": 1552197698000,
-    "meta": 1560475118955,
-    "relativePath": "prefab\\slider.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043780,
+    "relativePath": "prefab/slider.prefab"
   },
   "1f55e3be-b89b-4b79-88de-47fd31018044": {
-    "asset": 1552197698000,
-    "meta": 1560475118957,
-    "relativePath": "prefab\\sprite_splash.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043782,
+    "relativePath": "prefab/sprite_splash.prefab"
   },
   "96083d03-c332-4a3f-9386-d03e2d19e8ee": {
-    "asset": 1552197698000,
-    "meta": 1560475118959,
-    "relativePath": "prefab\\sprite.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043783,
+    "relativePath": "prefab/sprite.prefab"
   },
   "7de03a80-4457-438d-95a7-3e7cdffd6086": {
-    "asset": 1552197698000,
-    "meta": 1560475118962,
-    "relativePath": "prefab\\tiledmap.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043784,
+    "relativePath": "prefab/tiledmap.prefab"
   },
   "0d784963-d024-4ea6-a7db-03be0ad63010": {
-    "asset": 1552197698000,
-    "meta": 1560475118966,
-    "relativePath": "prefab\\toggle.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043787,
+    "relativePath": "prefab/toggle.prefab"
   },
   "bf0a434c-84dd-4a8e-a08a-7a36f180cc75": {
-    "asset": 1552197698000,
-    "meta": 1560475118971,
-    "relativePath": "prefab\\toggleContainer.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043788,
+    "relativePath": "prefab/toggleContainer.prefab"
   },
   "d1b8be49-b0a0-435c-83b7-552bed4bbe35": {
-    "asset": 1552197698000,
-    "meta": 1560475118973,
-    "relativePath": "prefab\\toggleGroup.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043790,
+    "relativePath": "prefab/toggleGroup.prefab"
   },
   "232d2782-c4bd-4bb4-9e01-909f03d6d3b9": {
-    "asset": 1552197698000,
-    "meta": 1560475118976,
-    "relativePath": "prefab\\videoplayer.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043791,
+    "relativePath": "prefab/videoplayer.prefab"
   },
   "8c5001fd-07ee-4a4b-a8a0-63e15195e94d": {
-    "asset": 1552197698000,
-    "meta": 1560475118978,
-    "relativePath": "prefab\\webview.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043792,
+    "relativePath": "prefab/webview.prefab"
   },
   "edd215b9-2796-4a05-aaf5-81f96c9281ce": {
-    "asset": 1552197698000,
-    "meta": 1560475118636,
-    "relativePath": "image\\default_editbox_bg.png"
+    "asset": 1552197907000,
+    "meta": 1560607043676,
+    "relativePath": "image/default_editbox_bg.png"
   },
   "8a96b965-2dc0-4e03-aa90-3b79cb93b5b4": {
-    "asset": 1552197698000,
-    "meta": 1560475118917,
-    "relativePath": "obsolete\\atom.png"
+    "asset": 1552197907000,
+    "meta": 1560607043757,
+    "relativePath": "obsolete/atom.png"
   },
   "d0a82d39-bede-46c4-b698-c81ff0dedfff": {
-    "asset": 1552197698000,
-    "meta": 1560475118925,
-    "relativePath": "particle\\atom.png"
+    "asset": 1552197907000,
+    "meta": 1560607043758,
+    "relativePath": "particle/atom.png"
   },
   "0e42ba95-1fa1-46aa-b2cf-143cd1bcee2c": {
-    "asset": 1552197698000,
-    "meta": 1560475118964,
-    "relativePath": "prefab\\tiledtile.prefab"
+    "asset": 1552197907000,
+    "meta": 1560607043785,
+    "relativePath": "prefab/tiledtile.prefab"
   },
   "93677c1e-f14c-4de1-b1a8-e55381fb16c6": {
-    "asset": 1560131334589,
-    "meta": 1560131334589,
+    "asset": 1560428147314,
+    "meta": 1560428147314,
     "relativePath": "resources"
   },
   "2102cce0-7adb-4e0f-be7a-563b79a8c01c": {
-    "asset": 1560474490213,
-    "meta": 1560131334589,
-    "relativePath": "resources\\UIPrefab"
+    "asset": 1560602440283,
+    "meta": 1560428147314,
+    "relativePath": "resources/UIPrefab"
   },
   "b7650dfd-39fa-46ee-9e68-a5c17609f06e": {
-    "asset": 1560392136367,
-    "meta": 1560475119213,
-    "relativePath": "resources\\UIPrefab\\UICardList.prefab"
+    "asset": 1560428147314,
+    "meta": 1560607043975,
+    "relativePath": "resources/UIPrefab/UICardList.prefab"
   },
   "5ef3f7df-eecc-482b-80b5-aa8444941688": {
-    "asset": 1560393404064,
-    "meta": 1560475119203,
-    "relativePath": "resources\\UIPrefab\\UICardListItem.prefab"
+    "asset": 1560428147315,
+    "meta": 1560607043975,
+    "relativePath": "resources/UIPrefab/UICardListItem.prefab"
   },
   "619d66bf-4a53-4a2d-92bd-6641a877fba9": {
-    "asset": 1560332291482,
-    "meta": 1560475119208,
-    "relativePath": "resources\\UIPrefab\\UICardPool.prefab"
+    "asset": 1560428147315,
+    "meta": 1560607043979,
+    "relativePath": "resources/UIPrefab/UICardPool.prefab"
   },
   "c2f8197c-852b-40ab-898f-f1395a2c50fd": {
-    "asset": 1560329587810,
-    "meta": 1560475119251,
-    "relativePath": "resources\\UIPrefab\\UICardPoolItem.prefab"
+    "asset": 1560428147316,
+    "meta": 1560607043979,
+    "relativePath": "resources/UIPrefab/UICardPoolItem.prefab"
   },
   "7a402d99-be70-4c98-9b6f-6f354af2e6ed": {
-    "asset": 1560507296709,
-    "meta": 1560507296717,
-    "relativePath": "resources\\UIPrefab\\UIGameMain.prefab"
+    "asset": 1560607353073,
+    "meta": 1560607353087,
+    "relativePath": "resources/UIPrefab/UIGameMain.prefab"
   },
   "dc55f1be-e50c-4ea2-aac2-1df343a0c3fc": {
-    "asset": 1560131334591,
-    "meta": 1560475119222,
-    "relativePath": "resources\\UIPrefab\\UIChessTable.prefab"
+    "asset": 1560428147317,
+    "meta": 1560607043992,
+    "relativePath": "resources/UIPrefab/UIChessTable.prefab"
   },
   "0a08dc0a-332e-448e-9a11-f9867b23e78d": {
-    "asset": 1560131334593,
-    "meta": 1560475119255,
-    "relativePath": "resources\\UIPrefab\\UILoadLayout.prefab"
+    "asset": 1560428147319,
+    "meta": 1560607043997,
+    "relativePath": "resources/UIPrefab/UILoadLayout.prefab"
   },
   "0f1285b8-0522-40a9-a289-a8713bfedc8f": {
-    "asset": 1560474458963,
-    "meta": 1560475119252,
-    "relativePath": "resources\\UIPrefab\\UIGameTable.prefab"
+    "asset": 1560432381120,
+    "meta": 1560607043994,
+    "relativePath": "resources/UIPrefab/UIGameTable.prefab"
   },
   "eeeb95e1-3bfd-4f2a-8643-72eef5c3ae3b": {
-    "asset": 1560131334594,
-    "meta": 1560475119258,
-    "relativePath": "resources\\UIPrefab\\UILoadLayoutItem.prefab"
+    "asset": 1560428147320,
+    "meta": 1560607043998,
+    "relativePath": "resources/UIPrefab/UILoadLayoutItem.prefab"
   },
   "360a91e4-790e-4c3a-9d39-6a3d73a7ce5c": {
-    "asset": 1560310734792,
-    "meta": 1560475119307,
-    "relativePath": "resources\\UIPrefab\\UILobby.prefab"
+    "asset": 1560428147321,
+    "meta": 1560607044001,
+    "relativePath": "resources/UIPrefab/UILobby.prefab"
   },
   "7d7395d8-3701-4ecc-8507-1ae60a8e4bff": {
-    "asset": 1560310485947,
-    "meta": 1560475119286,
-    "relativePath": "resources\\UIPrefab\\UILogin.prefab"
+    "asset": 1560428147321,
+    "meta": 1560607044005,
+    "relativePath": "resources/UIPrefab/UILogin.prefab"
   },
   "bb5e15f1-c86b-4088-87f4-109dd75ccca1": {
-    "asset": 1560302973546,
-    "meta": 1560475119289,
-    "relativePath": "resources\\UIPrefab\\UIMain.prefab"
+    "asset": 1560428147322,
+    "meta": 1560607044007,
+    "relativePath": "resources/UIPrefab/UIMain.prefab"
   },
   "e28f6aca-9d57-4949-a91a-7322adf9b2c0": {
-    "asset": 1560313785483,
-    "meta": 1560475119314,
-    "relativePath": "resources\\UIPrefab\\UIRoom.prefab"
+    "asset": 1560428147322,
+    "meta": 1560607044011,
+    "relativePath": "resources/UIPrefab/UIRoom.prefab"
   },
   "3eb9770d-dd70-4ebb-bbbd-c48055ce1bab": {
-    "asset": 1560313652976,
-    "meta": 1560475119318,
-    "relativePath": "resources\\UIPrefab\\UIRoomItem.prefab"
+    "asset": 1560428147323,
+    "meta": 1560607044011,
+    "relativePath": "resources/UIPrefab/UIRoomItem.prefab"
   },
   "00af8502-0c54-4636-8756-3c1591a4dfe7": {
-    "asset": 1560131334595,
-    "meta": 1560475119317,
-    "relativePath": "resources\\UIPrefab\\UISaveLayout.prefab"
+    "asset": 1560428147323,
+    "meta": 1560607044015,
+    "relativePath": "resources/UIPrefab/UISaveLayout.prefab"
   },
   "63a96881-c561-42fb-865b-d8bccfe38e7f": {
-    "asset": 1560131334595,
-    "meta": 1560475119320,
-    "relativePath": "resources\\UIPrefab\\UISetNpc.prefab"
+    "asset": 1560428147324,
+    "meta": 1560607044015,
+    "relativePath": "resources/UIPrefab/UISetNpc.prefab"
   },
   "c50eaff7-08f6-4666-9225-c8d4262a8c2a": {
-    "asset": 1560474489773,
-    "meta": 1560131334571,
+    "asset": 1560602440284,
+    "meta": 1560428147324,
     "relativePath": "Scene"
   },
   "b56079e8-e2ac-4ed0-bfbc-a03e008e27f2": {
-    "asset": 1560474426085,
-    "meta": 1560131334572,
+    "asset": 1560428147357,
+    "meta": 1560428147325,
     "relativePath": "Script"
   },
   "0b3e6439-f5f7-4480-8ead-646117fe13e4": {
-    "asset": 1560507697684,
-    "meta": 1560507697722,
-    "relativePath": "Scene\\helloworld.fire"
+    "asset": 1560608179573,
+    "meta": 1560608179591,
+    "relativePath": "Scene/helloworld.fire"
   },
   "82f59f9a-6ff5-4e5f-a45f-6fd073164071": {
-    "asset": 1560301848400,
-    "meta": 1560131334572,
-    "relativePath": "Script\\AutoBattle"
+    "asset": 1560428360976,
+    "meta": 1560428147326,
+    "relativePath": "Script/AutoBattle"
   },
   "cd235b27-506a-48f5-9705-ff426a0aa6b7": {
-    "asset": 1560331100227,
-    "meta": 1560475119522,
-    "relativePath": "Script\\aaa.ts"
+    "asset": 1560428147325,
+    "meta": 1560607044197,
+    "relativePath": "Script/aaa.ts"
   },
   "e1968ce6-3d77-45f4-975f-2f1832ac50e3": {
-    "asset": 1560331113382,
-    "meta": 1560323309198,
-    "relativePath": "Script\\Config"
+    "asset": 1560428147327,
+    "meta": 1560428147326,
+    "relativePath": "Script/Config"
   },
   "4efb69fd-0d41-4139-8a85-ea4ced82629b": {
-    "asset": 1560322119484,
-    "meta": 1560475121286,
-    "relativePath": "Script\\Config\\GameConfig.ts"
+    "asset": 1560428147326,
+    "meta": 1560607045692,
+    "relativePath": "Script/Config/GameConfig.ts"
   },
   "8df98bf1-5005-4961-b22d-94d4654ba24d": {
-    "asset": 1560331081854,
-    "meta": 1560475121287,
-    "relativePath": "Script\\Config\\GameWordsConfig.ts"
+    "asset": 1560428147327,
+    "meta": 1560607045693,
+    "relativePath": "Script/Config/GameWordsConfig.ts"
   },
   "ce21c832-d5a9-4277-9569-9708f779cbdd": {
-    "asset": 1560474489705,
-    "meta": 1560131334573,
-    "relativePath": "Script\\Connect"
+    "asset": 1560428147328,
+    "meta": 1560428147327,
+    "relativePath": "Script/Connect"
   },
   "8b9161e6-0702-4e7d-b118-ea3349a96f5c": {
-    "asset": 1560474489634,
-    "meta": 1560131334573,
-    "relativePath": "Script\\Data"
+    "asset": 1560428147330,
+    "meta": 1560428147328,
+    "relativePath": "Script/Data"
   },
   "b2c8cb70-20ff-4eff-ad2f-0290e6576778": {
-    "asset": 1560131334574,
-    "meta": 1560475121355,
-    "relativePath": "Script\\Data\\BaseData.ts"
+    "asset": 1560428147328,
+    "meta": 1560607045751,
+    "relativePath": "Script/Data/BaseData.ts"
   },
   "395bee5c-bd55-4462-ac41-2bf59938811a": {
-    "asset": 1560311072125,
-    "meta": 1560475121376,
-    "relativePath": "Script\\Data\\DataManager.ts"
+    "asset": 1560428147328,
+    "meta": 1560607045773,
+    "relativePath": "Script/Data/DataManager.ts"
   },
   "50cafaaf-7746-4f7e-99ba-fbef57cc22de": {
-    "asset": 1560308553403,
-    "meta": 1560475121419,
-    "relativePath": "Script\\Data\\LoginData.ts"
+    "asset": 1560428147329,
+    "meta": 1560607045803,
+    "relativePath": "Script/Data/LoginData.ts"
   },
   "c9485f81-1ad0-45aa-a05d-c01b8af56ae2": {
-    "asset": 1560133785311,
-    "meta": 1560475121435,
-    "relativePath": "Script\\Data\\UserData.ts"
+    "asset": 1560428147330,
+    "meta": 1560607045819,
+    "relativePath": "Script/Data/UserData.ts"
   },
   "7c70ce0b-549a-44ba-ba92-3cda4c70258b": {
-    "asset": 1560322665853,
-    "meta": 1560475121436,
-    "relativePath": "Script\\GameUtil.ts"
+    "asset": 1560428147330,
+    "meta": 1560607045820,
+    "relativePath": "Script/GameUtil.ts"
   },
   "2622c66e-c940-4e18-b8f9-b3721026c23a": {
-    "asset": 1560474458949,
-    "meta": 1560131334576,
-    "relativePath": "Script\\Gui"
+    "asset": 1560602440286,
+    "meta": 1560428147330,
+    "relativePath": "Script/Gui"
   },
   "b78c7da5-1568-4938-ac7a-1d5f8ad50108": {
-    "asset": 1560389882730,
-    "meta": 1560475121569,
-    "relativePath": "Script\\Gui\\UICardPool.ts"
+    "asset": 1560428147331,
+    "meta": 1560607045892,
+    "relativePath": "Script/Gui/UICardPool.ts"
   },
   "78c717ac-1d7e-431d-ae18-954312261a82": {
-    "asset": 1560389200679,
-    "meta": 1560475121611,
-    "relativePath": "Script\\Gui\\UICardPoolItem.ts"
+    "asset": 1560428147332,
+    "meta": 1560607045908,
+    "relativePath": "Script/Gui/UICardPoolItem.ts"
   },
   "4a5955b7-5581-48ef-8475-c4920c418ef9": {
-    "asset": 1560131334576,
-    "meta": 1560475121641,
-    "relativePath": "Script\\Gui\\UIChessTable.ts"
+    "asset": 1560428147332,
+    "meta": 1560607045941,
+    "relativePath": "Script/Gui/UIChessTable.ts"
   },
   "82e50f03-bd3b-4bd1-ac5e-688d960e1d7d": {
-    "asset": 1560131334577,
-    "meta": 1560475121756,
-    "relativePath": "Script\\Gui\\UIHome.ts"
+    "asset": 1560428147334,
+    "meta": 1560607045994,
+    "relativePath": "Script/Gui/UIHome.ts"
   },
   "2c3ea851-abcc-4fdd-92a4-db08a029739c": {
-    "asset": 1560313373296,
-    "meta": 1560475121769,
-    "relativePath": "Script\\Gui\\UILoadLayout.ts"
+    "asset": 1560428147334,
+    "meta": 1560607046014,
+    "relativePath": "Script/Gui/UILoadLayout.ts"
   },
   "82e855a9-c0d1-468d-8aa2-6b090ce5b1c8": {
-    "asset": 1560131334578,
-    "meta": 1560475121789,
-    "relativePath": "Script\\Gui\\UILoadLayoutItem.ts"
+    "asset": 1560428147335,
+    "meta": 1560607046020,
+    "relativePath": "Script/Gui/UILoadLayoutItem.ts"
   },
   "75be6a58-31f2-4577-9320-529848f2bfac": {
-    "asset": 1560313007819,
-    "meta": 1560475121812,
-    "relativePath": "Script\\Gui\\UILobby.ts"
+    "asset": 1560428147335,
+    "meta": 1560607046029,
+    "relativePath": "Script/Gui/UILobby.ts"
   },
   "5981d6c3-06ff-4a8b-9ab3-f08f62d9f031": {
-    "asset": 1560304310680,
-    "meta": 1560475121861,
-    "relativePath": "Script\\Gui\\UILogin.ts"
+    "asset": 1560428147336,
+    "meta": 1560607046045,
+    "relativePath": "Script/Gui/UILogin.ts"
   },
   "e253b299-9b67-48b1-80f8-6442835d02bf": {
-    "asset": 1560313478114,
-    "meta": 1560475121978,
-    "relativePath": "Script\\Gui\\UIRoom.ts"
+    "asset": 1560428147337,
+    "meta": 1560607046123,
+    "relativePath": "Script/Gui/UIRoom.ts"
   },
   "388003d6-b36b-4fbc-a164-4b475f3564d9": {
-    "asset": 1560313432789,
-    "meta": 1560475122000,
-    "relativePath": "Script\\Gui\\UIRoomItem.ts"
+    "asset": 1560428147338,
+    "meta": 1560607046132,
+    "relativePath": "Script/Gui/UIRoomItem.ts"
   },
   "46ffe486-0921-49aa-9414-e26cbb05a709": {
-    "asset": 1560131334579,
-    "meta": 1560475122022,
-    "relativePath": "Script\\Gui\\UISaveLayout.ts"
+    "asset": 1560428147338,
+    "meta": 1560607046148,
+    "relativePath": "Script/Gui/UISaveLayout.ts"
   },
   "a844e232-9904-44cb-a297-83f91e0b14d9": {
-    "asset": 1560392252524,
-    "meta": 1560475122034,
-    "relativePath": "Script\\Gui\\UISetNpc.ts"
+    "asset": 1560428147339,
+    "meta": 1560607046154,
+    "relativePath": "Script/Gui/UISetNpc.ts"
   },
   "08bf3385-ccbc-4e5b-9644-b2b58e7a400b": {
-    "asset": 1560474458962,
-    "meta": 1560131334581,
-    "relativePath": "Script\\Message"
+    "asset": 1560602440286,
+    "meta": 1560428147340,
+    "relativePath": "Script/Message"
   },
   "1e609927-7ed7-430d-9e45-b3a61724f892": {
-    "asset": 1560323368878,
-    "meta": 1560475122057,
-    "relativePath": "Script\\Helloworld.ts"
+    "asset": 1560428147339,
+    "meta": 1560607046165,
+    "relativePath": "Script/Helloworld.ts"
   },
   "c73b55fb-0944-4250-98a1-401a690dd35b": {
-    "asset": 1560131334581,
-    "meta": 1560475122080,
-    "relativePath": "Script\\Message\\MessagegBase.ts"
+    "asset": 1560428147340,
+    "meta": 1560607046197,
+    "relativePath": "Script/Message/MessagegBase.ts"
   },
   "21acbfc8-a0ea-42ab-9d2b-73ab228a36f9": {
-    "asset": 1560474425795,
-    "meta": 1560131334582,
-    "relativePath": "Script\\Net"
+    "asset": 1560428147342,
+    "meta": 1560428147342,
+    "relativePath": "Script/Net"
   },
   "a0db7e82-700c-4e35-9e1e-feb822042f8c": {
-    "asset": 1560131740905,
-    "meta": 1560475122116,
-    "relativePath": "Script\\Message\\UserMsg.ts"
+    "asset": 1560428147341,
+    "meta": 1560607046220,
+    "relativePath": "Script/Message/UserMsg.ts"
   },
   "95099c87-5183-4320-b56e-8e129089f737": {
-    "asset": 1560131334582,
-    "meta": 1560475122156,
-    "relativePath": "Script\\Net\\Layout.ts"
+    "asset": 1560428147342,
+    "meta": 1560607046243,
+    "relativePath": "Script/Net/Layout.ts"
   },
   "d981de93-131c-4699-b58c-75c7932d7e05": {
-    "asset": 1560132519725,
-    "meta": 1560475122157,
-    "relativePath": "Script\\Net\\NetUtil.ts"
+    "asset": 1560428147342,
+    "meta": 1560607046244,
+    "relativePath": "Script/Net/NetUtil.ts"
   },
   "eb49fc6b-319b-446d-8b7d-d4d3040f3b9e": {
-    "asset": 1560474425467,
-    "meta": 1560131334583,
-    "relativePath": "Script\\Platform"
+    "asset": 1560428147344,
+    "meta": 1560428147343,
+    "relativePath": "Script/Platform"
   },
   "9b1a9ed0-8933-46fe-b9ac-d92bb6525656": {
-    "asset": 1560131334583,
-    "meta": 1560475122184,
-    "relativePath": "Script\\Platform\\PlatformUtilBase.ts"
+    "asset": 1560428147343,
+    "meta": 1560607046261,
+    "relativePath": "Script/Platform/PlatformUtilBase.ts"
   },
   "d0d3898f-4c38-45b9-ab03-aac68f20a52f": {
-    "asset": 1560131334584,
-    "meta": 1560475122185,
-    "relativePath": "Script\\Platform\\PlatformUtilWx.ts"
+    "asset": 1560428147344,
+    "meta": 1560607046261,
+    "relativePath": "Script/Platform/PlatformUtilWx.ts"
   },
   "f6bff778-0f9f-43c1-a9cf-4d212e575010": {
-    "asset": 1560474425264,
-    "meta": 1560131334585,
+    "asset": 1560428147345,
+    "meta": 1560428147344,
     "relativePath": "Texture"
   },
   "942c12f9-4a27-4193-badb-7870d9ec3786": {
-    "asset": 1560131334587,
-    "meta": 1560475122231,
-    "relativePath": "Texture\\singleColor.png"
+    "asset": 1560428147345,
+    "meta": 1560607046275,
+    "relativePath": "Texture/singleColor.png"
   },
   "008eafd2-1e16-44fc-9e9d-20347d694ba4": {
-    "asset": 1560131334585,
-    "meta": 1560475122225,
-    "relativePath": "Texture\\HelloWorld.png"
+    "asset": 1560428147344,
+    "meta": 1560607046282,
+    "relativePath": "Texture/HelloWorld.png"
   },
   "22833393-61af-4de7-850a-a6b054c6b2c2": {
-    "asset": 1560474458964,
-    "meta": 1560475119323,
-    "relativePath": "resources\\UIPrefab\\UITableGrid.prefab"
+    "asset": 1560432560620,
+    "meta": 1560607044018,
+    "relativePath": "resources/UIPrefab/UITableGrid.prefab"
   },
   "5c0cf1f8-d181-4403-bc27-9c5ad9328dc9": {
-    "asset": 1560474458949,
-    "meta": 1560475122056,
-    "relativePath": "Script\\Gui\\UITableGrid.ts"
+    "asset": 1560436188654,
+    "meta": 1560607046164,
+    "relativePath": "Script/Gui/UITableGrid.ts"
   },
   "688623bb-861d-4192-96b3-c589c13e81b3": {
-    "asset": 1560474458945,
-    "meta": 1560475121424,
-    "relativePath": "Script\\Data\\RoomData.ts"
+    "asset": 1560440433090,
+    "meta": 1560607045812,
+    "relativePath": "Script/Data/RoomData.ts"
   },
   "37017716-36b4-4570-ba64-8055a3104352": {
-    "asset": 1560302685035,
-    "meta": 1560475121920,
-    "relativePath": "Script\\Gui\\UIMain.ts"
+    "asset": 1560441645518,
+    "meta": 1560607046109,
+    "relativePath": "Script/Gui/UIMain.ts"
   },
   "aaa26cec-f24d-4431-b370-9d8b69515a3e": {
-    "asset": 1560474458946,
-    "meta": 1560475121522,
-    "relativePath": "Script\\Gui\\UICardList.ts"
+    "asset": 1560441783489,
+    "meta": 1560607045869,
+    "relativePath": "Script/Gui/UICardList.ts"
   },
   "82ab33b6-efd9-4de0-8291-b466f4488465": {
-    "asset": 1560474458947,
-    "meta": 1560475121549,
-    "relativePath": "Script\\Gui\\UICardListItem.ts"
+    "asset": 1560441775047,
+    "meta": 1560607045876,
+    "relativePath": "Script/Gui/UICardListItem.ts"
   },
   "9fc40417-1be6-43f3-a355-dd749060051a": {
-    "asset": 1560474458948,
-    "meta": 1560475121952,
-    "relativePath": "Script\\Gui\\UIManager.ts"
+    "asset": 1560441793368,
+    "meta": 1560607046115,
+    "relativePath": "Script/Gui/UIManager.ts"
   },
   "791d2a7c-4c0b-49b2-b25a-6965a41a4135": {
-    "asset": 1560474458945,
-    "meta": 1560475121344,
-    "relativePath": "Script\\Connect\\MsgHandler.ts"
-  },
-  "c6f449af-e906-45e1-b8d0-65d0347e229d": {
-    "asset": 1560301708483,
-    "meta": 1560475119736,
-    "relativePath": "Script\\AutoBattle\\AutoBattle.ts"
-  },
-  "f25bc069-4f03-4e91-bd18-a02a8b8e5c5a": {
-    "asset": 1560301688513,
-    "meta": 1560475119737,
-    "relativePath": "Script\\AutoBattle\\AutoBattleManager.ts"
-  },
-  "189ab8ef-079b-4b52-8311-894be597eb7b": {
-    "asset": 1560331072118,
-    "meta": 1560132833756,
-    "relativePath": "Script\\AutoBattle\\Config"
-  },
-  "967bbae4-9766-40db-ae27-8dc97b4379a8": {
-    "asset": 1560131341197,
-    "meta": 1560475119803,
-    "relativePath": "Script\\AutoBattle\\Config\\AutoBattleConfig.ts"
-  },
-  "e5c092d5-4a9e-4fef-add0-259cbf282036": {
-    "asset": 1560331072123,
-    "meta": 1560475119804,
-    "relativePath": "Script\\AutoBattle\\Config\\WordsConfig.ts"
-  },
-  "131ded19-91d1-4088-bb46-9db759fa155b": {
-    "asset": 1560132833761,
-    "meta": 1560132833759,
-    "relativePath": "Script\\AutoBattle\\Input"
-  },
-  "1aa748e1-b4c6-47c4-8558-baa8431440fa": {
-    "asset": 1560131341198,
-    "meta": 1560475119871,
-    "relativePath": "Script\\AutoBattle\\Input\\InputCache.ts"
-  },
-  "7e62ba98-b857-4461-bb2b-bf9c23600914": {
-    "asset": 1560131341198,
-    "meta": 1560475119873,
-    "relativePath": "Script\\AutoBattle\\Input\\TestInput.ts"
-  },
-  "d0ade7b0-7300-4f55-866a-cf5b098d7489": {
-    "asset": 1560132833765,
-    "meta": 1560132833763,
-    "relativePath": "Script\\AutoBattle\\Model"
-  },
-  "8de08411-d66f-4f23-b817-1c0aa8256a55": {
-    "asset": 1560131341199,
-    "meta": 1560475120046,
-    "relativePath": "Script\\AutoBattle\\Model\\ChessBuff.ts"
-  },
-  "7886caf7-fa9a-41bf-9e3f-0a956c6b47bd": {
-    "asset": 1560131341199,
-    "meta": 1560475120061,
-    "relativePath": "Script\\AutoBattle\\Model\\ChessMonster.ts"
-  },
-  "b611cc3a-c601-4503-b5c7-e60ea31c30b4": {
-    "asset": 1560131341199,
-    "meta": 1560475120246,
-    "relativePath": "Script\\AutoBattle\\Model\\ChessNpc.ts"
-  },
-  "cb6bcb8a-94d3-4a2c-95c1-15e4b3ee974b": {
-    "asset": 1560131341198,
-    "meta": 1560475120337,
-    "relativePath": "Script\\AutoBattle\\LICENSE"
-  },
-  "3a8bb325-0489-4bdc-a36b-2e69b87c1682": {
-    "asset": 1560131341200,
-    "meta": 1560475120352,
-    "relativePath": "Script\\AutoBattle\\Model\\ChessSkill.ts"
-  },
-  "b1600d5c-bc08-4a71-89a1-8183f8b318f6": {
-    "asset": 1560131341200,
-    "meta": 1560475120363,
-    "relativePath": "Script\\AutoBattle\\Model\\EffectInfo.ts"
-  },
-  "5afaeebb-2dc2-4ecd-9b48-300ea745582b": {
-    "asset": 1560131341201,
-    "meta": 1560475120364,
-    "relativePath": "Script\\AutoBattle\\Model\\MagicBall.ts"
-  },
-  "d67bbad5-c65d-42ef-a4e6-08a4f475ac03": {
-    "asset": 1560132833769,
-    "meta": 1560132833767,
-    "relativePath": "Script\\AutoBattle\\OutPut"
-  },
-  "ed553c65-1fba-4cd6-925e-4cd6fb367aac": {
-    "asset": 1560131341201,
-    "meta": 1560475120411,
-    "relativePath": "Script\\AutoBattle\\OutPut\\OutputCache.ts"
-  },
-  "176a8b32-9651-4cbd-b72a-d7c9f68e4685": {
-    "asset": 1560131341201,
-    "meta": 1560475120412,
-    "relativePath": "Script\\AutoBattle\\OutPut\\Printer.ts"
-  },
-  "4961c94a-bc56-4607-8a0d-e74d4bb43654": {
-    "asset": 1560132833797,
-    "meta": 1560132833769,
-    "relativePath": "Script\\AutoBattle\\SkillEffect"
-  },
-  "49d845a8-9288-4bdc-beea-c58e0eb2110e": {
-    "asset": 1560131341202,
-    "meta": 1560475120439,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\AddAttackSpeed.ts"
-  },
-  "f6385557-3faf-4726-afd2-0f849573cc88": {
-    "asset": 1560131341202,
-    "meta": 1560475120450,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\AddDamage.ts"
-  },
-  "084291e5-789c-4d8f-909e-9050e8520a94": {
-    "asset": 1560131341202,
-    "meta": 1560475120464,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\AddDefence.ts"
-  },
-  "c1d926e6-20fd-41cc-82de-fbb4db040c71": {
-    "asset": 1560131341203,
-    "meta": 1560475120474,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\AddMaxHp.ts"
-  },
-  "9cd304d6-7e23-49ef-8a82-29701a28f814": {
-    "asset": 1560131341203,
-    "meta": 1560475120487,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\AddMDefence.ts"
-  },
-  "a0ead02f-59ec-4a69-a8d1-a534dcc24b3b": {
-    "asset": 1560131341203,
-    "meta": 1560475120496,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Bang.ts"
-  },
-  "a3d94286-f69d-4619-a298-007a30601911": {
-    "asset": 1560131341203,
-    "meta": 1560475120508,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Banish.ts"
-  },
-  "c053e17d-4b25-42ee-b1bb-e4cdd236b54d": {
-    "asset": 1560131341203,
-    "meta": 1560475120524,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\BaseSkillEffect.ts"
-  },
-  "7ba10363-a38e-4bc7-9f1c-0d377e841b7c": {
-    "asset": 1560131341205,
-    "meta": 1560475120550,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\BigFireBall.ts"
-  },
-  "741fbb48-ed1f-433b-ae19-7cb751756209": {
-    "asset": 1560131341205,
-    "meta": 1560475120559,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\BloodSacrifice.ts"
-  },
-  "9f33567a-984a-4d2d-afd4-1006d98d1b17": {
-    "asset": 1560131341206,
-    "meta": 1560475120595,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\BloodthirstySpear.ts"
-  },
-  "bb9ee7af-0618-44ce-ba1f-dc4aed03ff43": {
-    "asset": 1560131341206,
-    "meta": 1560475120605,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\BloodthirstySpearBuff.ts"
-  },
-  "6bdd4727-1cb8-4a69-bf66-dde2ba7b883c": {
-    "asset": 1560131341206,
-    "meta": 1560475120640,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Boom.ts"
-  },
-  "a7d6f869-24a8-427e-b4dc-9ff9199a6663": {
-    "asset": 1560131341206,
-    "meta": 1560475120658,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\ChainHeal.ts"
-  },
-  "e0ac557a-7f15-4a1c-9f43-429d62a294b8": {
-    "asset": 1560131341206,
-    "meta": 1560475120682,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\ChainLightning.ts"
-  },
-  "f96e5151-0aeb-4990-aa90-6f703c1350cc": {
-    "asset": 1560131341207,
-    "meta": 1560475120691,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\CircleDamage.ts"
-  },
-  "4c6d9290-a0e4-4f1e-a099-502f78716802": {
-    "asset": 1560131341207,
-    "meta": 1560475120719,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Crit.ts"
-  },
-  "d9331bb3-66b1-41c2-ab9e-0f4968c323cf": {
-    "asset": 1560131341207,
-    "meta": 1560475120741,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\CritSilent.ts"
-  },
-  "4f10525c-ad3c-49a9-bb4f-dac6c70b89f3": {
-    "asset": 1560131341207,
-    "meta": 1560475120755,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Damage.ts"
-  },
-  "698c4fa9-6299-4d74-a622-beea93d0f6d1": {
-    "asset": 1560131341208,
-    "meta": 1560475120765,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\FlashBoom.ts"
-  },
-  "70aa58e8-7f94-44c0-953d-7e2813606600": {
-    "asset": 1560131341208,
-    "meta": 1560475120792,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\GodAvatar.ts"
-  },
-  "f6a1b21a-6b95-46d4-9263-e6a348af05e4": {
-    "asset": 1560131341208,
-    "meta": 1560475120805,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\InitSkillEffect.ts"
-  },
-  "b7b2e15d-991f-4aaf-af34-444b80c4ca5c": {
-    "asset": 1560131341209,
-    "meta": 1560475120824,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\LineDamage.ts"
-  },
-  "035f53f3-4632-4496-a667-46d725c36e4d": {
-    "asset": 1560131341209,
-    "meta": 1560475120832,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\MagicRing.ts"
-  },
-  "c263e700-f676-407b-9b49-00748cff5afc": {
-    "asset": 1560131341209,
-    "meta": 1560475120842,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\ManaBurn.ts"
-  },
-  "8837392d-61af-4408-864f-3259121a6499": {
-    "asset": 1560131341209,
-    "meta": 1560475120848,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\MulDamage.ts"
-  },
-  "00dd2220-8b51-4596-b68d-6c513f026f58": {
-    "asset": 1560131341209,
-    "meta": 1560475120858,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\NormalDamage.ts"
-  },
-  "27d956be-2fe6-42d6-a529-7d8055fcfc9a": {
-    "asset": 1560131341210,
-    "meta": 1560475120866,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\RecoverHp.ts"
-  },
-  "a3060dfa-af84-405a-93a8-8852f2670d61": {
-    "asset": 1560131341210,
-    "meta": 1560475120877,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\RecoverMpRange.ts"
-  },
-  "df55a39d-5fe5-411b-bc62-09304379e2e0": {
-    "asset": 1560131341210,
-    "meta": 1560475120884,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\ReduceCd.ts"
-  },
-  "7f4250b4-7401-435d-af21-657aa6016b05": {
-    "asset": 1560131341210,
-    "meta": 1560475120899,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Refraction.ts"
-  },
-  "96e300a8-a928-4e19-acaf-3e06b8715e70": {
-    "asset": 1560131341210,
-    "meta": 1560475120911,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Roar.ts"
-  },
-  "41cab693-f5d3-45fd-a6fc-2771f077ac58": {
-    "asset": 1560131341212,
-    "meta": 1560475120940,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\SkillEffectEnum.ts"
-  },
-  "8eb396b9-f03f-4a35-9b9e-c2aa1083c9b0": {
-    "asset": 1560131341212,
-    "meta": 1560475120947,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Sneer.ts"
-  },
-  "4231ff08-e7eb-41c5-a5cd-63a46171f170": {
-    "asset": 1560131341212,
-    "meta": 1560475120959,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Sputtering.ts"
-  },
-  "dbfff5ed-e9f2-4cb1-89b5-427597c28d48": {
-    "asset": 1560131341212,
-    "meta": 1560475120968,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Summon.ts"
-  },
-  "a6bad03c-4c4b-44cb-914f-f2a642df231f": {
-    "asset": 1560131341212,
-    "meta": 1560475120982,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Sweep.ts"
-  },
-  "bf9941aa-2dc1-4191-a744-71e0104bb755": {
-    "asset": 1560131341213,
-    "meta": 1560475120990,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\SwordStorm.ts"
-  },
-  "2871e56b-acbe-420a-8a11-a8966651f297": {
-    "asset": 1560131341213,
-    "meta": 1560475121002,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Tear.ts"
-  },
-  "366a2c48-d075-4c0d-8705-d33e3e2ae50b": {
-    "asset": 1560131341213,
-    "meta": 1560475121012,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\Tenacity.ts"
-  },
-  "3ca7222f-8388-4d2b-994a-0caa93087642": {
-    "asset": 1560131341213,
-    "meta": 1560475121034,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\ThunderClap.ts"
-  },
-  "1180e380-19de-474d-a4e0-578122589b44": {
-    "asset": 1560131341213,
-    "meta": 1560475121041,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\WarCry.ts"
-  },
-  "66cc060a-1918-49c4-917a-708317c06036": {
-    "asset": 1560132833800,
-    "meta": 1560132833798,
-    "relativePath": "Script\\AutoBattle\\Tbx"
-  },
-  "5dc2d787-f619-423f-a4f2-b26c17cef87b": {
-    "asset": 1560131341214,
-    "meta": 1560475121077,
-    "relativePath": "Script\\AutoBattle\\SkillEffect\\WarFever.ts"
-  },
-  "556ba50c-b7ff-4c34-bbb0-09f7bce544ea": {
-    "asset": 1560131341214,
-    "meta": 1560475121101,
-    "relativePath": "Script\\AutoBattle\\Tbx\\npc_data.ts"
-  },
-  "fe700659-9f17-4d63-8c4f-923345ba325f": {
-    "asset": 1560131341214,
-    "meta": 1560475121128,
-    "relativePath": "Script\\AutoBattle\\Tbx\\skill_data.ts"
-  },
-  "5db84e37-007f-4cbc-be4b-9013ce214c0e": {
-    "asset": 1560132833803,
-    "meta": 1560132833801,
-    "relativePath": "Script\\AutoBattle\\TbxModel"
-  },
-  "80a6c6d8-abbb-46bc-9c3b-7ea9e96cf781": {
-    "asset": 1560131341214,
-    "meta": 1560475121142,
-    "relativePath": "Script\\AutoBattle\\Tbx\\skill_level_data.ts"
-  },
-  "3d5eafad-4432-4ba7-83b1-c37cd83db2cd": {
-    "asset": 1560328864347,
-    "meta": 1560475121152,
-    "relativePath": "Script\\AutoBattle\\TbxModel\\ChessNpcBaseData.ts"
-  },
-  "cdf6d7cd-2b27-4f21-969d-db92c6e4bed2": {
-    "asset": 1560131341215,
-    "meta": 1560475121167,
-    "relativePath": "Script\\AutoBattle\\TbxModel\\skillBaseData.ts"
-  },
-  "8237f8f2-3b55-4a65-a24c-bc0e081b38d8": {
-    "asset": 1560132833804,
-    "meta": 1560132833804,
-    "relativePath": "Script\\AutoBattle\\Test"
-  },
-  "1e303e4f-c5f9-4c94-a802-dd5abe45f9ee": {
-    "asset": 1560131341215,
-    "meta": 1560475121175,
-    "relativePath": "Script\\AutoBattle\\TbxModel\\SkillLevelData.ts"
-  },
-  "3ca48db5-731c-4744-9d23-555cd729c60a": {
-    "asset": 1560131341215,
-    "meta": 1560475121222,
-    "relativePath": "Script\\AutoBattle\\Test\\UnitTest.ts"
-  },
-  "cf4dd1d1-b937-4710-acb5-03056b23584b": {
-    "asset": 1560331102101,
-    "meta": 1560475121223,
-    "relativePath": "Script\\AutoBattle\\Util.ts"
+    "asset": 1560442984574,
+    "meta": 1560607045740,
+    "relativePath": "Script/Connect/MsgHandler.ts"
   },
   "9fcd01ef-fb43-4c36-a436-7d63443af3d6": {
-    "asset": 1560506199788,
-    "meta": 1560506208662,
-    "relativePath": "Script\\Gui\\UIGameTable.ts"
+    "asset": 1560602440286,
+    "meta": 1560607045978,
+    "relativePath": "Script/Gui/UIGameTable.ts"
   },
-  "1c89e0e8-c342-409c-a97e-936ffde6e441": {
-    "asset": 1560506194084,
-    "meta": 1560506208662,
-    "relativePath": "Script\\Message\\RoomMsg.ts"
+  "c506d2ff-7939-43ad-a73c-5f03b1995317": {
+    "asset": 1560428157304,
+    "meta": 1560607044398,
+    "relativePath": "Script/AutoBattle/AutoBattle.ts"
+  },
+  "e24f3534-f92c-407b-bcda-6bbf505d3f44": {
+    "asset": 1560441615006,
+    "meta": 1560607044399,
+    "relativePath": "Script/AutoBattle/AutoBattleManager.ts"
+  },
+  "e4d84353-d06e-4a6e-b9b8-588f0feafb72": {
+    "asset": 1560428360916,
+    "meta": 1560428360915,
+    "relativePath": "Script/AutoBattle/Config"
+  },
+  "6b553c5c-d320-4c6e-a826-71782ff10896": {
+    "asset": 1560428157305,
+    "meta": 1560607044473,
+    "relativePath": "Script/AutoBattle/Config/AutoBattleConfig.ts"
+  },
+  "d32e6564-e993-4ba5-b2ea-a816eca37ed6": {
+    "asset": 1560428157305,
+    "meta": 1560607044474,
+    "relativePath": "Script/AutoBattle/Config/WordsConfig.ts"
+  },
+  "6647f8c2-3e4c-41d4-9428-49caaeed5d61": {
+    "asset": 1560428360919,
+    "meta": 1560428360919,
+    "relativePath": "Script/AutoBattle/Input"
+  },
+  "a6b62d47-8f0d-4ff7-a51a-0ca50006e4f6": {
+    "asset": 1560441602870,
+    "meta": 1560607044540,
+    "relativePath": "Script/AutoBattle/Input/InputCache.ts"
+  },
+  "0cdbf707-0fdc-4f72-8522-84ac1f533da8": {
+    "asset": 1560428157306,
+    "meta": 1560607044541,
+    "relativePath": "Script/AutoBattle/Input/TestInput.ts"
+  },
+  "aa40c4a9-c4ae-4058-abf7-f94b4d28f290": {
+    "asset": 1560428360924,
+    "meta": 1560428360922,
+    "relativePath": "Script/AutoBattle/Model"
+  },
+  "0e1b6d79-a720-424e-8121-9176007dd49d": {
+    "asset": 1560428157306,
+    "meta": 1560607044629,
+    "relativePath": "Script/AutoBattle/Model/ChessBuff.ts"
+  },
+  "5764b458-d690-4d5c-b6b5-cababa343507": {
+    "asset": 1560428157306,
+    "meta": 1560607044635,
+    "relativePath": "Script/AutoBattle/LICENSE"
+  },
+  "6eeb5453-c697-4a6a-a4a7-d65ec7e44ebf": {
+    "asset": 1560428157307,
+    "meta": 1560607044867,
+    "relativePath": "Script/AutoBattle/Model/ChessMonster.ts"
+  },
+  "06c21fb3-e076-4714-99b1-f971b76be2c6": {
+    "asset": 1560428157307,
+    "meta": 1560607044969,
+    "relativePath": "Script/AutoBattle/Model/ChessNpc.ts"
+  },
+  "84ab83cf-c259-44ce-9c9b-f26f092d4c3e": {
+    "asset": 1560428157308,
+    "meta": 1560607044984,
+    "relativePath": "Script/AutoBattle/Model/ChessSkill.ts"
+  },
+  "a0c00b6c-bae3-4672-ae4b-bccfc302394f": {
+    "asset": 1560428157308,
+    "meta": 1560607044990,
+    "relativePath": "Script/AutoBattle/Model/EffectInfo.ts"
+  },
+  "0f00aab4-7a5d-4045-8bd4-058c487edfbb": {
+    "asset": 1560428360928,
+    "meta": 1560428360928,
+    "relativePath": "Script/AutoBattle/OutPut"
+  },
+  "d7261545-4014-4909-a7df-0db8043bcf75": {
+    "asset": 1560428157308,
+    "meta": 1560607044995,
+    "relativePath": "Script/AutoBattle/Model/MagicBall.ts"
+  },
+  "8fbc44ca-bb76-401a-aa65-c36ab01a2528": {
+    "asset": 1560428157308,
+    "meta": 1560607045036,
+    "relativePath": "Script/AutoBattle/OutPut/OutputCache.ts"
+  },
+  "841b7194-7eef-4d3e-8ec9-6e75e9c897ec": {
+    "asset": 1560428157308,
+    "meta": 1560607045036,
+    "relativePath": "Script/AutoBattle/OutPut/Printer.ts"
+  },
+  "0b57a81c-b257-45bf-a58a-4c04a81cb089": {
+    "asset": 1560428360944,
+    "meta": 1560428360932,
+    "relativePath": "Script/AutoBattle/SkillEffect"
+  },
+  "3be85e6d-79d4-43eb-bcc5-2e33f2cea1eb": {
+    "asset": 1560428157309,
+    "meta": 1560607045058,
+    "relativePath": "Script/AutoBattle/SkillEffect/AddAttackSpeed.ts"
+  },
+  "bfecad96-665a-4ae1-9716-c321c3222ee5": {
+    "asset": 1560428157309,
+    "meta": 1560607045067,
+    "relativePath": "Script/AutoBattle/SkillEffect/AddDamage.ts"
+  },
+  "74a5c280-f6db-49f7-b21a-35b6300b85f9": {
+    "asset": 1560428157310,
+    "meta": 1560607045075,
+    "relativePath": "Script/AutoBattle/SkillEffect/AddDefence.ts"
+  },
+  "0596b25f-c15c-4b6e-a3fb-5ba052171a8c": {
+    "asset": 1560428157310,
+    "meta": 1560607045084,
+    "relativePath": "Script/AutoBattle/SkillEffect/AddMaxHp.ts"
+  },
+  "228e423e-450e-4944-89dc-6a9fb8bc4caf": {
+    "asset": 1560428157310,
+    "meta": 1560607045093,
+    "relativePath": "Script/AutoBattle/SkillEffect/AddMDefence.ts"
+  },
+  "5144f67f-426c-4d3a-b0e8-bb4222668cfe": {
+    "asset": 1560428157310,
+    "meta": 1560607045102,
+    "relativePath": "Script/AutoBattle/SkillEffect/Bang.ts"
+  },
+  "a8486e65-5fc2-4447-9f5c-3c1ffc107203": {
+    "asset": 1560428157311,
+    "meta": 1560607045114,
+    "relativePath": "Script/AutoBattle/SkillEffect/Banish.ts"
+  },
+  "1185a692-94b4-4891-96f2-4f98e7826323": {
+    "asset": 1560428157311,
+    "meta": 1560607045132,
+    "relativePath": "Script/AutoBattle/SkillEffect/BaseSkillEffect.ts"
+  },
+  "46f06057-51a8-447c-aa20-58b31d37a9df": {
+    "asset": 1560428157311,
+    "meta": 1560607045142,
+    "relativePath": "Script/AutoBattle/SkillEffect/BigFireBall.ts"
+  },
+  "6a99e61d-2b20-481a-be3f-e45c2a6dc39e": {
+    "asset": 1560428157311,
+    "meta": 1560607045149,
+    "relativePath": "Script/AutoBattle/SkillEffect/BloodSacrifice.ts"
+  },
+  "c77b10fc-2251-4b26-b009-f162227b1a9f": {
+    "asset": 1560428157312,
+    "meta": 1560607045159,
+    "relativePath": "Script/AutoBattle/SkillEffect/BloodthirstySpear.ts"
+  },
+  "af4a420b-3239-49ab-927c-d2de99bb49e3": {
+    "asset": 1560428157312,
+    "meta": 1560607045166,
+    "relativePath": "Script/AutoBattle/SkillEffect/BloodthirstySpearBuff.ts"
+  },
+  "5ce593c5-4588-43ca-bb4e-1a11d0f515bb": {
+    "asset": 1560428157312,
+    "meta": 1560607045189,
+    "relativePath": "Script/AutoBattle/SkillEffect/Boom.ts"
+  },
+  "e286b6c2-d831-40e1-9ba2-4200c0230ace": {
+    "asset": 1560428157313,
+    "meta": 1560607045198,
+    "relativePath": "Script/AutoBattle/SkillEffect/ChainHeal.ts"
+  },
+  "27a06b52-9e47-4735-85ef-9a139f2457fb": {
+    "asset": 1560428157313,
+    "meta": 1560607045221,
+    "relativePath": "Script/AutoBattle/SkillEffect/ChainLightning.ts"
+  },
+  "d237753a-d235-4bfd-a9a4-2b5d466cf29f": {
+    "asset": 1560428157313,
+    "meta": 1560607045228,
+    "relativePath": "Script/AutoBattle/SkillEffect/CircleDamage.ts"
+  },
+  "c23e1865-34d3-49b5-9378-0febe66ebf5f": {
+    "asset": 1560428157313,
+    "meta": 1560607045238,
+    "relativePath": "Script/AutoBattle/SkillEffect/Crit.ts"
+  },
+  "69d107a6-bb51-4042-9f15-66170569581c": {
+    "asset": 1560428157314,
+    "meta": 1560607045258,
+    "relativePath": "Script/AutoBattle/SkillEffect/CritSilent.ts"
+  },
+  "5c42c937-ba1a-4fa5-974e-112b3a980d15": {
+    "asset": 1560428157314,
+    "meta": 1560607045268,
+    "relativePath": "Script/AutoBattle/SkillEffect/Damage.ts"
+  },
+  "df2e6755-79fc-45cf-baba-8a3fea500045": {
+    "asset": 1560428157314,
+    "meta": 1560607045277,
+    "relativePath": "Script/AutoBattle/SkillEffect/FlashBoom.ts"
+  },
+  "ea212aa3-6d5e-4d6c-bfc1-2b800f3ef637": {
+    "asset": 1560428157315,
+    "meta": 1560607045308,
+    "relativePath": "Script/AutoBattle/SkillEffect/GodAvatar.ts"
+  },
+  "cd3f7f07-2223-478a-a0fa-908a42332b27": {
+    "asset": 1560428157315,
+    "meta": 1560607045321,
+    "relativePath": "Script/AutoBattle/SkillEffect/InitSkillEffect.ts"
+  },
+  "25fd1cc5-ab32-45ef-a51e-d82101a481c6": {
+    "asset": 1560428157315,
+    "meta": 1560607045329,
+    "relativePath": "Script/AutoBattle/SkillEffect/LineDamage.ts"
+  },
+  "81f811cd-30e7-4cba-beaf-7848af789600": {
+    "asset": 1560428157315,
+    "meta": 1560607045337,
+    "relativePath": "Script/AutoBattle/SkillEffect/MagicRing.ts"
+  },
+  "9601bd2f-5b80-4372-b360-c560b60bd330": {
+    "asset": 1560428157316,
+    "meta": 1560607045346,
+    "relativePath": "Script/AutoBattle/SkillEffect/ManaBurn.ts"
+  },
+  "760f766c-216b-4723-9c17-b2557ad22c72": {
+    "asset": 1560428157316,
+    "meta": 1560607045351,
+    "relativePath": "Script/AutoBattle/SkillEffect/MulDamage.ts"
+  },
+  "49811f91-db59-4562-918d-691ba6446a05": {
+    "asset": 1560428157316,
+    "meta": 1560607045360,
+    "relativePath": "Script/AutoBattle/SkillEffect/NormalDamage.ts"
+  },
+  "87a0bfe4-884f-4335-9dac-1fda2bb12450": {
+    "asset": 1560428157316,
+    "meta": 1560607045367,
+    "relativePath": "Script/AutoBattle/SkillEffect/RecoverHp.ts"
+  },
+  "1d9f246a-d706-4f30-91a8-ff3d9008f506": {
+    "asset": 1560428157317,
+    "meta": 1560607045375,
+    "relativePath": "Script/AutoBattle/SkillEffect/RecoverMpRange.ts"
+  },
+  "77588782-a07c-4423-be83-5f3d97106fb9": {
+    "asset": 1560428157317,
+    "meta": 1560607045382,
+    "relativePath": "Script/AutoBattle/SkillEffect/ReduceCd.ts"
+  },
+  "4c1d3d24-7090-4205-b28f-b538a73bdc80": {
+    "asset": 1560428157317,
+    "meta": 1560607045401,
+    "relativePath": "Script/AutoBattle/SkillEffect/Refraction.ts"
+  },
+  "5c8070e8-facd-4b7c-a318-bee0c540961d": {
+    "asset": 1560428157318,
+    "meta": 1560607045413,
+    "relativePath": "Script/AutoBattle/SkillEffect/Roar.ts"
+  },
+  "8dfd0fb1-691d-4755-b009-cecde89be10e": {
+    "asset": 1560428157318,
+    "meta": 1560607045427,
+    "relativePath": "Script/AutoBattle/SkillEffect/SkillEffectEnum.ts"
+  },
+  "b75f2e53-7028-4665-ae67-6cf8c7163dcb": {
+    "asset": 1560428157318,
+    "meta": 1560607045433,
+    "relativePath": "Script/AutoBattle/SkillEffect/Sneer.ts"
+  },
+  "2e960b6c-5c3b-4b9b-887e-7f55d2311415": {
+    "asset": 1560428157318,
+    "meta": 1560607045441,
+    "relativePath": "Script/AutoBattle/SkillEffect/Sputtering.ts"
+  },
+  "00b1bec7-4830-4896-9f82-378ec5aaf502": {
+    "asset": 1560428157319,
+    "meta": 1560607045451,
+    "relativePath": "Script/AutoBattle/SkillEffect/Summon.ts"
+  },
+  "0a912d3d-5677-49b4-a47c-7ece1acc99cf": {
+    "asset": 1560428157319,
+    "meta": 1560607045470,
+    "relativePath": "Script/AutoBattle/SkillEffect/Sweep.ts"
+  },
+  "ddb4ede7-fa1e-4740-879f-42397ecf6e94": {
+    "asset": 1560428157319,
+    "meta": 1560607045476,
+    "relativePath": "Script/AutoBattle/SkillEffect/SwordStorm.ts"
+  },
+  "cf165829-19f9-4ab7-a98e-d28dc71b46ff": {
+    "asset": 1560428157319,
+    "meta": 1560607045485,
+    "relativePath": "Script/AutoBattle/SkillEffect/Tear.ts"
+  },
+  "cd2de3ad-9188-4b24-a748-cf9bf2c0dc89": {
+    "asset": 1560428157320,
+    "meta": 1560607045493,
+    "relativePath": "Script/AutoBattle/SkillEffect/Tenacity.ts"
+  },
+  "ed6cad95-28a3-40d5-bc88-8370c9b2d5d7": {
+    "asset": 1560428157320,
+    "meta": 1560607045503,
+    "relativePath": "Script/AutoBattle/SkillEffect/ThunderClap.ts"
+  },
+  "cd57bdeb-8aed-4b83-b6f9-a3663fad791a": {
+    "asset": 1560428157320,
+    "meta": 1560607045510,
+    "relativePath": "Script/AutoBattle/SkillEffect/WarCry.ts"
+  },
+  "b6f0caba-5db0-482c-bbc2-a7c2757a5a9b": {
+    "asset": 1560428360967,
+    "meta": 1560428360966,
+    "relativePath": "Script/AutoBattle/Tbx"
+  },
+  "eb06a384-c654-4622-9613-28b84ca18d7e": {
+    "asset": 1560428157320,
+    "meta": 1560607045535,
+    "relativePath": "Script/AutoBattle/SkillEffect/WarFever.ts"
+  },
+  "75cd0e95-62aa-4bb4-ad66-8ad1e80f5ec9": {
+    "asset": 1560428157321,
+    "meta": 1560607045568,
+    "relativePath": "Script/AutoBattle/Tbx/npc_data.ts"
+  },
+  "c388a64c-004a-49ba-a3f6-bc4d2fef1047": {
+    "asset": 1560428157321,
+    "meta": 1560607045590,
+    "relativePath": "Script/AutoBattle/Tbx/skill_data.ts"
+  },
+  "3087f115-ac25-4ae5-8624-2c02dfd900f3": {
+    "asset": 1560428360971,
+    "meta": 1560428360970,
+    "relativePath": "Script/AutoBattle/TbxModel"
+  },
+  "b23917cb-f0b1-4a02-adaa-b6bfaf9065fc": {
+    "asset": 1560428157321,
+    "meta": 1560607045615,
+    "relativePath": "Script/AutoBattle/Tbx/skill_level_data.ts"
+  },
+  "a9826892-2f02-4f17-baee-8344864144af": {
+    "asset": 1560428157322,
+    "meta": 1560607045623,
+    "relativePath": "Script/AutoBattle/TbxModel/ChessNpcBaseData.ts"
+  },
+  "d4f08336-94e3-44ec-9ae9-3f5d96798b46": {
+    "asset": 1560428157322,
+    "meta": 1560607045630,
+    "relativePath": "Script/AutoBattle/TbxModel/skillBaseData.ts"
+  },
+  "35c1fbd3-87dc-420f-8fc7-7e880a15b196": {
+    "asset": 1560428360975,
+    "meta": 1560428360974,
+    "relativePath": "Script/AutoBattle/Test"
+  },
+  "58c67658-d38f-46c2-96b8-f9f0339cc525": {
+    "asset": 1560428157322,
+    "meta": 1560607045638,
+    "relativePath": "Script/AutoBattle/TbxModel/SkillLevelData.ts"
+  },
+  "c7b69af5-dab7-4b5d-9615-f4e1c139164d": {
+    "asset": 1560428157323,
+    "meta": 1560607045677,
+    "relativePath": "Script/AutoBattle/Test/UnitTest.ts"
+  },
+  "4fc6bb92-92c0-478b-8153-96a6524ae06f": {
+    "asset": 1560441609583,
+    "meta": 1560607045679,
+    "relativePath": "Script/AutoBattle/Util.ts"
   },
   "238b13d2-0e24-4117-b7c6-dd04f1e834b1": {
-    "asset": 1560507291480,
-    "meta": 1560507292538,
-    "relativePath": "Script\\Gui\\UIGameMain.ts"
+    "asset": 1560607340891,
+    "meta": 1560607341631,
+    "relativePath": "Script/Gui/UIGameMain.ts"
+  },
+  "1c89e0e8-c342-409c-a97e-936ffde6e441": {
+    "asset": 1560607335612,
+    "meta": 1560607341632,
+    "relativePath": "Script/Message/RoomMsg.ts"
   }
 }
