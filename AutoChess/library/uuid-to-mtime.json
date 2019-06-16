@@ -275,8 +275,8 @@
     "relativePath": "resources/UIPrefab/UICardPoolItem.prefab"
   },
   "7a402d99-be70-4c98-9b6f-6f354af2e6ed": {
-    "asset": 1560607353073,
-    "meta": 1560607353087,
+    "asset": 1560702493639,
+    "meta": 1560702493644,
     "relativePath": "resources/UIPrefab/UIGameMain.prefab"
   },
   "dc55f1be-e50c-4ea2-aac2-1df343a0c3fc": {
@@ -345,8 +345,8 @@
     "relativePath": "Script"
   },
   "0b3e6439-f5f7-4480-8ead-646117fe13e4": {
-    "asset": 1560694666176,
-    "meta": 1560694666182,
+    "asset": 1560702494215,
+    "meta": 1560702494224,
     "relativePath": "Scene/helloworld.fire"
   },
   "82f59f9a-6ff5-4e5f-a45f-6fd073164071": {

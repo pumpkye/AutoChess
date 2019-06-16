@@ -27,7 +27,7 @@
       }
     ],
     "_active": true,
-    "_level": 2,
+    "_level": 1,
     "_components": [
       {
         "__id__": 78
@@ -1074,7 +1074,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 151.17,
+      "width": 0,
       "height": 40
     },
     "_anchorPoint": {
@@ -1117,8 +1117,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "win - 3:0",
-    "_N$string": "win - 3:0",
+    "_string": "",
+    "_N$string": "",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
