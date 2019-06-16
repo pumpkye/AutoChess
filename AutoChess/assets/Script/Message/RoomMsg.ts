@@ -224,3 +224,10 @@ interface Result {
      */
     point: number;
 }
+
+export class MsgGameOver extends MessageBase {
+    name = "msgGameOver";
+    data: {
+        winnerId: number;
+    }
+}

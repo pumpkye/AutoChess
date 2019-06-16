@@ -1,7 +1,8 @@
-import { MsgResEnterRoom, PlayerInfo, MsgRefreshRoomPlayer, MsgResStartGame, MsgRoundState, RoundState, MsgRefreshCardPool } from "../Message/RoomMsg";
+import { MsgResEnterRoom, PlayerInfo, MsgRefreshRoomPlayer, MsgResStartGame, MsgRoundState, RoundState, MsgRefreshCardPool, MsgGameOver } from "../Message/RoomMsg";
 import { g_UIManager } from "../Gui/UIManager";
 import { g_UserData } from "./UserData";
 import UICardPool from "../Gui/UICardPool";
+import UIGameOver from "../Gui/UIGameOver";
 
 class RoomData {
     roomId: number;
@@ -115,6 +116,17 @@ class RoomData {
         let panel: UICardPool = g_UIManager.getOrCreatePanel("UICardPool");
         if (panel) {
             panel.refreshPool();
+        }
+    }
+
+    msgGameOver(msg: MsgGameOver['data']) {
+        let panel: UIGameOver = g_UIManager.getOrCreatePanel('UIGameOver');
+        if (panel) {
+            if (msg.winnerId == g_UserData.id) {
+                panel.setResult("Win!");
+            } else {
+                panel.setResult("Game over...");
+            }
         }
     }
 

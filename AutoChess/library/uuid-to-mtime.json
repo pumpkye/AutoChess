@@ -345,8 +345,8 @@
     "relativePath": "Script"
   },
   "0b3e6439-f5f7-4480-8ead-646117fe13e4": {
-    "asset": 1560608179573,
-    "meta": 1560608179591,
+    "asset": 1560694666176,
+    "meta": 1560694666182,
     "relativePath": "Scene/helloworld.fire"
   },
   "82f59f9a-6ff5-4e5f-a45f-6fd073164071": {
@@ -549,11 +549,6 @@
     "meta": 1560607046164,
     "relativePath": "Script/Gui/UITableGrid.ts"
   },
-  "688623bb-861d-4192-96b3-c589c13e81b3": {
-    "asset": 1560440433090,
-    "meta": 1560607045812,
-    "relativePath": "Script/Data/RoomData.ts"
-  },
   "37017716-36b4-4570-ba64-8055a3104352": {
     "asset": 1560441645518,
     "meta": 1560607046109,
@@ -568,11 +563,6 @@
     "asset": 1560441775047,
     "meta": 1560607045876,
     "relativePath": "Script/Gui/UICardListItem.ts"
-  },
-  "9fc40417-1be6-43f3-a355-dd749060051a": {
-    "asset": 1560441793368,
-    "meta": 1560607046115,
-    "relativePath": "Script/Gui/UIManager.ts"
   },
   "791d2a7c-4c0b-49b2-b25a-6965a41a4135": {
     "asset": 1560442984574,
@@ -959,9 +949,29 @@
     "meta": 1560607341631,
     "relativePath": "Script/Gui/UIGameMain.ts"
   },
+  "52863bf2-0b9c-48e8-9df2-b93889dd04f1": {
+    "asset": 1560694352916,
+    "meta": 1560694352927,
+    "relativePath": "resources/UIPrefab/UIGameOver.prefab"
+  },
+  "9fc40417-1be6-43f3-a355-dd749060051a": {
+    "asset": 1560694054673,
+    "meta": 1560694061071,
+    "relativePath": "Script/Gui/UIManager.ts"
+  },
   "1c89e0e8-c342-409c-a97e-936ffde6e441": {
-    "asset": 1560607335612,
-    "meta": 1560607341632,
+    "asset": 1560693858581,
+    "meta": 1560694061072,
     "relativePath": "Script/Message/RoomMsg.ts"
+  },
+  "688623bb-861d-4192-96b3-c589c13e81b3": {
+    "asset": 1560694090840,
+    "meta": 1560694337307,
+    "relativePath": "Script/Data/RoomData.ts"
+  },
+  "ddcc88f4-e162-4f72-be13-9b84b8a3f828": {
+    "asset": 1560694622667,
+    "meta": 1560694663164,
+    "relativePath": "Script/Gui/UIGameOver.ts"
   }
 }
