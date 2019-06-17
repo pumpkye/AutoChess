@@ -45,8 +45,6 @@ export default class UIGameMain extends cc.Component {
     @property(cc.Label)
     expLabel: cc.Label = null;
 
-    countdownTime: number;
-
     @property(cc.Label)
     layoutACost: cc.Label = null;
 
@@ -60,6 +58,10 @@ export default class UIGameMain extends cc.Component {
     hpLabel: cc.Label = null;
 
     battleInfo: BattleInfo;
+
+    finishTime: number;
+    countdownTime: number;
+    dt = 0;;
     // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
@@ -75,8 +77,9 @@ export default class UIGameMain extends cc.Component {
         this.playerNameLabel.string = g_UserData.name;
         this.roundIdxLabel.string = "round " + g_RoomData.roundIdx;
         this.roundStateLabel.string = GameWorsConfig.battleState[g_RoomData.roundState];
-        let finishTime = g_RoomData.curStateFinishTime;
-        this.countdownTime = finishTime - new Date().getTime();
+        this.finishTime = g_RoomData.curStateFinishTime;
+        this.countdownTime = this.finishTime - new Date().getTime();
+        this.dt = 0;
         this.timeLabel.string = Math.ceil(this.countdownTime / 1000).toString();
     }
 
@@ -149,7 +152,15 @@ export default class UIGameMain extends cc.Component {
     }
 
     update(dt) {
+        this.dt += dt;
         this.countdownTime = this.countdownTime - dt * 1000;
+        if (this.dt > 1 && this.finishTime) {
+            this.countdownTime = this.finishTime - new Date().getTime();
+        }
         this.timeLabel.string = Math.ceil(this.countdownTime / 1000).toString();
+    }
+
+    onEnable() {
+        console.log("uiGameMain onEnable");
     }
 }

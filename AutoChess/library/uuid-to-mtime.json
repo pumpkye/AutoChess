@@ -364,11 +364,6 @@
     "meta": 1560323309198,
     "relativePath": "Script\\Config"
   },
-  "4efb69fd-0d41-4139-8a85-ea4ced82629b": {
-    "asset": 1560322119484,
-    "meta": 1560733539538,
-    "relativePath": "Script\\Config\\GameConfig.ts"
-  },
   "8df98bf1-5005-4961-b22d-94d4654ba24d": {
     "asset": 1560331081854,
     "meta": 1560733539539,
@@ -393,11 +388,6 @@
     "asset": 1560311072125,
     "meta": 1560733539611,
     "relativePath": "Script\\Data\\DataManager.ts"
-  },
-  "50cafaaf-7746-4f7e-99ba-fbef57cc22de": {
-    "asset": 1560308553403,
-    "meta": 1560733539629,
-    "relativePath": "Script\\Data\\LoginData.ts"
   },
   "c9485f81-1ad0-45aa-a05d-c01b8af56ae2": {
     "asset": 1560133785311,
@@ -494,11 +484,6 @@
     "meta": 1560131334582,
     "relativePath": "Script\\Net"
   },
-  "a0db7e82-700c-4e35-9e1e-feb822042f8c": {
-    "asset": 1560131740905,
-    "meta": 1560733540114,
-    "relativePath": "Script\\Message\\UserMsg.ts"
-  },
   "95099c87-5183-4320-b56e-8e129089f737": {
     "asset": 1560131334582,
     "meta": 1560733540136,
@@ -564,20 +549,10 @@
     "meta": 1560733539710,
     "relativePath": "Script\\Gui\\UICardListItem.ts"
   },
-  "791d2a7c-4c0b-49b2-b25a-6965a41a4135": {
-    "asset": 1560474458945,
-    "meta": 1560733539573,
-    "relativePath": "Script\\Connect\\MsgHandler.ts"
-  },
   "9fcd01ef-fb43-4c36-a436-7d63443af3d6": {
     "asset": 1560506199788,
     "meta": 1560733539830,
     "relativePath": "Script\\Gui\\UIGameTable.ts"
-  },
-  "238b13d2-0e24-4117-b7c6-dd04f1e834b1": {
-    "asset": 1560733297027,
-    "meta": 1560733539782,
-    "relativePath": "Script\\Gui\\UIGameMain.ts"
   },
   "52863bf2-0b9c-48e8-9df2-b93889dd04f1": {
     "asset": 1560733297030,
@@ -973,5 +948,30 @@
     "asset": 1560331102101,
     "meta": 1560733539521,
     "relativePath": "Script\\AutoBattle\\Util.ts"
+  },
+  "4efb69fd-0d41-4139-8a85-ea4ced82629b": {
+    "asset": 1560734907068,
+    "meta": 1560751881832,
+    "relativePath": "Script\\Config\\GameConfig.ts"
+  },
+  "a0db7e82-700c-4e35-9e1e-feb822042f8c": {
+    "asset": 1560752955672,
+    "meta": 1560753471232,
+    "relativePath": "Script\\Message\\UserMsg.ts"
+  },
+  "791d2a7c-4c0b-49b2-b25a-6965a41a4135": {
+    "asset": 1560755674605,
+    "meta": 1560755990102,
+    "relativePath": "Script\\Connect\\MsgHandler.ts"
+  },
+  "50cafaaf-7746-4f7e-99ba-fbef57cc22de": {
+    "asset": 1560755732801,
+    "meta": 1560755990103,
+    "relativePath": "Script\\Data\\LoginData.ts"
+  },
+  "238b13d2-0e24-4117-b7c6-dd04f1e834b1": {
+    "asset": 1560757388874,
+    "meta": 1560757395590,
+    "relativePath": "Script\\Gui\\UIGameMain.ts"
   }
 }

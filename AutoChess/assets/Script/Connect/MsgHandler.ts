@@ -1,6 +1,8 @@
 import { MessageBase } from "../Message/MessagegBase";
 import { g_DataManager } from "../Data/DataManager";
 import { g_UIManager } from "../Gui/UIManager";
+import { GameConfig } from "../config/GameConfig";
+import { g_LoginData } from "../Data/LoginData";
 
 /**
  * socket连接
@@ -11,8 +13,11 @@ class MsgHandler {
     readonly path = "/lobby";
 
     ws: WebSocket;
-    // sendMsgArr = new Array<MessageBase>();
-    // receiveMsgArr = new Array<MessageBase>();
+    /**
+     * 自动重连次数，当websocket意外断开时会自动尝试重连，
+     */
+    reconnectCount = 0;
+    lastReconnectTime = 0;
 
     constructor() {
 
@@ -36,6 +41,7 @@ class MsgHandler {
         let ws = new WebSocket(this.formatUrl(this.path));
         ws.onclose = function (event) {
             console.log("connect close");
+            g_MsgHandler.tryReconnect();
         }
         ws.onmessage = function (event) {
             console.log("receive server message");
@@ -52,6 +58,27 @@ class MsgHandler {
             }
 
         })
+    }
+
+    async tryReconnect() {
+        while (this.reconnectCount < GameConfig.reconnect.maxCount) {
+            this.reconnectCount++;
+            let dt = GameConfig.reconnect.deltaTime[this.reconnectCount];
+            await new Promise(resove => {
+                setTimeout(() => {
+                    resove();
+                }, dt);
+            });
+            console.log(`try reconnect no.${this.reconnectCount}`);
+            let connectRet: any = await this.createWsConnect();
+            if (connectRet.success) {
+                this.ws = connectRet.ws;
+                g_LoginData.reqUserInfoById();
+                return true;
+            }
+            console.log("connect fail");
+        }
+        return false;
     }
 
     sendMsg(msg: MessageBase) {

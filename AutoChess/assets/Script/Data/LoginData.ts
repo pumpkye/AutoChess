@@ -1,5 +1,5 @@
 import { g_MsgHandler } from "../Connect/MsgHandler";
-import { MsgReqUserInfo, MsgResUserInfo } from "../Message/UserMsg";
+import { MsgReqUserInfo, MsgResUserInfo, MsgReqLogin } from "../Message/UserMsg";
 import { g_UIManager } from "../Gui/UIManager";
 
 class LoginData {
@@ -25,6 +25,12 @@ class LoginData {
     reqUserInfo() {
         let msg = new MsgReqUserInfo();
         msg.data.name = this.userName;
+        g_MsgHandler.sendMsg(msg);
+    }
+
+    reqUserInfoById() {
+        let msg = new MsgReqLogin();
+        msg.data.id = this.id;
         g_MsgHandler.sendMsg(msg);
     }
 
