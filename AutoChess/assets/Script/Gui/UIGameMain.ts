@@ -7,7 +7,8 @@ import { BattleInfo, LayoutInfo } from "../AutoBattle/Input/InputCache";
 import { npc_data } from "../AutoBattle/Tbx/npc_data";
 import { g_Util } from "../AutoBattle/Util";
 import UIGameTable from "./UIGameTable";
-import { MsgBattleResult } from "../Message/RoomMsg";
+import { MsgBattleResult, MsgBuyExp } from "../Message/RoomMsg";
+import { g_MsgHandler } from "../Connect/MsgHandler";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -142,6 +143,11 @@ export default class UIGameMain extends cc.Component {
         this.battleInfo.clearLayout();
         this.battleInfo.addLayout(layoutInfoA);
         this.battleInfo.addLayout(layoutInfoB);
+    }
+
+    buyExp() {
+        let msg = new MsgBuyExp();
+        g_MsgHandler.sendMsg(msg);
     }
 
     openShop() {

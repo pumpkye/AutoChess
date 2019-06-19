@@ -275,8 +275,8 @@
     "relativePath": "resources\\UIPrefab\\UICardPoolItem.prefab"
   },
   "7a402d99-be70-4c98-9b6f-6f354af2e6ed": {
-    "asset": 1560733297029,
-    "meta": 1560733537733,
+    "asset": 1560925111052,
+    "meta": 1560925111123,
     "relativePath": "resources\\UIPrefab\\UIGameMain.prefab"
   },
   "dc55f1be-e50c-4ea2-aac2-1df343a0c3fc": {
@@ -345,8 +345,8 @@
     "relativePath": "Script"
   },
   "0b3e6439-f5f7-4480-8ead-646117fe13e4": {
-    "asset": 1560733571705,
-    "meta": 1560733571725,
+    "asset": 1560925151937,
+    "meta": 1560925151945,
     "relativePath": "Scene\\helloworld.fire"
   },
   "82f59f9a-6ff5-4e5f-a45f-6fd073164071": {
@@ -563,11 +563,6 @@
     "asset": 1560733297028,
     "meta": 1560733539974,
     "relativePath": "Script\\Gui\\UIManager.ts"
-  },
-  "1c89e0e8-c342-409c-a97e-936ffde6e441": {
-    "asset": 1560733297029,
-    "meta": 1560733540094,
-    "relativePath": "Script\\Message\\RoomMsg.ts"
   },
   "688623bb-861d-4192-96b3-c589c13e81b3": {
     "asset": 1560733297026,
@@ -970,8 +965,13 @@
     "relativePath": "Script\\Data\\LoginData.ts"
   },
   "238b13d2-0e24-4117-b7c6-dd04f1e834b1": {
-    "asset": 1560757388874,
-    "meta": 1560757395590,
+    "asset": 1560925090347,
+    "meta": 1560925091525,
     "relativePath": "Script\\Gui\\UIGameMain.ts"
+  },
+  "1c89e0e8-c342-409c-a97e-936ffde6e441": {
+    "asset": 1560925071346,
+    "meta": 1560925091526,
+    "relativePath": "Script\\Message\\RoomMsg.ts"
   }
 }
