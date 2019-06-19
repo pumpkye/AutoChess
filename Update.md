@@ -1,3 +1,9 @@
+# 6.19
+
+游戏部分基本完成，联机之后可以打，注意先启动AutoChessBattleServer,再启动GameServer，这个问题过两天我处理一下。
+
+在尝试编写打牌机器人，平时自己打牌不觉得，现在要把策略写成代码的时候发现有点麻烦，所以这段时间进度会慢一些。。。
+
 # 6.14
 
 AutoChessGameServer已经public了，一并提交的还有AutoChessBattleServer, 在这两个工程根目录下执行npm start启动服务器，然后autoChess点击右下角游戏登录即可进入游戏，自己开两个页面可以互相打。
